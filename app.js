@@ -1,8 +1,10 @@
 /* ===========================================================
    Výběr rodinného auta – dashboard
    Vanilla JS, no build step. Data: data/cars.json
-   Fotky: natahují se živě z Wikipedia REST API (CORS povoleno),
-   s fallbackem na ikonu podle karoserie, pokud se fotka nenajde.
+   Fotky: URL je předstažená přímo v data/cars.json (pole "image", viz
+   scripts/fetch_car_images.py), takže se vykreslí okamžitě přes <img>.
+   Živé dotažení z Wikipedia REST API běží jen jako záložní fallback
+   pro auta bez předstažené fotky; jinak fallback na ikonu karoserie.
    =========================================================== */
 
 const CATEGORY_LABELS = {
@@ -146,10 +148,15 @@ function listingsBlock(car) {
 
 function cardTemplate(car) {
   const catIcon = CATEGORY_ICONS[car.category] || "🚗";
+  const photoInner = car.image
+    ? `<img src="${car.image}" alt="${car.name}" loading="lazy" decoding="async"
+         onerror="this.remove(); this.parentElement.querySelector('.fallback-icon').style.display='';">
+       <span class="fallback-icon" style="display:none">${catIcon}</span>`
+    : `<span class="fallback-icon">${catIcon}</span>`;
   return `
     <article class="car-card" data-id="${car.id}">
       <div class="car-photo" data-photo="${car.id}">
-        <span class="fallback-icon">${catIcon}</span>
+        ${photoInner}
         ${car.top ? '<span class="badge-top">★ TOP</span>' : ""}
         <span class="badge-tier ${tierClass(car.tier)}">${TIER_LABELS[car.tier]}</span>
       </div>
@@ -235,22 +242,26 @@ function render() {
     el.addEventListener("click", () => openModal(el.dataset.id));
   });
 
-  // lazy-load photos
-  list.forEach((car) => {
-    fetchWikiThumb(car.wikiTitle).then((src) => {
-      if (!src) return;
-      const holder = grid.querySelector(`[data-photo="${car.id}"]`);
-      if (!holder) return;
-      const img = new Image();
-      img.src = src;
-      img.alt = car.name;
-      img.loading = "lazy";
-      img.onload = () => {
-        holder.querySelector(".fallback-icon")?.remove();
-        holder.prepend(img);
-      };
+  // fallback: živě dotáhnout fotku jen u aut, která nemají předstaženou
+  // URL přímo v cars.json (viz scripts/fetch_car_images.py) — ve výchozím
+  // stavu by tenhle blok pro naprostou většinu aut vůbec neběžel.
+  list
+    .filter((car) => !car.image)
+    .forEach((car) => {
+      fetchWikiThumb(car.wikiTitle).then((src) => {
+        if (!src) return;
+        const holder = grid.querySelector(`[data-photo="${car.id}"]`);
+        if (!holder) return;
+        const img = new Image();
+        img.src = src;
+        img.alt = car.name;
+        img.loading = "lazy";
+        img.onload = () => {
+          holder.querySelector(".fallback-icon")?.remove();
+          holder.prepend(img);
+        };
+      });
     });
-  });
 }
 
 function openModal(id) {
@@ -262,7 +273,13 @@ function openModal(id) {
 
   content.innerHTML = `
     <div class="modal-photo" data-photo="modal-${car.id}">
-      <span class="fallback-icon">${catIcon}</span>
+      ${
+        car.image
+          ? `<img src="${car.image}" alt="${car.name}" decoding="async"
+               onerror="this.remove(); this.parentElement.querySelector('.fallback-icon').style.display='';">
+             <span class="fallback-icon" style="display:none">${catIcon}</span>`
+          : `<span class="fallback-icon">${catIcon}</span>`
+      }
     </div>
     <div class="modal-body">
       <h2>${car.name}</h2>
@@ -299,18 +316,20 @@ function openModal(id) {
 
   backdrop.classList.add("open");
 
-  fetchWikiThumb(car.wikiTitle).then((src) => {
-    if (!src) return;
-    const holder = content.querySelector(`[data-photo="modal-${car.id}"]`);
-    if (!holder) return;
-    const img = new Image();
-    img.src = src;
-    img.alt = car.name;
-    img.onload = () => {
-      holder.querySelector(".fallback-icon")?.remove();
-      holder.prepend(img);
-    };
-  });
+  if (!car.image) {
+    fetchWikiThumb(car.wikiTitle).then((src) => {
+      if (!src) return;
+      const holder = content.querySelector(`[data-photo="modal-${car.id}"]`);
+      if (!holder) return;
+      const img = new Image();
+      img.src = src;
+      img.alt = car.name;
+      img.onload = () => {
+        holder.querySelector(".fallback-icon")?.remove();
+        holder.prepend(img);
+      };
+    });
+  }
 }
 
 function closeModal() {
