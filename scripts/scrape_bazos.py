@@ -31,6 +31,7 @@ import json
 import re
 import sys
 import time
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import quote
@@ -60,6 +61,35 @@ DIESEL_KEYWORDS = [
 ]
 
 _DISPLACEMENT_RE = re.compile(r"(?<!\d)([12])[.,](\d)(?!\d)")
+
+
+def normalize(text: str) -> str:
+    """Lowercase a odstrani diakritiku, aby 'Škoda' == 'skoda' apod."""
+    nfkd = unicodedata.normalize("NFKD", text or "")
+    return "".join(c for c in nfkd if not unicodedata.combining(c)).lower()
+
+
+def required_keywords(car: dict):
+    """
+    Znacka + model, ktere by mel nadpis inzeratu obsahovat, aby slo o
+    relevantni auto (Bazos casto do vysledku primichava placene 'TOP'
+    inzeraty naprosto jineho auta, ktere s hledanym vyrazem nesouvisi).
+    Vraci (brand_kw, model_kw) normalizovane bez diakritiky.
+    """
+    brand_raw = car.get("brand", "").split("/")[0].strip()
+    brand_kw = normalize(brand_raw)
+    model_kw = normalize(car.get("sautoModel") or "")
+    return brand_kw, model_kw
+
+
+def keyword_match(title: str, car: dict) -> bool:
+    """True pokud nadpis obsahuje znacku a model hledaneho auta (nebo aspon jedno z nich,
+    pokud druhe chybi ve vstupnich datech)."""
+    norm_title = normalize(title)
+    brand_kw, model_kw = required_keywords(car)
+    brand_ok = (not brand_kw) or (brand_kw in norm_title)
+    model_ok = (not model_kw) or (model_kw in norm_title)
+    return brand_ok and model_ok
 
 
 def extract_displacements(text: str):
@@ -166,18 +196,23 @@ def parse_listings(html: str, base_url: str = "https://auto.bazos.cz"):
     return results
 
 
-def filter_and_cap_listings(listings, car_name: str):
+def filter_and_cap_listings(listings, car: dict):
     """
-    Aplikuje engine_match klasifikaci a odfiltruje jasne nesedici motorizace
-    (nafta, jiny objem nez cilovy). Nejiste (None) necha a oznaci v datech,
+    Odfiltruje inzeraty, ktere:
+    - vubec nezminuji znacku/model hledaneho auta (Bazos casto do vysledku
+      primichava placene 'TOP' inzeraty uplne jineho auta bez ohledu na dotaz),
+    - maji jasne jinou motorizaci (nafta, jiny objem nez cilovy).
+    Nejiste motorizace (objem v nadpisu neuveden) necha a oznaci v datech,
     aby to dashboard mohl zobrazit s poznamkou. Na konci orizne na MAX_LISTINGS_PER_CAR.
     """
-    target = target_displacement(car_name)
+    target = target_displacement(car["name"])
     kept = []
     for item in listings:
+        if not keyword_match(item["title"], car):
+            continue  # nadpis vubec nezminuje znacku/model -> nejspis promo inzerat jineho auta
         match = classify_listing(item["title"], target)
         if match is False:
-            continue  # jasny nesoulad -> vyradit z vypisu
+            continue  # jasny nesoulad motorizace -> vyradit z vypisu
         item["engine_match"] = match  # True nebo None
         kept.append(item)
         if len(kept) >= MAX_LISTINGS_PER_CAR:
@@ -206,7 +241,7 @@ def main():
         try:
             html = fetch(url)
             raw_listings = parse_listings(html)
-            listings = filter_and_cap_listings(raw_listings, car["name"])
+            listings = filter_and_cap_listings(raw_listings, car)
             status = "ok"
         except Exception as exc:  # noqa: BLE001 — chceme pokracovat i pri chybe jednoho requestu
             print(f"  chyba: {exc}", file=sys.stderr)

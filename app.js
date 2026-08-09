@@ -102,7 +102,8 @@ function bazosUrl(car) {
 
 function sautoUrl(car) {
   const cenado = car.tier === "280k" || car.tier === "avoid" ? 350000 : 200000;
-  return `https://www.sauto.cz/inzerce/osobni/${car.brandSlug}?cena-do=${cenado}&palivo=benzin`;
+  const modelPart = car.sautoModel ? `/${encodeURIComponent(car.sautoModel)}` : "";
+  return `https://www.sauto.cz/inzerce/osobni/${car.brandSlug}${modelPart}?cena-do=${cenado}&palivo=benzin`;
 }
 
 function tierClass(tier) {

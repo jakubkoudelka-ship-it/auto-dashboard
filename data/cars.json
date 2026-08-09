@@ -12,9 +12,17 @@
     "price": "150–200 tis. Kč (roč. 2006–2010)",
     "reliability": "Velmi dobrá",
     "note": "Nejlepší poměr prostor / cena / dostupnost servisu v celém segmentu.",
-    "pros": ["Největší kufr mezi kombíky v rozpočtu", "Nejlevnější servis a díly v ČR", "Mechanik a náhradní díly kdekoli"],
-    "cons": ["U TSI před 2012 zkontrolovat napínák rozvodového řetězu", "Starší ročníky – hlídat korozi prahů"],
-    "bazosQuery": "škoda octavia combi benzín"
+    "pros": [
+      "Největší kufr mezi kombíky v rozpočtu",
+      "Nejlevnější servis a díly v ČR",
+      "Mechanik a náhradní díly kdekoli"
+    ],
+    "cons": [
+      "U TSI před 2012 zkontrolovat napínák rozvodového řetězu",
+      "Starší ročníky – hlídat korozi prahů"
+    ],
+    "bazosQuery": "škoda octavia combi 1.6 benzín",
+    "sautoModel": "octavia"
   },
   {
     "id": "fiat-tipo-kombi",
@@ -29,9 +37,17 @@
     "price": "do 200 tis. Kč (roč. 2016–2018, vyšší nájezd)",
     "reliability": "Dobrá",
     "note": "Podhodnocený model, jednoduchý atmosférický motor bez neduhů TSI/T-GDI.",
-    "pros": ["Kufr na úrovni Octavie", "Jednoduchý spolehlivý motor 1.4 16V", "Nižší poptávka = nižší cena"],
-    "cons": ["Menší nabídka na trhu", "Horší dostupnost některých dílů než Škoda"],
-    "bazosQuery": "fiat tipo kombi benzín"
+    "pros": [
+      "Kufr na úrovni Octavie",
+      "Jednoduchý spolehlivý motor 1.4 16V",
+      "Nižší poptávka = nižší cena"
+    ],
+    "cons": [
+      "Menší nabídka na trhu",
+      "Horší dostupnost některých dílů než Škoda"
+    ],
+    "bazosQuery": "fiat tipo kombi 1.4 benzín",
+    "sautoModel": "tipo"
   },
   {
     "id": "toyota-avensis-corolla-verso",
@@ -46,9 +62,16 @@
     "price": "do 180 tis. Kč (spíš starší ročníky)",
     "reliability": "Nejvyšší ze všech modelů v seznamu",
     "note": "Pokud narazíte na dobře udržovaný kus, mechanicky nejjistější volba.",
-    "pros": ["Vynikající dlouhodobá spolehlivost", "Žádné typické opakující se závady"],
-    "cons": ["Malá nabídka na českém trhu", "Často dovoz ze zahraničí"],
-    "bazosQuery": "toyota avensis kombi benzín"
+    "pros": [
+      "Vynikající dlouhodobá spolehlivost",
+      "Žádné typické opakující se závady"
+    ],
+    "cons": [
+      "Malá nabídka na českém trhu",
+      "Často dovoz ze zahraničí"
+    ],
+    "bazosQuery": "toyota avensis kombi benzín",
+    "sautoModel": "avensis"
   },
   {
     "id": "ford-mondeo-combi",
@@ -63,9 +86,15 @@
     "price": "od 130 tis. Kč",
     "reliability": "Velmi dobrá",
     "note": "Odolné motory i převodovky, dobrý podvozek.",
-    "pros": ["U benzínu jednoznačně lepší zkušenosti než u nafty", "Levný vstup do třídy"],
-    "cons": ["Vyšší spotřeba u větších motorů"],
-    "bazosQuery": "ford mondeo combi benzín"
+    "pros": [
+      "U benzínu jednoznačně lepší zkušenosti než u nafty",
+      "Levný vstup do třídy"
+    ],
+    "cons": [
+      "Vyšší spotřeba u větších motorů"
+    ],
+    "bazosQuery": "ford mondeo combi 2.0 benzín",
+    "sautoModel": "mondeo"
   },
   {
     "id": "ford-focus-combi",
@@ -80,9 +109,15 @@
     "price": "od 130 tis. Kč",
     "reliability": "Dobrá",
     "note": "Kvalitní mechanika, spolehlivý benzín.",
-    "pros": ["Dobrý podvozek a jízdní vlastnosti", "Široká nabídka na trhu"],
-    "cons": ["Diesely se nedoporučují (jen benzín)"],
-    "bazosQuery": "ford focus combi benzín"
+    "pros": [
+      "Dobrý podvozek a jízdní vlastnosti",
+      "Široká nabídka na trhu"
+    ],
+    "cons": [
+      "Diesely se nedoporučují (jen benzín)"
+    ],
+    "bazosQuery": "ford focus combi 1.6 benzín",
+    "sautoModel": "focus"
   },
   {
     "id": "kia-ceed-hyundai-i30-combi",
@@ -97,9 +132,15 @@
     "price": "130–190 tis. Kč (roč. 2007–2012)",
     "reliability": "Dobrá",
     "note": "Modernější zpracování, u i30 hezčí interiér, u Ceedu větší kufr.",
-    "pros": ["Solidní dílenské zpracování", "Možnost doběhu korejské záruky"],
-    "cons": ["V rozpočtu jen starší generace"],
-    "bazosQuery": "kia ceed sw benzín"
+    "pros": [
+      "Solidní dílenské zpracování",
+      "Možnost doběhu korejské záruky"
+    ],
+    "cons": [
+      "V rozpočtu jen starší generace"
+    ],
+    "bazosQuery": "kia ceed sw benzín",
+    "sautoModel": "ceed"
   },
   {
     "id": "mazda6-kombi",
@@ -114,9 +155,15 @@
     "price": "100–200 tis. Kč",
     "reliability": "Velmi dobrá",
     "note": "Řetězový bezúdržbový rozvod, spolehlivá i po letech.",
-    "pros": ["Bezúdržbový řetěz zvládá 300 000+ km", "Jednoduchá atmosférická technika"],
-    "cons": ["Napínák drážkového řemene – preventivní výměna cca po 80–100 tis. km"],
-    "bazosQuery": "mazda 6 kombi benzín"
+    "pros": [
+      "Bezúdržbový řetěz zvládá 300 000+ km",
+      "Jednoduchá atmosférická technika"
+    ],
+    "cons": [
+      "Napínák drážkového řemene – preventivní výměna cca po 80–100 tis. km"
+    ],
+    "bazosQuery": "mazda 6 kombi 2.0 benzín",
+    "sautoModel": "6"
   },
   {
     "id": "peugeot-308-sw",
@@ -131,9 +178,15 @@
     "price": "70–100 tis. Kč",
     "reliability": "Lepší než předchůdce 307",
     "note": "Levná a podhodnocená volba.",
-    "pros": ["Nejnižší cena mezi klasickými kombíky", "Slušná prostornost"],
-    "cons": ["Starší 8V motor slabší výkonem"],
-    "bazosQuery": "peugeot 308 sw benzín"
+    "pros": [
+      "Nejnižší cena mezi klasickými kombíky",
+      "Slušná prostornost"
+    ],
+    "cons": [
+      "Starší 8V motor slabší výkonem"
+    ],
+    "bazosQuery": "peugeot 308 sw 1.6 benzín",
+    "sautoModel": "308"
   },
   {
     "id": "seat-leon-st",
@@ -148,9 +201,15 @@
     "price": "130–190 tis. Kč (starší roč.)",
     "reliability": "Dobrá (sdílí techniku VAG)",
     "note": "Největší kufr v celém segmentu kombi.",
-    "pros": ["Obří kufr", "Technika sdílená s Octavií/Golfem"],
-    "cons": ["Méně servisů specializovaných na Seat"],
-    "bazosQuery": "seat leon st benzín"
+    "pros": [
+      "Obří kufr",
+      "Technika sdílená s Octavií/Golfem"
+    ],
+    "cons": [
+      "Méně servisů specializovaných na Seat"
+    ],
+    "bazosQuery": "seat leon st 1.6 benzín",
+    "sautoModel": "leon"
   },
   {
     "id": "volvo-v70-v50",
@@ -165,9 +224,16 @@
     "price": "kolem 200 tis. Kč (V70), V50 levněji",
     "reliability": "Mechanicky velmi odolné (5válec 2.4i)",
     "note": "Vyšší spotřeba a dražší servis/díly než Škoda/Toyota.",
-    "pros": ["Robustní karoserie a bezpečnost", "Odolný motor"],
-    "cons": ["Spotřeba cca 9 l/100 km", "Dražší náhradní díly"],
-    "bazosQuery": "volvo v70 benzín"
+    "pros": [
+      "Robustní karoserie a bezpečnost",
+      "Odolný motor"
+    ],
+    "cons": [
+      "Spotřeba cca 9 l/100 km",
+      "Dražší náhradní díly"
+    ],
+    "bazosQuery": "volvo v70 2.4 benzín",
+    "sautoModel": "v70"
   },
   {
     "id": "skoda-roomster-rapid",
@@ -182,9 +248,15 @@
     "price": "100–150 tis. Kč",
     "reliability": "Stejná jako Fabia",
     "note": "Menší auto, ale vysoká karoserie = dobrý výhled a nástup.",
-    "pros": ["Levné a spolehlivé", "Dobrý výhled díky vysoké karoserii"],
-    "cons": ["Menší kufr než klasický kombík"],
-    "bazosQuery": "škoda roomster benzín"
+    "pros": [
+      "Levné a spolehlivé",
+      "Dobrý výhled díky vysoké karoserii"
+    ],
+    "cons": [
+      "Menší kufr než klasický kombík"
+    ],
+    "bazosQuery": "škoda roomster 1.2 benzín",
+    "sautoModel": "roomster"
   },
   {
     "id": "dacia-logan-mcv",
@@ -199,9 +271,16 @@
     "price": "pod 150 tis. Kč",
     "reliability": "Jednoduchý, robustní motor",
     "note": "Nejlevnější kombík na trhu s velkým kufrem.",
-    "pros": ["Minimum elektroniky k pokažení", "Nejnižší cena za daný prostor"],
-    "cons": ["Skromnější výbava", "Horší korozní ochrana"],
-    "bazosQuery": "dacia logan mcv benzín"
+    "pros": [
+      "Minimum elektroniky k pokažení",
+      "Nejnižší cena za daný prostor"
+    ],
+    "cons": [
+      "Skromnější výbava",
+      "Horší korozní ochrana"
+    ],
+    "bazosQuery": "dacia logan mcv 1.6 benzín",
+    "sautoModel": "logan"
   },
   {
     "id": "renault-megane-grandtour",
@@ -216,9 +295,15 @@
     "price": "100–160 tis. Kč",
     "reliability": "Průměrná až dobrá",
     "note": "Srovnatelné s Loganem, o něco lepší výbava.",
-    "pros": ["Lepší výbava než Logan", "Dobrá dostupnost na trhu"],
-    "cons": ["Průměrná dlouhodobá spolehlivost"],
-    "bazosQuery": "renault megane grandtour benzín"
+    "pros": [
+      "Lepší výbava než Logan",
+      "Dobrá dostupnost na trhu"
+    ],
+    "cons": [
+      "Průměrná dlouhodobá spolehlivost"
+    ],
+    "bazosQuery": "renault megane grandtour 1.6 benzín",
+    "sautoModel": "megane"
   },
   {
     "id": "vw-golf-passat-variant",
@@ -233,9 +318,15 @@
     "price": "mimo rozpočet (slušné kusy od 300–400 tis. Kč)",
     "reliability": "Dobrá",
     "note": "Do 200 tis. Kč jen velmi staré/najeté kusy, obtížně sehnatelné.",
-    "pros": ["Kvalitní zpracování", "Velký kufr u Passatu"],
-    "cons": ["Mimo rozpočet ve slušném stavu"],
-    "bazosQuery": "vw golf variant benzín"
+    "pros": [
+      "Kvalitní zpracování",
+      "Velký kufr u Passatu"
+    ],
+    "cons": [
+      "Mimo rozpočet ve slušném stavu"
+    ],
+    "bazosQuery": "vw golf variant benzín",
+    "sautoModel": "golf"
   },
   {
     "id": "citroen-c4-c5-tourer",
@@ -250,11 +341,17 @@
     "price": "C5 kolem 175 tis. Kč",
     "reliability": "Sporná – hodně elektroniky a hydropneumatiky",
     "note": "Benzínovému 1,6 turbo se vyhněte (karbon), jinak dobrý komfort.",
-    "pros": ["Vysoký komfort jízdy", "Nízká cena"],
-    "cons": ["Hydropneumatický podvozek = složitější diagnostika a opravy", "Jde proti požadavku na bezúdržbovost"],
-    "bazosQuery": "citroen c5 tourer benzín"
+    "pros": [
+      "Vysoký komfort jízdy",
+      "Nízká cena"
+    ],
+    "cons": [
+      "Hydropneumatický podvozek = složitější diagnostika a opravy",
+      "Jde proti požadavku na bezúdržbovost"
+    ],
+    "bazosQuery": "citroen c5 tourer benzín",
+    "sautoModel": "c5"
   },
-
   {
     "id": "mazda-premacy-5",
     "name": "Mazda Premacy / Mazda 5",
@@ -268,9 +365,15 @@
     "price": "pod 50–100 tis. Kč",
     "reliability": "Solidní, řetězový rozvod",
     "note": "Velmi levná, prostorná, u Mazdy 5 možnost 7 míst.",
-    "pros": ["Nejnižší cena mezi MPV", "Volitelně 7 míst"],
-    "cons": ["Opotřebené tlumiče/vůle u vysokých nájezdů – zkontrolovat"],
-    "bazosQuery": "mazda premacy benzín"
+    "pros": [
+      "Nejnižší cena mezi MPV",
+      "Volitelně 7 míst"
+    ],
+    "cons": [
+      "Opotřebené tlumiče/vůle u vysokých nájezdů – zkontrolovat"
+    ],
+    "bazosQuery": "mazda premacy benzín",
+    "sautoModel": "premacy"
   },
   {
     "id": "seat-altea-xl",
@@ -285,9 +388,15 @@
     "price": "120–180 tis. Kč",
     "reliability": "Dobrá (technika Octavia/Golf)",
     "note": "Vysoká karoserie, dobrý výhled.",
-    "pros": ["Sdílená technika s Octavií/Golfem", "Dobrý výhled a nástup"],
-    "cons": ["Méně specializovaných servisů"],
-    "bazosQuery": "seat altea xl benzín"
+    "pros": [
+      "Sdílená technika s Octavií/Golfem",
+      "Dobrý výhled a nástup"
+    ],
+    "cons": [
+      "Méně specializovaných servisů"
+    ],
+    "bazosQuery": "seat altea xl benzín",
+    "sautoModel": "altea"
   },
   {
     "id": "fiat-500l",
@@ -302,9 +411,15 @@
     "price": "160–280 tis. Kč (spíš roč. 2012–2014)",
     "reliability": "Slušná, bez fatálních závad",
     "note": "Preferujte 1.4 16V nebo 1.4 T-Jet.",
-    "pros": ["Prostorná kabina", "Dobrý výhled a komfort pro rodinu"],
-    "cons": ["Motoru 0.9 TwinAir se vyhněte (nejvíc stížností)"],
-    "bazosQuery": "fiat 500l benzín"
+    "pros": [
+      "Prostorná kabina",
+      "Dobrý výhled a komfort pro rodinu"
+    ],
+    "cons": [
+      "Motoru 0.9 TwinAir se vyhněte (nejvíc stížností)"
+    ],
+    "bazosQuery": "fiat 500l 1.4 benzín",
+    "sautoModel": "500l"
   },
   {
     "id": "opel-zafira",
@@ -319,9 +434,16 @@
     "price": "150–200 tis. Kč (roč. 2005–2011)",
     "reliability": "Průměrná, náchylnější elektronika",
     "note": "Jediné reálně dostupné 7místé auto v rozpočtu.",
-    "pros": ["7 míst za rozumnou cenu", "Variabilní interiér"],
-    "cons": ["Náchylnější elektronika", "Vyšší náklady na údržbu"],
-    "bazosQuery": "opel zafira 7 míst benzín"
+    "pros": [
+      "7 míst za rozumnou cenu",
+      "Variabilní interiér"
+    ],
+    "cons": [
+      "Náchylnější elektronika",
+      "Vyšší náklady na údržbu"
+    ],
+    "bazosQuery": "opel zafira 7 míst benzín",
+    "sautoModel": "zafira"
   },
   {
     "id": "renault-grand-scenic",
@@ -336,9 +458,15 @@
     "price": "150–200 tis. Kč (roč. 2005–2011)",
     "reliability": "Průměrná",
     "note": "Totéž co Zafira, jen pokud potřebujete 7 míst.",
-    "pros": ["7 míst", "Variabilní interiér"],
-    "cons": ["Průměrná dlouhodobá spolehlivost"],
-    "bazosQuery": "renault grand scenic benzín"
+    "pros": [
+      "7 míst",
+      "Variabilní interiér"
+    ],
+    "cons": [
+      "Průměrná dlouhodobá spolehlivost"
+    ],
+    "bazosQuery": "renault grand scenic benzín",
+    "sautoModel": "grand-scenic"
   },
   {
     "id": "vw-sharan-galaxy-alhambra",
@@ -353,11 +481,17 @@
     "price": "prakticky mimo rozpočet",
     "reliability": "Velmi dobrá (Sharan/Alhambra)",
     "note": "Benzínová verze na trhu vzácná, ceny start kolem 200 tis. Kč i ve špatném stavu.",
-    "pros": ["Nejprostornější 7místá MPV", "Velmi odolná mechanika"],
-    "cons": ["Benzín na trhu vzácný", "Cena mimo rozpočet"],
-    "bazosQuery": "vw sharan benzín"
+    "pros": [
+      "Nejprostornější 7místá MPV",
+      "Velmi odolná mechanika"
+    ],
+    "cons": [
+      "Benzín na trhu vzácný",
+      "Cena mimo rozpočet"
+    ],
+    "bazosQuery": "vw sharan benzín",
+    "sautoModel": "sharan"
   },
-
   {
     "id": "dacia-duster1",
     "name": "Dacia Duster I 1.6 16V",
@@ -371,9 +505,16 @@
     "price": "130–190 tis. Kč",
     "reliability": "Velmi dobrá, servisně levné",
     "note": "Vyšší podvozek, ideální na chatu/hory.",
-    "pros": ["Nejlevnější reálné SUV se slušnou spolehlivostí", "Vysoký podvozek pro horší cesty"],
-    "cons": ["Rozvodový řetěz – zkontrolovat napínák kolem 80–100 tis. km", "Horší koroze karoserie"],
-    "bazosQuery": "dacia duster benzín"
+    "pros": [
+      "Nejlevnější reálné SUV se slušnou spolehlivostí",
+      "Vysoký podvozek pro horší cesty"
+    ],
+    "cons": [
+      "Rozvodový řetěz – zkontrolovat napínák kolem 80–100 tis. km",
+      "Horší koroze karoserie"
+    ],
+    "bazosQuery": "dacia duster 1.6 benzín",
+    "sautoModel": "duster"
   },
   {
     "id": "nissan-qashqai1",
@@ -388,9 +529,16 @@
     "price": "od cca 200 tis. Kč (facelift), méně předfacelift",
     "reliability": "Velmi dobrá, řetězový bezúdržbový rozvod",
     "note": "Kontrola koroze podvozku a vůle ramen před koupí.",
-    "pros": ["Bezúdržbový řetězový rozvod", "Pohodlný posez"],
-    "cons": ["Koroze podvozku u starších kusů", "Menší kufr než kombík"],
-    "bazosQuery": "nissan qashqai benzín"
+    "pros": [
+      "Bezúdržbový řetězový rozvod",
+      "Pohodlný posez"
+    ],
+    "cons": [
+      "Koroze podvozku u starších kusů",
+      "Menší kufr než kombík"
+    ],
+    "bazosQuery": "nissan qashqai 1.6 benzín",
+    "sautoModel": "qashqai"
   },
   {
     "id": "hyundai-ix35",
@@ -405,9 +553,15 @@
     "price": "150–250 tis. Kč (roč. 2010–2015)",
     "reliability": "Dobrá, jednoduché atmosférické motory",
     "note": "Solidní, ale pohon 4x4 dražší.",
-    "pros": ["Jednoduché atmosférické motory", "Slušná výbava"],
-    "cons": ["4x4 verze dražší"],
-    "bazosQuery": "hyundai ix35 benzín"
+    "pros": [
+      "Jednoduché atmosférické motory",
+      "Slušná výbava"
+    ],
+    "cons": [
+      "4x4 verze dražší"
+    ],
+    "bazosQuery": "hyundai ix35 1.6 benzín",
+    "sautoModel": "ix35"
   },
   {
     "id": "mitsubishi-asx",
@@ -422,9 +576,16 @@
     "price": "nad 200 tis. Kč, těsné",
     "reliability": "Velmi dobrá (jen benzín 1.6)",
     "note": "Nejmenší kufr ze všech SUV v seznamu.",
-    "pros": ["Velmi spolehlivý motor 1.6 MIVEC", "Nízká spotřeba"],
-    "cons": ["Cena na hraně rozpočtu", "Nejmenší kufr"],
-    "bazosQuery": "mitsubishi asx benzín"
+    "pros": [
+      "Velmi spolehlivý motor 1.6 MIVEC",
+      "Nízká spotřeba"
+    ],
+    "cons": [
+      "Cena na hraně rozpočtu",
+      "Nejmenší kufr"
+    ],
+    "bazosQuery": "mitsubishi asx 1.6 benzín",
+    "sautoModel": "asx"
   },
   {
     "id": "suzuki-sx4",
@@ -439,9 +600,15 @@
     "price": "100–170 tis. Kč",
     "reliability": "Velmi dobrá, jednoduchá technika",
     "note": "Menší auto, malý kufr.",
-    "pros": ["Velmi spolehlivá jednoduchá technika", "Nízká cena"],
-    "cons": ["Malý kufr"],
-    "bazosQuery": "suzuki sx4 benzín"
+    "pros": [
+      "Velmi spolehlivá jednoduchá technika",
+      "Nízká cena"
+    ],
+    "cons": [
+      "Malý kufr"
+    ],
+    "bazosQuery": "suzuki sx4 1.6 benzín",
+    "sautoModel": "sx4"
   },
   {
     "id": "suzuki-vitara-new",
@@ -456,9 +623,14 @@
     "price": "mimo rozpočet (nad 300 tis. Kč i ojetá)",
     "reliability": "Nadprůměrná (2. místo v TÜV pro své stáří)",
     "note": "Nová generace se drží nad 300 tis. Kč i ojetá.",
-    "pros": ["Nadprůměrná spolehlivost"],
-    "cons": ["Cena mimo rozpočet"],
-    "bazosQuery": "suzuki vitara benzín"
+    "pros": [
+      "Nadprůměrná spolehlivost"
+    ],
+    "cons": [
+      "Cena mimo rozpočet"
+    ],
+    "bazosQuery": "suzuki vitara benzín",
+    "sautoModel": "vitara"
   },
   {
     "id": "skoda-yeti",
@@ -473,9 +645,15 @@
     "price": "těsně nad 200 tis. Kč",
     "reliability": "Velmi dobrá",
     "note": "Kvalitní SUV, v rozpočtu jen okrajově.",
-    "pros": ["Kvalitní zpracování", "Oblíbené a žádané SUV"],
-    "cons": ["Cena na hraně nebo mírně nad rozpočtem"],
-    "bazosQuery": "škoda yeti benzín"
+    "pros": [
+      "Kvalitní zpracování",
+      "Oblíbené a žádané SUV"
+    ],
+    "cons": [
+      "Cena na hraně nebo mírně nad rozpočtem"
+    ],
+    "bazosQuery": "škoda yeti 1.2 benzín",
+    "sautoModel": "yeti"
   },
   {
     "id": "subaru-forester",
@@ -490,9 +668,15 @@
     "price": "kolem 190–200 tis. Kč",
     "reliability": "Velmi dobrá, pohon 4x4 součástí výbavy",
     "note": "Plus pro cesty na chatu/hory, vyšší spotřeba paliva.",
-    "pros": ["Trvalý pohon 4x4 v základu", "Velmi odolná mechanika"],
-    "cons": ["Vyšší spotřeba paliva"],
-    "bazosQuery": "subaru forester benzín"
+    "pros": [
+      "Trvalý pohon 4x4 v základu",
+      "Velmi odolná mechanika"
+    ],
+    "cons": [
+      "Vyšší spotřeba paliva"
+    ],
+    "bazosQuery": "subaru forester 2.0 benzín",
+    "sautoModel": "forester"
   },
   {
     "id": "honda-crv-civic-tourer",
@@ -507,9 +691,14 @@
     "price": "mimo rozpočet (300–450 tis. Kč+)",
     "reliability": "Vynikající (Honda dlouhodobě TOP 5 značek)",
     "note": "Ceny citelně nad 300–450 tis. Kč.",
-    "pros": ["Vynikající dlouhodobá spolehlivost"],
-    "cons": ["Cena mimo rozpočet"],
-    "bazosQuery": "honda cr-v benzín"
+    "pros": [
+      "Vynikající dlouhodobá spolehlivost"
+    ],
+    "cons": [
+      "Cena mimo rozpočet"
+    ],
+    "bazosQuery": "honda cr-v 1.8 benzín",
+    "sautoModel": "cr-v"
   },
   {
     "id": "tucson-sportage-moderni",
@@ -524,11 +713,15 @@
     "price": "mimo rozpočet (start cca 400 tis. Kč)",
     "reliability": "Velmi dobrá",
     "note": "Start reálně kolem 400 tis. Kč.",
-    "pros": ["Moderní bezpečnostní výbava"],
-    "cons": ["Zcela mimo rozpočet 200 tis. Kč"],
-    "bazosQuery": "hyundai tucson benzín"
+    "pros": [
+      "Moderní bezpečnostní výbava"
+    ],
+    "cons": [
+      "Zcela mimo rozpočet 200 tis. Kč"
+    ],
+    "bazosQuery": "hyundai tucson benzín",
+    "sautoModel": "tucson"
   },
-
   {
     "id": "dacia-dokker",
     "name": "Dacia Dokker 1.6 MPI",
@@ -542,9 +735,16 @@
     "price": "pod 150 tis. Kč",
     "reliability": "Stejný motor K4M jako Duster",
     "note": "Extrémní poměr prostoru a ceny, nižší komfort.",
-    "pros": ["Obrovský prostor za málo peněz", "Jednoduchá technika"],
-    "cons": ["Výhrada k napínáku řetězu kolem 80–100 tis. km", "Nižší komfort a hlučnost"],
-    "bazosQuery": "dacia dokker benzín"
+    "pros": [
+      "Obrovský prostor za málo peněz",
+      "Jednoduchá technika"
+    ],
+    "cons": [
+      "Výhrada k napínáku řetězu kolem 80–100 tis. km",
+      "Nižší komfort a hlučnost"
+    ],
+    "bazosQuery": "dacia dokker 1.6 benzín",
+    "sautoModel": "dokker"
   },
   {
     "id": "renault-kangoo",
@@ -559,9 +759,15 @@
     "price": "pod 150 tis. Kč",
     "reliability": "Jednoduchá technika",
     "note": "Starší generace velmi levné.",
-    "pros": ["Velký prostor za nízkou cenu", "Jednoduchá mechanika"],
-    "cons": ["Nižší komfort než klasické osobní auto"],
-    "bazosQuery": "renault kangoo benzín"
+    "pros": [
+      "Velký prostor za nízkou cenu",
+      "Jednoduchá mechanika"
+    ],
+    "cons": [
+      "Nižší komfort než klasické osobní auto"
+    ],
+    "bazosQuery": "renault kangoo 1.6 benzín",
+    "sautoModel": "kangoo"
   },
   {
     "id": "partner-tepee-berlingo",
@@ -576,9 +782,15 @@
     "price": "100–180 tis. Kč",
     "reliability": "Dobrá",
     "note": "Variabilní 3 samostatná zadní sedadla, snadno vyjímatelná.",
-    "pros": ["Variabilní zadní sedadla", "Velký objemný prostor"],
-    "cons": ["Horší výsledky crash testů než klasický kombík"],
-    "bazosQuery": "peugeot partner tepee benzín"
+    "pros": [
+      "Variabilní zadní sedadla",
+      "Velký objemný prostor"
+    ],
+    "cons": [
+      "Horší výsledky crash testů než klasický kombík"
+    ],
+    "bazosQuery": "peugeot partner tepee benzín",
+    "sautoModel": "partner"
   },
   {
     "id": "fiat-doblo",
@@ -593,11 +805,16 @@
     "price": "100–180 tis. Kč",
     "reliability": "Jednoduchý atmosférický motor",
     "note": "Obří prostor za rozumné peníze.",
-    "pros": ["Největší objem v přepočtu na cenu", "Jednoduchý motor"],
-    "cons": ["Dodávkový charakter jízdy a komfortu"],
-    "bazosQuery": "fiat doblo benzín"
+    "pros": [
+      "Největší objem v přepočtu na cenu",
+      "Jednoduchý motor"
+    ],
+    "cons": [
+      "Dodávkový charakter jízdy a komfortu"
+    ],
+    "bazosQuery": "fiat doblo 1.4 benzín",
+    "sautoModel": "doblo"
   },
-
   {
     "id": "citroen-c4-picasso",
     "name": "Citroën C4 Picasso / Grand Picasso 1.6 VTi",
@@ -611,9 +828,16 @@
     "price": "100–180 tis. Kč",
     "reliability": "Atmosférický benzín spolehlivý a úsporný",
     "note": "Přeplňovanému THP a staré robotizované převodovce se vyhněte.",
-    "pros": ["Prostorná kabina, pojme 3 autosedačky vedle sebe", "Úsporný atmosférický motor"],
-    "cons": ["Turbo THP – časté omezení výkonu kvůli karbonu", "Stará robotizovaná převodovka nedoporučena"],
-    "bazosQuery": "citroen c4 picasso benzín"
+    "pros": [
+      "Prostorná kabina, pojme 3 autosedačky vedle sebe",
+      "Úsporný atmosférický motor"
+    ],
+    "cons": [
+      "Turbo THP – časté omezení výkonu kvůli karbonu",
+      "Stará robotizovaná převodovka nedoporučena"
+    ],
+    "bazosQuery": "citroen c4 picasso 1.6 benzín",
+    "sautoModel": "c4-picasso"
   },
   {
     "id": "ford-cmax",
@@ -628,9 +852,15 @@
     "price": "100–180 tis. Kč",
     "reliability": "Benzíny jsou u Fordu elita ve spolehlivosti",
     "note": "1.6 je na těžší C-Max slabý, raději 1.8 nebo 2.0.",
-    "pros": ["Velmi spolehlivé benzínové motory", "Dobrá dostupnost"],
-    "cons": ["Motor 1.6 podvýkonný pro těžší karoserii"],
-    "bazosQuery": "ford c-max benzín"
+    "pros": [
+      "Velmi spolehlivé benzínové motory",
+      "Dobrá dostupnost"
+    ],
+    "cons": [
+      "Motor 1.6 podvýkonný pro těžší karoserii"
+    ],
+    "bazosQuery": "ford c-max 1.8 benzín",
+    "sautoModel": "c-max"
   },
   {
     "id": "ford-smax",
@@ -645,9 +875,14 @@
     "price": "spíš nad rozpočtem",
     "reliability": "Dobrá",
     "note": "Benzín na trhu vzácný, hlavně diesely.",
-    "pros": ["Prostorné 7místé MPV"],
-    "cons": ["Benzínové verze těžko sehnatelné v rozpočtu"],
-    "bazosQuery": "ford s-max benzín"
+    "pros": [
+      "Prostorné 7místé MPV"
+    ],
+    "cons": [
+      "Benzínové verze těžko sehnatelné v rozpočtu"
+    ],
+    "bazosQuery": "ford s-max benzín",
+    "sautoModel": "s-max"
   },
   {
     "id": "kia-carens",
@@ -662,9 +897,15 @@
     "price": "100–170 tis. Kč",
     "reliability": "Dobrá",
     "note": "Levné 7místé MPV, dobrá dostupnost.",
-    "pros": ["Levné 7místé MPV", "Dobrá dostupnost na trhu"],
-    "cons": ["Menší kufr při obsazení 7 míst"],
-    "bazosQuery": "kia carens benzín"
+    "pros": [
+      "Levné 7místé MPV",
+      "Dobrá dostupnost na trhu"
+    ],
+    "cons": [
+      "Menší kufr při obsazení 7 míst"
+    ],
+    "bazosQuery": "kia carens benzín",
+    "sautoModel": "carens"
   },
   {
     "id": "toyota-verso",
@@ -679,11 +920,16 @@
     "price": "130–200 tis. Kč",
     "reliability": "Typicky toyotí spolehlivost",
     "note": "Sdílí základ s Corolla Verso.",
-    "pros": ["Toyotí spolehlivost", "7 míst"],
-    "cons": ["Menší nabídka na trhu"],
-    "bazosQuery": "toyota verso benzín"
+    "pros": [
+      "Toyotí spolehlivost",
+      "7 míst"
+    ],
+    "cons": [
+      "Menší nabídka na trhu"
+    ],
+    "bazosQuery": "toyota verso benzín",
+    "sautoModel": "verso"
   },
-
   {
     "id": "mitsubishi-outlander",
     "name": "Mitsubishi Outlander (starší gen., 2.4 benzín)",
@@ -697,9 +943,15 @@
     "price": "150–200 tis. Kč",
     "reliability": "Japonská spolehlivost",
     "note": "U některých verzí 7 míst.",
-    "pros": ["Japonská spolehlivost", "Možnost 7 míst"],
-    "cons": ["Vyšší spotřeba 2.4 motoru"],
-    "bazosQuery": "mitsubishi outlander benzín"
+    "pros": [
+      "Japonská spolehlivost",
+      "Možnost 7 míst"
+    ],
+    "cons": [
+      "Vyšší spotřeba 2.4 motoru"
+    ],
+    "bazosQuery": "mitsubishi outlander 2.4 benzín",
+    "sautoModel": "outlander"
   },
   {
     "id": "suzuki-grand-vitara",
@@ -714,9 +966,15 @@
     "price": "150–220 tis. Kč",
     "reliability": "Skutečné SUV s redukcí",
     "note": "Oblíbené myslivci/lesníky – ideální na horší cesty.",
-    "pros": ["Skutečná redukce a rámová konstrukce", "Velmi robustní na horší terén"],
-    "cons": ["Vyšší spotřeba, tvrdší jízdní vlastnosti na silnici"],
-    "bazosQuery": "suzuki grand vitara benzín"
+    "pros": [
+      "Skutečná redukce a rámová konstrukce",
+      "Velmi robustní na horší terén"
+    ],
+    "cons": [
+      "Vyšší spotřeba, tvrdší jízdní vlastnosti na silnici"
+    ],
+    "bazosQuery": "suzuki grand vitara 2.0 benzín",
+    "sautoModel": "grand-vitara"
   },
   {
     "id": "lada-niva",
@@ -731,11 +989,17 @@
     "price": "pod 150 tis. Kč",
     "reliability": "Extrémně jednoduchá mechanika",
     "note": "Nejlevnější reálný terénní 4x4 na trhu, ale slabá pasivní bezpečnost a komfort.",
-    "pros": ["Nejlevnější skutečný 4x4 s redukcí na trhu", "Extrémně jednoduchá mechanika"],
-    "cons": ["Slabá pasivní bezpečnost", "Nízký komfort – spíš jako druhé/výletní auto se 2 dětmi"],
-    "bazosQuery": "lada niva benzín"
+    "pros": [
+      "Nejlevnější skutečný 4x4 s redukcí na trhu",
+      "Extrémně jednoduchá mechanika"
+    ],
+    "cons": [
+      "Slabá pasivní bezpečnost",
+      "Nízký komfort – spíš jako druhé/výletní auto se 2 dětmi"
+    ],
+    "bazosQuery": "lada niva 1.7 benzín",
+    "sautoModel": "niva"
   },
-
   {
     "id": "toyota-auris-touring",
     "name": "Toyota Auris Touring Sports 1.6/1.8",
@@ -749,9 +1013,14 @@
     "price": "novější roč. (2013+) spíš nad rozpočtem",
     "reliability": "Typicky velmi spolehlivá Toyota",
     "note": "Modernější nástupce Corolly.",
-    "pros": ["Vynikající dlouhodobá spolehlivost"],
-    "cons": ["Novější ročníky nad rozpočtem"],
-    "bazosQuery": "toyota auris touring sports benzín"
+    "pros": [
+      "Vynikající dlouhodobá spolehlivost"
+    ],
+    "cons": [
+      "Novější ročníky nad rozpočtem"
+    ],
+    "bazosQuery": "toyota auris touring sports 1.6 benzín",
+    "sautoModel": "auris"
   },
   {
     "id": "opel-astra-combi",
@@ -766,9 +1035,15 @@
     "price": "100–180 tis. Kč",
     "reliability": "Průměrná",
     "note": "Dobrá dostupnost na trhu.",
-    "pros": ["Dobrá dostupnost a nízká cena", "Slušný prostor"],
-    "cons": ["Průměrná dlouhodobá spolehlivost"],
-    "bazosQuery": "opel astra combi benzín"
+    "pros": [
+      "Dobrá dostupnost a nízká cena",
+      "Slušný prostor"
+    ],
+    "cons": [
+      "Průměrná dlouhodobá spolehlivost"
+    ],
+    "bazosQuery": "opel astra combi 1.4 benzín",
+    "sautoModel": "astra"
   },
   {
     "id": "opel-insignia-combi",
@@ -783,9 +1058,14 @@
     "price": "spíš nad rozpočtem ve slušném stavu",
     "reliability": "Dobrá",
     "note": "Větší auto, dobrá výbava, hůř se vejde do 200 tis. Kč.",
-    "pros": ["Velký prostor a dobrá výbava"],
-    "cons": ["Ve slušném stavu spíš nad rozpočtem"],
-    "bazosQuery": "opel insignia combi benzín"
+    "pros": [
+      "Velký prostor a dobrá výbava"
+    ],
+    "cons": [
+      "Ve slušném stavu spíš nad rozpočtem"
+    ],
+    "bazosQuery": "opel insignia combi benzín",
+    "sautoModel": "insignia"
   },
   {
     "id": "skoda-superb-combi",
@@ -800,9 +1080,14 @@
     "price": "prakticky mimo dosah rozpočtu (500 tis. Kč+)",
     "reliability": "Velmi dobrá",
     "note": "I 1. generace (2001–2008) se do 200 tis. Kč hledá těžko.",
-    "pros": ["Obrovský prostor a komfort"],
-    "cons": ["Cena zcela mimo rozpočet"],
-    "bazosQuery": "škoda superb combi benzín"
+    "pros": [
+      "Obrovský prostor a komfort"
+    ],
+    "cons": [
+      "Cena zcela mimo rozpočet"
+    ],
+    "bazosQuery": "škoda superb combi benzín",
+    "sautoModel": "superb"
   },
   {
     "id": "hyundai-i40-combi",
@@ -817,9 +1102,15 @@
     "price": "benzín vzácný, převažuje nafta",
     "reliability": "Dobrá",
     "note": "Obtížně sehnatelné v benzínové verzi.",
-    "pros": ["Velký kufr", "Slušná výbava"],
-    "cons": ["Benzínové verze na trhu vzácné"],
-    "bazosQuery": "hyundai i40 combi benzín"
+    "pros": [
+      "Velký kufr",
+      "Slušná výbava"
+    ],
+    "cons": [
+      "Benzínové verze na trhu vzácné"
+    ],
+    "bazosQuery": "hyundai i40 combi benzín",
+    "sautoModel": "i40"
   },
   {
     "id": "chevrolet-daewoo-lacetti",
@@ -834,11 +1125,16 @@
     "price": "pod 100 tis. Kč",
     "reliability": "Slabší korozní ochrana a horší pověst kvality",
     "note": "Nejlevnější kombík na trhu, spíš nouzová/přechodná volba.",
-    "pros": ["Nejnižší cena ze všech kombíků"],
-    "cons": ["Slabší korozní ochrana", "Horší pověst kvality"],
-    "bazosQuery": "daewoo lacetti kombi benzín"
+    "pros": [
+      "Nejnižší cena ze všech kombíků"
+    ],
+    "cons": [
+      "Slabší korozní ochrana",
+      "Horší pověst kvality"
+    ],
+    "bazosQuery": "daewoo lacetti kombi benzín",
+    "sautoModel": "lacetti"
   },
-
   {
     "id": "octavia3-14tsi-ea211",
     "name": "Škoda Octavia III 1.4 TSI EA211 (2012–cca 2017)",
@@ -852,9 +1148,15 @@
     "price": "cca 280–320 tis. Kč",
     "reliability": "Velmi dobrá – vyřešený problém s natahaným řetězem oproti EA111",
     "note": "Zvládá 200 000 km bez větších zásahů. Ročníky před cca 2017/2018 nemusí mít GPF.",
-    "pros": ["Moderní bezpečnostní výbava o generaci navíc", "Vyřešená slabina staré generace TSI"],
-    "cons": ["Ověřte v TP, zda vůz nemá GPF (méně vhodné pro čistě městský provoz)"],
-    "bazosQuery": "škoda octavia 3 combi 1.4 tsi benzín"
+    "pros": [
+      "Moderní bezpečnostní výbava o generaci navíc",
+      "Vyřešená slabina staré generace TSI"
+    ],
+    "cons": [
+      "Ověřte v TP, zda vůz nemá GPF (méně vhodné pro čistě městský provoz)"
+    ],
+    "bazosQuery": "škoda octavia 3 combi 1.4 tsi benzín",
+    "sautoModel": "octavia"
   },
   {
     "id": "octavia3-16mpi",
@@ -869,9 +1171,15 @@
     "price": "cca 280–320 tis. Kč",
     "reliability": "Nejjednodušší a nejbezpečnější volba motoru v této generaci",
     "note": "Nepřímé vstřikování, GPF nepotřebuje vůbec.",
-    "pros": ["Bez GPF – ideální pro krátké městské trasy", "Nejjednodušší motor generace"],
-    "cons": ["Nižší výkon než TSI verze"],
-    "bazosQuery": "škoda octavia 3 combi 1.6 mpi benzín"
+    "pros": [
+      "Bez GPF – ideální pro krátké městské trasy",
+      "Nejjednodušší motor generace"
+    ],
+    "cons": [
+      "Nižší výkon než TSI verze"
+    ],
+    "bazosQuery": "škoda octavia 3 combi 1.6 mpi benzín",
+    "sautoModel": "octavia"
   },
   {
     "id": "duster2-sce",
@@ -886,9 +1194,15 @@
     "price": "cca 280–320 tis. Kč",
     "reliability": "Atmosférický, nepřímé vstřikování",
     "note": "Bez GPF, bezpečnější volba než TCe.",
-    "pros": ["Bez GPF – vhodné pro krátké trasy", "Novější generace, lepší výbava"],
-    "cons": ["Nižší výkon než přeplňované TCe"],
-    "bazosQuery": "dacia duster 2 1.6 sce benzín"
+    "pros": [
+      "Bez GPF – vhodné pro krátké trasy",
+      "Novější generace, lepší výbava"
+    ],
+    "cons": [
+      "Nižší výkon než přeplňované TCe"
+    ],
+    "bazosQuery": "dacia duster 2 1.6 sce benzín",
+    "sautoModel": "duster"
   },
   {
     "id": "octavia3-duster2-evo-avoid",
@@ -903,8 +1217,15 @@
     "price": "cca 280–350 tis. Kč",
     "reliability": "Nejnovější, ale rizikovější pro váš profil jízdy",
     "note": "Kvůli GPF a přímému vstřiku vhodné spíš pro časté dálniční jízdy – pro krátké městské trasy spíš nedoporučeno.",
-    "pros": ["Nejnovější bezpečnostní a asistenční systémy", "Nejnižší emise a spotřeba na papíře"],
-    "cons": ["GPF se zanáší při krátkých městských trasách", "Downsizing – karbonizace a ředění oleje palivem"],
-    "bazosQuery": "škoda octavia 3 1.0 tsi benzín"
+    "pros": [
+      "Nejnovější bezpečnostní a asistenční systémy",
+      "Nejnižší emise a spotřeba na papíře"
+    ],
+    "cons": [
+      "GPF se zanáší při krátkých městských trasách",
+      "Downsizing – karbonizace a ředění oleje palivem"
+    ],
+    "bazosQuery": "škoda octavia 3 1.0 tsi benzín",
+    "sautoModel": "octavia"
   }
 ]
