@@ -122,17 +122,22 @@ function listingsBlock(car) {
   }
   const rows = entry.listings
     .slice(0, 5)
-    .map(
-      (l) => `
+    .map((l) => {
+      const unverified = l.engine_match !== true;
+      const note = unverified
+        ? '<span class="listing-engine-note" title="Nadpis inzerátu neobsahuje objem motoru, který hledáme — ověřte motorizaci přímo v inzerátu.">⚠︎ ověřte motorizaci</span>'
+        : "";
+      return `
       <li>
         <a href="${l.url}" target="_blank" rel="noopener">${l.title}</a>
-        <span>${l.price_text || "cena neuvedena"}${l.location ? " · " + l.location : ""}</span>
-      </li>`
-    )
+        <span>${l.price_text || "cena neuvedena"}${l.location ? " · " + l.location : ""} ${note}</span>
+      </li>`;
+    })
     .join("");
   return `
     <div class="listings-block">
       <div class="listings-head">🔎 ${n} nalezených inzerátů <span class="listings-date">(aktualizováno ${dateStr})</span></div>
+      <div class="listings-subnote">Inzeráty s jasně jinou motorizací (nafta, jiný objem) jsou automaticky vyřazené. U ⚠︎ položek nadpis objem motoru neuvádí — ověřte v inzerátu.</div>
       <ul class="listings-list">${rows}</ul>
     </div>
   `;

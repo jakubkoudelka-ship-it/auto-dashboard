@@ -51,6 +51,44 @@ HEADERS = {
 }
 
 MAX_LISTINGS_PER_CAR = 8
+MAX_RAW_ITEMS_TO_SCAN = 40  # kolik prvnich vysledku z vypisu vubec projit pred filtrovanim
+
+# Slova, ktera jasne znaci naftovy motor -> vyradit, protoze cely dashboard je jen pro benzin
+DIESEL_KEYWORDS = [
+    "tdi", "dci", "cdti", "hdi", "crdi", "jtd", "multijet", "d4d",
+    "dtec", "cdi ", " cdi", "bluehdi", "nafta", "diesel", "tdci",
+]
+
+_DISPLACEMENT_RE = re.compile(r"(?<!\d)([12])[.,](\d)(?!\d)")
+
+
+def extract_displacements(text: str):
+    """Najde vsechny zminky objemu motoru typu '1.6' / '1,6' / '2.0' v textu."""
+    return {f"{m.group(1)}.{m.group(2)}" for m in _DISPLACEMENT_RE.finditer(text)}
+
+
+def target_displacement(car_name: str):
+    """Odvodi cilovy objem motoru z nazvu modelu, napr. '1.6' z 'Octavia Combi 1.6 MPI/TSI'."""
+    found = extract_displacements(car_name)
+    return sorted(found)[0] if found else None
+
+
+def classify_listing(title: str, target: str):
+    """
+    Vrati True/False/None podle toho, jestli inzerat odpovida ocekavane motorizaci:
+    - False = jasny nesoulad (naftovy motor, nebo jiny objem nez cilovy) -> vyradit
+    - True  = objem v nadpisu odpovida cilovemu
+    - None  = nadpis neobsahuje info o motoru -> nejde overit, necháme (s poznamkou v UI)
+    """
+    lower = title.lower()
+    if any(kw in lower for kw in DIESEL_KEYWORDS):
+        return False
+    if not target:
+        return None
+    found = extract_displacements(lower)
+    if not found:
+        return None
+    return target in found
 
 
 def bazos_search_url(query: str, cena_do: int) -> str:
@@ -122,10 +160,29 @@ def parse_listings(html: str, base_url: str = "https://auto.bazos.cz"):
                 "thumbnail": thumb,
             }
         )
-        if len(results) >= MAX_LISTINGS_PER_CAR:
+        if len(results) >= MAX_RAW_ITEMS_TO_SCAN:
             break
 
     return results
+
+
+def filter_and_cap_listings(listings, car_name: str):
+    """
+    Aplikuje engine_match klasifikaci a odfiltruje jasne nesedici motorizace
+    (nafta, jiny objem nez cilovy). Nejiste (None) necha a oznaci v datech,
+    aby to dashboard mohl zobrazit s poznamkou. Na konci orizne na MAX_LISTINGS_PER_CAR.
+    """
+    target = target_displacement(car_name)
+    kept = []
+    for item in listings:
+        match = classify_listing(item["title"], target)
+        if match is False:
+            continue  # jasny nesoulad -> vyradit z vypisu
+        item["engine_match"] = match  # True nebo None
+        kept.append(item)
+        if len(kept) >= MAX_LISTINGS_PER_CAR:
+            break
+    return kept
 
 
 def main():
@@ -148,7 +205,8 @@ def main():
 
         try:
             html = fetch(url)
-            listings = parse_listings(html)
+            raw_listings = parse_listings(html)
+            listings = filter_and_cap_listings(raw_listings, car["name"])
             status = "ok"
         except Exception as exc:  # noqa: BLE001 — chceme pokracovat i pri chybe jednoho requestu
             print(f"  chyba: {exc}", file=sys.stderr)
