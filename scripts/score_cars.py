@@ -15,30 +15,37 @@ nahore, takze si ho muzete kdykoli sami omezit.
                             slova) + bonus/malus podle rizikovych/pozitivnich
                             frazi v "pros"/"cons" (napinak retezu, koroze,
                             elektronika, bezudrzbovy rozvod, bez turba...)
-  15 % bezpecnost (NCAP)  - hvezdicky Euro NCAP (viz NCAP_DATA); ruzne
+   8 % bezpecnost (NCAP)  - hvezdicky Euro NCAP (viz NCAP_DATA); ruzne
                             generace testovaciho protokolu nejsou 1:1
                             srovnatelne (test se v case zpřísňoval), proto
                             se u kazdeho auta zobrazuje i rok testu.
                             Netestovana auta dostavaji neutralni 50 b.
+                            Vaha snizena z 15 % na 8 % na explicitni
+                            pozadavek uzivatele.
   10 % spotreba paliva    - odhad realne kombinovane spotreby (l/100 km),
                             normalizovano napric celym seznamem (mensi
                             spotreba = vyssi skore) - viz CONSUMPTION_DATA
-  10 % servis a dily      - kombinace obecne znamky dostupnosti/ceny
+  17 % servis a dily      - kombinace obecne znamky dostupnosti/ceny
                             servisu a dilu pro danou znacku v CR
-                            (BRAND_SERVICE_BASE) + klicova slova v pros/cons
+                            (BRAND_SERVICE_BASE) + klicova slova v pros/cons.
+                            Vaha zvysena z 10 % na 17 % na explicitni
+                            pozadavek uzivatele.
   25 % prostor (kufr)     - objem zavazadloveho prostoru (litry, "na
                             sedadla", tedy nesklopeno - realny uzitny prostor
                             pri plne obsazenem aute) normalizovany GLOBALNE
-                            napric vsemi 53 auty (ne po kategoriich - puvodni
+                            napric vsemi auty (ne po kategoriich - puvodni
                             normalizace po kategoriich davala matouci vysledky,
                             protoze kategorie "mpv" mixuje 5mistne a 7mistne
                             vozy a 7mistne maji s obsazenymi sedadly male
                             kufry, coz uměle nafukovalo skore malych MPV
-                            oproti objemnejsim kombi). Vaha zvysena z 15 %
-                            na 25 % na explicitni pozadavek uzivatele.
-  10 % dostupnost na trhu - kolik relevantnich inzeratu se aktualne najde
-                            (data/listings.json ze scripts/scrape_bazos.py) -
-                            malo inzeratu = hur se to realne shani
+                            oproti objemnejsim kombi).
+  10 % rok vyroby         - reprezentativni rok generace/motorizace (viz
+                            YEAR_DATA), normalizovano globalne napric vsemi
+                            auty (novejsi = vyssi skore). Nahrazuje puvodni
+                            slozku "dostupnost na trhu" (pocet inzeratu), ktera
+                            byla na explicitni pozadavek uzivatele odstranena -
+                            zivé inzeraty a odkazy na Bazos/Sauto v aplikaci
+                            zustavaji, jen uz nejsou soucasti skore.
 
 Znacku TOP (top 3 podle skore) mohou dostat jen auta v realnem rozpoctu
 (tier "200k" nebo "280k") - auto nad rozpoctem nebo s tier "avoid" se
@@ -58,15 +65,14 @@ import re
 import unicodedata
 
 CARS_PATH = "data/cars.json"
-LISTINGS_PATH = "data/listings.json"
 
 WEIGHTS = {
     "reliability": 0.30,
-    "safety": 0.15,
+    "safety": 0.08,
     "consumption": 0.10,
-    "service": 0.10,
+    "service": 0.17,
     "space": 0.25,
-    "availability": 0.10,
+    "year": 0.10,
 }
 assert abs(sum(WEIGHTS.values()) - 1.0) < 1e-9
 
@@ -231,6 +237,76 @@ NCAP_DATA = {
     "mercedes-c-klasse-t-w204": (5, 2007),
 }
 
+# Reprezentativni rok vyroby/generace pro danou motorizaci (stred typickeho
+# rozsahu rocniku uvedeneho v poli "price"). Novejsi rok = vyssi skore.
+YEAR_DATA = {
+    "skoda-octavia2-combi": 2008,
+    "fiat-tipo-kombi": 2017,
+    "toyota-avensis-corolla-verso": 2004,
+    "ford-mondeo-combi": 2003,
+    "ford-focus-combi": 2014,
+    "kia-ceed-hyundai-i30-combi": 2009,
+    "mazda6-kombi": 2007,
+    "peugeot-308-sw": 2009,
+    "seat-leon-st": 2008,
+    "volvo-v70-v50": 2007,
+    "skoda-roomster-rapid": 2011,
+    "dacia-logan-mcv": 2010,
+    "renault-megane-grandtour": 2008,
+    "vw-golf-passat-variant": 2013,
+    "citroen-c4-c5-tourer": 2010,
+    "mazda-premacy-5": 2006,
+    "seat-altea-xl": 2010,
+    "fiat-500l": 2013,
+    "opel-zafira": 2008,
+    "renault-grand-scenic": 2008,
+    "vw-sharan-galaxy-alhambra": 2012,
+    "dacia-duster1": 2013,
+    "nissan-qashqai1": 2012,
+    "hyundai-ix35": 2012,
+    "mitsubishi-asx": 2013,
+    "suzuki-sx4": 2009,
+    "suzuki-vitara-new": 2018,
+    "skoda-yeti": 2013,
+    "subaru-forester": 2011,
+    "honda-crv-civic-tourer": 2015,
+    "tucson-sportage-moderni": 2018,
+    "dacia-dokker": 2015,
+    "renault-kangoo": 2012,
+    "partner-tepee-berlingo": 2012,
+    "fiat-doblo": 2014,
+    "citroen-c4-picasso": 2010,
+    "ford-cmax": 2012,
+    "ford-smax": 2011,
+    "kia-carens": 2015,
+    "toyota-verso": 2013,
+    "mitsubishi-outlander": 2009,
+    "suzuki-grand-vitara": 2010,
+    "lada-niva": 2010,
+    "toyota-auris-touring": 2014,
+    "opel-astra-combi": 2008,
+    "opel-insignia-combi": 2013,
+    "skoda-superb-combi": 2018,
+    "hyundai-i40-combi": 2014,
+    "chevrolet-daewoo-lacetti": 2006,
+    "octavia3-14tsi-ea211": 2014,
+    "octavia3-16mpi": 2015,
+    "duster2-sce": 2019,
+    "octavia3-duster2-evo-avoid": 2019,
+    "vw-touran": 2009,
+    "vw-tiguan": 2013,
+    "skoda-octavia1-tour": 2004,
+    "citroen-xsara-picasso": 2004,
+    "toyota-rav4-3gen": 2008,
+    "nissan-xtrail-1gen": 2004,
+    "kia-sportage-2gen": 2007,
+    "opel-meriva": 2006,
+    "peugeot-3008": 2012,
+    "peugeot-5008": 2013,
+    "bmw-3-touring-e90": 2009,
+    "mercedes-c-klasse-t-w204": 2011,
+}
+
 STRONG_POS = [
     "vynikaj", "nejvyss ze vsech", "japonsk", "typick", "elita",
     "nadprumern", "velmi dobr", "velmi spolehliv", "extremn jednoduch",
@@ -317,26 +393,9 @@ def parse_trunk(trunk_str):
     return nums[0] if nums else None
 
 
-def load_listing_counts():
-    try:
-        with open(LISTINGS_PATH, encoding="utf-8") as f:
-            data = json.load(f)
-    except FileNotFoundError:
-        return {}
-    return {entry["car_id"]: len(entry.get("listings", [])) for entry in data}
-
-
-def availability_score(count):
-    if count is None:
-        return 50  # zadna data o inzeratech - neutralni
-    return round(min(100, count / 6 * 100))
-
-
 def main():
     with open(CARS_PATH, encoding="utf-8") as f:
         cars = json.load(f)
-
-    listing_counts = load_listing_counts()
 
     # prostor: normalizace napric celym seznamem (ne po kategoriich) - viz
     # docstring nahore, proc byla puvodni normalizace po kategoriich zmenena.
@@ -351,6 +410,10 @@ def main():
     # spotreba: normalizace napric celym seznamem (mensi = lepsi)
     consumptions = [v for v in CONSUMPTION_DATA.values() if v is not None]
     cons_lo, cons_hi = min(consumptions), max(consumptions)
+
+    # rok vyroby: normalizace napric celym seznamem (novejsi = lepsi)
+    years = [v for v in YEAR_DATA.values() if v is not None]
+    year_lo, year_hi = min(years), max(years)
 
     for car in cars:
         rel = reliability_score(car)
@@ -380,8 +443,12 @@ def main():
             else None
         )
 
-        count = listing_counts.get(car["id"])
-        availability = availability_score(count)
+        year_val = YEAR_DATA.get(car["id"])
+        car["year"] = year_val
+        if year_val is None:
+            year = 50
+        else:
+            year = round((year_val - year_lo) / (year_hi - year_lo) * 100)
 
         total = (
             WEIGHTS["reliability"] * rel
@@ -389,7 +456,7 @@ def main():
             + WEIGHTS["consumption"] * consumption
             + WEIGHTS["service"] * service
             + WEIGHTS["space"] * space
-            + WEIGHTS["availability"] * availability
+            + WEIGHTS["year"] * year
         )
         total = max(0, min(100, round(total)))
 
@@ -400,7 +467,7 @@ def main():
             "consumption": consumption,
             "service": service,
             "space": space,
-            "availability": availability,
+            "year": year,
         }
 
     # TOP 3 podle skore, jen mezi auty v realnem rozpoctu

@@ -285,11 +285,11 @@ function render() {
 
 const SCORE_BREAKDOWN_LABELS = [
   ["reliability", "Spolehlivost", 30],
-  ["safety", "Bezpečnost (Euro NCAP)", 15],
+  ["safety", "Bezpečnost (Euro NCAP)", 8],
   ["consumption", "Spotřeba paliva", 10],
-  ["service", "Servis a díly", 10],
+  ["service", "Servis a díly", 17],
   ["space", "Prostor (zavazadlový, litry)", 25],
-  ["availability", "Dostupnost na trhu", 10],
+  ["year", "Rok výroby", 10],
 ];
 
 function scoreBreakdownBlock(car) {
@@ -310,7 +310,7 @@ function scoreBreakdownBlock(car) {
         <span class="score-total score-${scoreTier(car.score)}">${car.score}<small>/100</small></span>
       </div>
       <div class="score-rows">${rows}</div>
-      <p class="score-note">Skóre popisuje vlastnosti auta (spolehlivost, bezpečnost, spotřeba, servis/díly, zavazadlový prostor, dostupnost na trhu) – záměrně nezahrnuje pořizovací cenu ani značku samotnou, protože to nejsou vlastnosti auta, ale konkrétního inzerátu / osobní preference. Rozpočet vidíte zvlášť jako štítek u karty a lze podle něj filtrovat nahoře. Prostor = objem zavazadlového prostoru v litrech (nesklopeno), porovnaný napříč všemi auty v přehledu bez ohledu na kategorii – kdo má víc litrů, skóruje líp. Bezpečnostní hvězdičky Euro NCAP z různých let nejsou 1:1 srovnatelné (test se v čase zpřísňoval) – rok testu je uveden u auta výše. Skóre nezohledňuje konkrétní inzeráty ani stav dané kupované ojetiny.</p>
+      <p class="score-note">Skóre popisuje vlastnosti auta (spolehlivost, bezpečnost, spotřeba, servis/díly, zavazadlový prostor, rok výroby) – záměrně nezahrnuje pořizovací cenu ani značku samotnou, protože to nejsou vlastnosti auta, ale konkrétního inzerátu / osobní preference. Rozpočet vidíte zvlášť jako štítek u karty a lze podle něj filtrovat nahoře. Prostor = objem zavazadlového prostoru v litrech (nesklopeno), porovnaný napříč všemi auty v přehledu bez ohledu na kategorii – kdo má víc litrů, skóruje líp. Rok výroby = reprezentativní rok dané generace/motorizace, novější auto skóruje líp. Bezpečnostní hvězdičky Euro NCAP z různých let nejsou 1:1 srovnatelné (test se v čase zpřísňoval) – rok testu je uveden u auta výše. Skóre nezohledňuje konkrétní inzeráty ani stav dané kupované ojetiny.</p>
     </div>
   `;
 }
@@ -346,6 +346,7 @@ function openModal(id) {
         <div class="modal-stat"><div class="label">Značka</div><div class="value">${car.brand}</div></div>
         <div class="modal-stat"><div class="label">Spotřeba</div><div class="value">${typeof car.consumption === "number" ? `~${car.consumption.toLocaleString("cs-CZ")} l/100 km` : "neznámá"}</div></div>
         <div class="modal-stat"><div class="label">Euro NCAP</div><div class="value">${car.ncap ? `${"★".repeat(car.ncap.stars)}${"☆".repeat(5 - car.ncap.stars)} (${car.ncap.year})` : "netestováno"}</div></div>
+        <div class="modal-stat"><div class="label">Rok výroby</div><div class="value">${typeof car.year === "number" ? `cca ${car.year}` : "neznámý"}</div></div>
       </div>
       ${scoreBreakdownBlock(car)}
       <div class="note-box">${car.note}</div>
