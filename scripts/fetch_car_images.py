@@ -12,10 +12,10 @@ Bezpecne spustit opakovane - prepise vsechny fotky. Pro dofetchnuti jen
 chybejicich pouzijte --missing-only.
 """
 import json
+import subprocess
 import sys
 import time
 import urllib.parse
-import urllib.request
 
 CARS_PATH = "data/cars.json"
 UA = "auto-dashboard/1.0 (osobni projekt; kontakt: jakub.koudelka@puellavone.sk)"
@@ -27,9 +27,20 @@ def fetch_thumb(title, size=640):
         f"&piprop=thumbnail%7Coriginalimage&pithumbsize={size}&format=json&titles="
         + urllib.parse.quote(title)
     )
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=15) as resp:
-        data = json.load(resp)
+    # Pouziva se system curl (macOS Keychain trust store) misto Python
+    # urllib/ssl - vyhne se casti castemu problemu s chybejicimi CA
+    # certifikaty u python.org/Homebrew instalaci Pythonu na macOS
+    # (CERTIFICATE_VERIFY_FAILED: unable to get local issuer certificate).
+    result = subprocess.run(
+        ["curl", "-s", "--max-time", "15", "-A", UA, url],
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0 or not result.stdout:
+        raise RuntimeError(
+            f"curl selhal (kod {result.returncode}): {result.stderr.strip()}"
+        )
+    data = json.loads(result.stdout)
     pages = data.get("query", {}).get("pages", {})
     for page in pages.values():
         thumb = page.get("thumbnail")
