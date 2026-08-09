@@ -1,5 +1,5 @@
 /* ===========================================================
-   Výběr rodinného auta – dashboard
+   Vybíráme auto pro Koudelkovy – dashboard
    Vanilla JS, no build step. Data: data/cars.json
    Fotky: URL je předstažená přímo v data/cars.json (pole "image", viz
    scripts/fetch_car_images.py), takže se vykreslí okamžitě přes <img>.

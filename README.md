@@ -1,4 +1,4 @@
-# Výběr rodinného auta – dashboard
+# Vybíráme auto pro Koudelkovy – dashboard
 
 Interaktivní dashboard nad tržním researchem ojetých aut (kombi/MPV/SUV, benzín, rozpočet do cca 320 tis. Kč). Vznikl jako nástavba nad textovým reportem — cílem je mít místo statického dokumentu živý přehled s fotkami, filtry a odkazy na aktuální inzeráty.
 
