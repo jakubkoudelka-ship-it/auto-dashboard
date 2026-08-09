@@ -89,6 +89,7 @@ BRAND_SERVICE_BASE = {
     "chevrolet": 66, "daewoo": 66,
     "volvo": 60, "subaru": 60,
     "lada": 55,
+    "bmw": 55, "mercedes": 55,
 }
 
 # Odhad realne kombinovane spotreby (l/100 km) pro danou motorizaci.
@@ -146,6 +147,18 @@ CONSUMPTION_DATA = {
     "octavia3-16mpi": 6.5,
     "duster2-sce": 7.2,
     "octavia3-duster2-evo-avoid": 5.7,
+    "vw-touran": 7.5,
+    "vw-tiguan": 8.5,
+    "skoda-octavia1-tour": 7.3,
+    "citroen-xsara-picasso": 7.8,
+    "toyota-rav4-3gen": 8.6,
+    "nissan-xtrail-1gen": 9.2,
+    "kia-sportage-2gen": 9.6,
+    "opel-meriva": 7.6,
+    "peugeot-3008": 7.6,
+    "peugeot-5008": 7.9,
+    "bmw-3-touring-e90": 7.8,
+    "mercedes-c-klasse-t-w204": 8.5,
 }
 
 # Euro NCAP hvezdicky (0-5, None = netestovano) + rok testu (informacni,
@@ -204,6 +217,18 @@ NCAP_DATA = {
     "octavia3-16mpi": (5, 2013),
     "duster2-sce": (3, 2018),
     "octavia3-duster2-evo-avoid": (5, 2013),
+    "vw-touran": (5, 2003),
+    "vw-tiguan": (5, 2007),
+    "skoda-octavia1-tour": (None, None),
+    "citroen-xsara-picasso": (None, None),
+    "toyota-rav4-3gen": (5, 2006),
+    "nissan-xtrail-1gen": (4, 2003),
+    "kia-sportage-2gen": (None, None),
+    "opel-meriva": (4, 2003),
+    "peugeot-3008": (5, 2009),
+    "peugeot-5008": (5, 2009),
+    "bmw-3-touring-e90": (5, 2005),
+    "mercedes-c-klasse-t-w204": (5, 2007),
 }
 
 STRONG_POS = [

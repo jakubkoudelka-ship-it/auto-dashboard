@@ -2166,5 +2166,500 @@
       "stars": 5,
       "year": 2013
     }
+  },
+  {
+    "id": "vw-touran",
+    "name": "VW Touran 1.6/2.0 FSI (I. generace)",
+    "wikiTitle": "Volkswagen Touran",
+    "brand": "Volkswagen",
+    "brandSlug": "volkswagen",
+    "category": "mpv",
+    "tier": "200k",
+    "top": false,
+    "trunk": "645–1989 l (sklopeno)",
+    "price": "130–220 tis. Kč (roč. 2006–2012)",
+    "reliability": "Dobrá",
+    "note": "Sdílí platformu s Golf V / Octavia II, prostorné a praktické rodinné MPV.",
+    "pros": [
+      "Velký variabilní prostor, posuvná zadní sedadla",
+      "Sdílená technika s Golf V a Octavia II – dostupné díly",
+      "1.6 MPI je jednoduchý atmosférický motor"
+    ],
+    "cons": [
+      "1.6 FSI (přímé vstřikování) náchylné na karbonizaci sacích ventilů",
+      "2.0 FSI méně obvyklý, dražší náhradní díly",
+      "Starší kusy – zkontrolovat těsnost chladicího systému"
+    ],
+    "bazosQuery": "vw touran benzín",
+    "sautoModel": "touran",
+    "engineNote": "Touran I. generace nabízela hlavně 1.6 FSI a 2.0 FSI s přímým vstřikováním, které jako všechny FSI motory trpí karbonizací sacích ventilů (chybí omývání paliva při sání). Hledejte raději starší 1.6 MPI (nepřímé vstřikování, do cca 2006) nebo počítejte s pravidelným čištěním sání ořechovou drtí u FSI verzí. Rozvodový řemen (ne řetěz) je nutné měnit po cca 90–120 000 km. Mechanicky je auto jinak nenáročné, sdílí komponenty s Golf V/Octavia II, takže díly i mechanici jsou snadno dostupní.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/2018_Volkswagen_Touran_1.6.jpg/960px-2018_Volkswagen_Touran_1.6.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "consumption": 7.5,
+    "ncap": {
+      "stars": 5,
+      "year": 2003
+    },
+    "score": 79,
+    "scoreBreakdown": {
+      "reliability": 80,
+      "safety": 100,
+      "consumption": 62,
+      "service": 94,
+      "space": 76,
+      "availability": 50
+    }
+  },
+  {
+    "id": "vw-tiguan",
+    "name": "VW Tiguan 1.4 TSI/2.0 TSI (I. generace)",
+    "wikiTitle": "Volkswagen Tiguan",
+    "brand": "Volkswagen",
+    "brandSlug": "volkswagen",
+    "category": "suv",
+    "tier": "280k",
+    "top": false,
+    "trunk": "470–1510 l (sklopeno)",
+    "price": "220–320 tis. Kč (roč. 2011–2015)",
+    "reliability": "Dobrá",
+    "note": "Nejrozšířenější kompaktní SUV od VW na bazaru, sdílí platformu s Golf V/VI.",
+    "pros": [
+      "Vyšší posez, dobrá viditelnost",
+      "Možnost 4Motion (pohon všech kol) u vyšších verzí",
+      "Sdílená technika s Golf – dostupný servis"
+    ],
+    "cons": [
+      "1.4 TSI (turbo + kompresor) je mechanicky složitější motor",
+      "2.0 TSI u starších ročníků náchylnější na napínák rozvodového řetězu",
+      "Dražší než srovnatelné kombi/MPV"
+    ],
+    "bazosQuery": "vw tiguan benzín",
+    "sautoModel": "tiguan",
+    "engineNote": "Základní 1.4 TSI kombinuje turbodmychadlo s mechanickým kompresorem (tzv. Twincharger) – výkonný, ale mechanicky složitější motor s vyšším rizikem poruchy oproti běžnému turbu. 2.0 TSI je jednodušší (jen turbo), ale starší ročníky (do cca 2012) mohou mít problém s napínákem rozvodového řetězu podobně jako u Octavia III. Obě verze TSI mají navíc přímé vstřikování se stejným rizikem karbonizace sacích ventilů jako ostatní TSI/FSI jednotky ve srovnání – pro krátké městské trasy je to tedy o něco rizikovější volba než jednoduché atmosférické motory jinde v přehledu.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Volkswagen_Tiguan_III_IMG_8823_%28cropped%29.jpg/960px-Volkswagen_Tiguan_III_IMG_8823_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "consumption": 8.5,
+    "ncap": {
+      "stars": 5,
+      "year": 2007
+    },
+    "score": 67,
+    "scoreBreakdown": {
+      "reliability": 72,
+      "safety": 100,
+      "consumption": 42,
+      "service": 90,
+      "space": 50,
+      "availability": 50
+    }
+  },
+  {
+    "id": "skoda-octavia1-tour",
+    "name": "Škoda Octavia I \"Tour\" Combi 1.6/1.8",
+    "wikiTitle": "Škoda Octavia",
+    "brand": "Škoda",
+    "brandSlug": "skoda",
+    "category": "kombi",
+    "tier": "200k",
+    "top": false,
+    "trunk": "528 l",
+    "price": "50–120 tis. Kč",
+    "reliability": "Velmi dobrá",
+    "note": "Nejlevnější a nejjednodušší kombi v přehledu, desítky let ověřená technika.",
+    "pros": [
+      "Extrémně nízká pořizovací cena",
+      "Nejjednodušší a nejprověřenější motory v celém přehledu (bez turba, bez GPF)",
+      "Nejlevnější servis a díly v ČR, mechanik kdekoli"
+    ],
+    "cons": [
+      "Vysoký věk vozu – nutná důkladná kontrola koroze prahů a podběhů",
+      "Starší bezpečnostní výbava (ABS ano, ale bez moderních asistentů)",
+      "Vyšší najeté kilometry u většiny nabízených kusů"
+    ],
+    "bazosQuery": "škoda octavia tour combi benzín",
+    "sautoModel": "octavia",
+    "engineNote": "1.6 MPI (8V) a 1.8 20V jsou atmosférické motory s nepřímým vstřikováním a rozvodovým řemenem – patří mezi nejjednodušší a nejprověřenější motory v celém přehledu, bez turba, bez přímého vstřikování a bez GPF. Riziko poruchy je minimální, hlavní pozornost patří spíš stavu karoserie (koroze prahů, podběhů, dveří) vzhledem ke stáří vozu. Pro nejnižší možný rozpočet a maximální mechanickou jistotu je to jedna z nejbezpečnějších voleb v celém přehledu.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Skoda_Octavia_IV_liftback_%28cropped%29.jpg/960px-Skoda_Octavia_IV_liftback_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "consumption": 7.3,
+    "ncap": null,
+    "score": 73,
+    "scoreBreakdown": {
+      "reliability": 97,
+      "safety": 50,
+      "consumption": 67,
+      "service": 100,
+      "space": 58,
+      "availability": 50
+    }
+  },
+  {
+    "id": "citroen-xsara-picasso",
+    "name": "Citroën Xsara Picasso 1.6/1.8/2.0",
+    "wikiTitle": "Citroën Xsara Picasso",
+    "brand": "Citroën",
+    "brandSlug": "citroen",
+    "category": "mpv",
+    "tier": "200k",
+    "top": false,
+    "trunk": "391–1839 l (sklopeno)",
+    "price": "40–90 tis. Kč",
+    "reliability": "Průměrná",
+    "note": "Nejlevnější MPV v přehledu, jednoduchá atmosférická technika bez turba.",
+    "pros": [
+      "Velmi nízká pořizovací cena",
+      "Atmosférické motory 1.6/1.8/2.0 bez turba a bez přímého vstřikování",
+      "Praktický a prostorný interiér na svou dobu"
+    ],
+    "cons": [
+      "Francouzská elektronika a senzory náchylnější na poruchy",
+      "Starší kus – hlídat korozi a stav podvozku",
+      "Menší nabídka kvalitních kusů, hodně přejetých"
+    ],
+    "bazosQuery": "citroen xsara picasso benzín",
+    "sautoModel": "xsara-picasso",
+    "engineNote": "Atmosférické motory 1.6/1.8/2.0 16V (bez turba, nepřímé vstřikování) jsou mechanicky jednoduché a spolehlivé – hlavní riziko u tohoto vozu není motor, ale stáří: elektroinstalace, senzory a plasty už mají za sebou 15–25 let provozu. Před koupí důkladně zkontrolujte korozi prahů a podběhů a funkčnost elektroniky (palubní displej, centrální zamykání). Vzhledem ke stáří jde o auto spíš na nejnižší cenu než na dlouhodobě bezstarostné vlastnictví.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/2002_Citroen_Xsara_Picasso_HDi_Exclusive_2.0_Front.jpg/960px-2002_Citroen_Xsara_Picasso_HDi_Exclusive_2.0_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "consumption": 7.8,
+    "ncap": null,
+    "score": 48,
+    "scoreBreakdown": {
+      "reliability": 46,
+      "safety": 50,
+      "consumption": 56,
+      "service": 70,
+      "space": 38,
+      "availability": 50
+    }
+  },
+  {
+    "id": "toyota-rav4-3gen",
+    "name": "Toyota RAV4 2.0 (III. generace)",
+    "wikiTitle": "Toyota RAV4",
+    "brand": "Toyota",
+    "brandSlug": "toyota",
+    "category": "suv",
+    "tier": "200k",
+    "top": false,
+    "trunk": "490–1633 l (sklopeno)",
+    "price": "180–280 tis. Kč (roč. 2006–2010)",
+    "reliability": "Vynikající",
+    "note": "Legendární toyotí spolehlivost, atmosférický motor bez turba.",
+    "pros": [
+      "Jedna z nejspolehlivějších SUV vůbec",
+      "2.0 VVT-i atmosférický, bez turba, bez GPF",
+      "Nízké provozní náklady, dobrá zbytková hodnota"
+    ],
+    "cons": [
+      "Vyšší pořizovací cena než konkurence stejného stáří",
+      "Menší nabídka kvalitních kusů – rychle mizí z trhu",
+      "Diesel verze (2.2 D-4D) raději vynechat, benzín je jistota"
+    ],
+    "bazosQuery": "toyota rav4 2.0 benzín",
+    "sautoModel": "rav4",
+    "engineNote": "Motor 2.0 VVT-i je atmosférický, bez turba a bez přímého vstřikování – typicky toyotí nenáročná a extrémně odolná jednotka s rozvodovým řetězem prakticky bez problémů. Pro váš profil krátkých městských tras jde o jednu z nejbezpečnějších voleb v celém přehledu, jedinou nevýhodou je vyšší pořizovací cena odpovídající pověsti značky.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/2024_Toyota_RAV4_Prime_XSE_Premium_in_Silver_Sky_with_Midnight_Black_roof%2C_front_left.jpg/960px-2024_Toyota_RAV4_Prime_XSE_Premium_in_Silver_Sky_with_Midnight_Black_roof%2C_front_left.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "consumption": 8.6,
+    "ncap": {
+      "stars": 5,
+      "year": 2006
+    },
+    "score": 75,
+    "scoreBreakdown": {
+      "reliability": 99,
+      "safety": 100,
+      "consumption": 40,
+      "service": 78,
+      "space": 53,
+      "availability": 50
+    }
+  },
+  {
+    "id": "nissan-xtrail-1gen",
+    "name": "Nissan X-Trail 2.0/2.5 (I. generace)",
+    "wikiTitle": "Nissan X-Trail",
+    "brand": "Nissan",
+    "brandSlug": "nissan",
+    "category": "suv",
+    "tier": "200k",
+    "top": false,
+    "trunk": "410–603 l (sklopeno)",
+    "price": "120–220 tis. Kč",
+    "reliability": "Dobrá",
+    "note": "Robustní a jednoduché SUV s atmosférickým motorem.",
+    "pros": [
+      "Jednoduchá atmosférická technika, žádné turbo",
+      "Prostorný a variabilní kufr",
+      "Robustní karoserie, dobrá odolnost proti korozi"
+    ],
+    "cons": [
+      "Starší ročníky – prověřit stav 4x4 převodovky/rozdělovací skříně",
+      "Menší nabídka benzínových verzí (většina inzerátů diesel)",
+      "Vyšší spotřeba u 2.5 verze"
+    ],
+    "bazosQuery": "nissan x-trail benzín",
+    "sautoModel": "x-trail",
+    "engineNote": "Atmosférické motory 2.0 (QR20DE) a 2.5 (QR25DE) jsou bez turba a bez přímého vstřikování, mechanicky nenáročné a odolné. Hlavní pozornost věnujte u verzí s pohonem 4x4 stavu rozvodovky a spojky mezi nápravami, pokud auto jezdilo hodně v terénu. Pro čistě městský/silniční provoz je to spolehlivá a jednoduchá volba, benzínových kusů je ale na trhu podstatně méně než dieselů.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Nissan_X-Trail_%28T33%29_1X7A7179.jpg/960px-Nissan_X-Trail_%28T33%29_1X7A7179.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "consumption": 9.2,
+    "ncap": {
+      "stars": 4,
+      "year": 2003
+    },
+    "score": 61,
+    "scoreBreakdown": {
+      "reliability": 80,
+      "safety": 80,
+      "consumption": 27,
+      "service": 76,
+      "space": 40,
+      "availability": 50
+    }
+  },
+  {
+    "id": "kia-sportage-2gen",
+    "name": "Kia Sportage 2.0 (II. generace, 2004–2010)",
+    "wikiTitle": "Kia Sportage",
+    "brand": "Kia",
+    "brandSlug": "kia",
+    "category": "suv",
+    "tier": "200k",
+    "top": false,
+    "trunk": "570 l",
+    "price": "100–180 tis. Kč",
+    "reliability": "Dobrá",
+    "note": "Levnější a starší alternativa k moderní generaci Sportage/Tucson výše v přehledu.",
+    "pros": [
+      "Nižší cena než modernější generace",
+      "Atmosférický 2.0 benzín bez turba",
+      "Sdílená technika s Hyundai Tucson stejné generace"
+    ],
+    "cons": [
+      "Euro NCAP tuto generaci netestoval – bezpečnost neověřena moderním protokolem",
+      "Starší korejská elektronika, méně prověřená než dnešní Kia/Hyundai",
+      "Horší dostupnost některých dílů než u modernější generace"
+    ],
+    "bazosQuery": "kia sportage 2.0 benzín",
+    "sautoModel": "sportage",
+    "engineNote": "Atmosférický 2.0 benzín (bez turba, nepřímé vstřikování) je mechanicky jednoduchý a spolehlivý, sdílí základ s Hyundai Tucson první generace. Jde o starší, ale levnější alternativu k modernější generaci Tucson/Sportage výše v přehledu – vhodná, pokud chcete SUV karoserii za nižší cenu a jste ochotní slevit z novosti výbavy a bezpečnostních asistentů.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/2025_Kia_Sportage_S_front_only.jpg/960px-2025_Kia_Sportage_S_front_only.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "consumption": 9.6,
+    "ncap": null,
+    "score": 62,
+    "scoreBreakdown": {
+      "reliability": 78,
+      "safety": 50,
+      "consumption": 19,
+      "service": 84,
+      "space": 65,
+      "availability": 50
+    }
+  },
+  {
+    "id": "opel-meriva",
+    "name": "Opel Meriva 1.6/1.8 (I. generace)",
+    "wikiTitle": "Opel Meriva",
+    "brand": "Opel",
+    "brandSlug": "opel",
+    "category": "mpv",
+    "tier": "200k",
+    "top": false,
+    "trunk": "400–1500 l (sklopeno)",
+    "price": "60–120 tis. Kč",
+    "reliability": "Průměrná",
+    "note": "Levné kompaktní MPV s jednoduchou atmosférickou technikou.",
+    "pros": [
+      "Nízká pořizovací cena",
+      "Atmosférické motory 1.6/1.8 bez turba",
+      "Praktický variabilní interiér (FlexSpace sedadla)"
+    ],
+    "cons": [
+      "Opel má proměnlivou pověst spolehlivosti",
+      "Starší kusy – hlídat korozi prahů a podběhů",
+      "Menší výběr kvalitních kusů na trhu"
+    ],
+    "bazosQuery": "opel meriva benzín",
+    "sautoModel": "meriva",
+    "engineNote": "Atmosférické motory 1.6 a 1.8 16V (bez turba, nepřímé vstřikování) jsou mechanicky nenáročné, podobné konstrukci jako motory z Astra G/H. Hlavní riziko představuje spíš stáří vozu (koroze, opotřebené plasty) než samotný motor. Pro krátké městské trasy je to bezpečná volba z hlediska pohonné jednotky, ale počítejte s tím, že Opel obecně nemá tak proslulou pověst spolehlivosti jako Toyota nebo Škoda.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Opel_Meriva_B_front_20100723.jpg/960px-Opel_Meriva_B_front_20100723.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "consumption": 7.6,
+    "ncap": {
+      "stars": 4,
+      "year": 2003
+    },
+    "score": 56,
+    "scoreBreakdown": {
+      "reliability": 48,
+      "safety": 80,
+      "consumption": 60,
+      "service": 86,
+      "space": 39,
+      "availability": 50
+    }
+  },
+  {
+    "id": "peugeot-3008",
+    "name": "Peugeot 3008 (I. generace) 1.6 VTi/THP",
+    "wikiTitle": "Peugeot 3008",
+    "brand": "Peugeot",
+    "brandSlug": "peugeot",
+    "category": "suv",
+    "tier": "200k",
+    "top": false,
+    "trunk": "432–1604 l (sklopeno)",
+    "price": "150–250 tis. Kč (roč. 2011–2014)",
+    "reliability": "Průměrná",
+    "note": "Vyšší posez a bohatá výbava, ale francouzská elektronika je citlivější.",
+    "pros": [
+      "Vyšší posez, dobrý výhled",
+      "1.6 VTi atmosférický motor bez turba",
+      "Bohatá výbava i v nižších cenových hladinách"
+    ],
+    "cons": [
+      "Francouzská elektronika – citlivější na senzory a řídicí jednotky",
+      "THP (přeplňovaná) verze má přímé vstřikování s rizikem karbonizace",
+      "Horší dostupnost dílů než u mainstreamových značek"
+    ],
+    "bazosQuery": "peugeot 3008 benzín",
+    "sautoModel": "3008",
+    "engineNote": "Základní 1.6 VTi je atmosférický motor s nepřímým vstřikováním – bez turba, bez GPF, mechanicky nenáročný a pro krátké trasy nejbezpečnější volba z nabídky. Výkonnější 1.6 THP (turbo + přímé vstřikování) trpí běžnými neduhy přeplňovaných GDI jednotek (karbonizace sání, řetěz). Obecně je francouzská elektronika (palubní počítač, senzory) náchylnější na drobné poruchy než německá/japonská konkurence, i když motor samotný bývá spolehlivý.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Peugeot_e-3008_Automesse_Ludwigsburg_2024_IMG_1537.jpg/960px-Peugeot_e-3008_Automesse_Ludwigsburg_2024_IMG_1537.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "consumption": 7.6,
+    "ncap": {
+      "stars": 5,
+      "year": 2009
+    },
+    "score": 58,
+    "scoreBreakdown": {
+      "reliability": 46,
+      "safety": 100,
+      "consumption": 60,
+      "service": 74,
+      "space": 44,
+      "availability": 50
+    }
+  },
+  {
+    "id": "peugeot-5008",
+    "name": "Peugeot 5008 (I. generace, 7 míst) 1.6 VTi/THP",
+    "wikiTitle": "Peugeot 5008",
+    "brand": "Peugeot",
+    "brandSlug": "peugeot",
+    "category": "mpv",
+    "tier": "200k",
+    "top": false,
+    "trunk": "240–2506 l (sklopeno, 7 míst)",
+    "price": "170–270 tis. Kč (roč. 2011–2016)",
+    "reliability": "Průměrná",
+    "note": "7místná varianta 3008, se sklopenou 3. řadou velký prostor, obsazená minimální kufr.",
+    "pros": [
+      "7 míst, velmi variabilní prostor",
+      "1.6 VTi atmosférický motor bez turba",
+      "Sdílená technika s 3008 – běžně dostupné díly"
+    ],
+    "cons": [
+      "S plně obsazenou 3. řadou minimální kufr",
+      "Francouzská elektronika – citlivější na senzory",
+      "THP verze s přímým vstřikováním náchylnější na karbonizaci"
+    ],
+    "bazosQuery": "peugeot 5008 benzín",
+    "sautoModel": "5008",
+    "engineNote": "Motorová nabídka je stejná jako u 3008 – doporučujeme atmosférický 1.6 VTi bez turba a bez přímého vstřikování jako nejjistější volbu pro krátké městské trasy. Se 3. řadou sedadel v provozu klesne objem kufru na pouhých cca 240 l, což je potřeba zohlednit, pokud budete běžně vozit 7 lidí najednou.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Peugeot_5008_C_DSC_2949.jpg/960px-Peugeot_5008_C_DSC_2949.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "consumption": 7.9,
+    "ncap": {
+      "stars": 5,
+      "year": 2009
+    },
+    "score": 51,
+    "scoreBreakdown": {
+      "reliability": 48,
+      "safety": 100,
+      "consumption": 54,
+      "service": 74,
+      "space": 15,
+      "availability": 50
+    }
+  },
+  {
+    "id": "bmw-3-touring-e90",
+    "name": "BMW 3 Touring 2.0i/2.5i (E90/E91)",
+    "wikiTitle": "BMW 3 Series (E90)",
+    "brand": "BMW",
+    "brandSlug": "bmw",
+    "category": "kombi",
+    "tier": "280k",
+    "top": false,
+    "trunk": "460–1385 l (sklopeno)",
+    "price": "250–320 tis. Kč (roč. 2007–2011)",
+    "reliability": "Dobrá mechanika, ale drahý servis",
+    "note": "Prémiové kombi s kvalitním podvozkem, ale vyššími provozními náklady než ostatní modely v přehledu.",
+    "pros": [
+      "Kvalitní podvozek a jízdní vlastnosti",
+      "Řadové motory N46/N52 mechanicky spolehlivé",
+      "Velký výběr na trhu"
+    ],
+    "cons": [
+      "Výrazně dražší servis a originální díly než evropský mainstream",
+      "Plastové vodní čerpadlo a termostat – časté poruchy chlazení po 100–150 tis. km",
+      "Dražší pojištění a vyšší spotřeba"
+    ],
+    "bazosQuery": "bmw 3 touring benzín",
+    "sautoModel": "rada-3",
+    "engineNote": "Atmosférické řadové čtyřválce a šestiválce (N46, N52) jsou mechanicky velmi odolné a bez turba, takže odpadá riziko karbonizace i turba – z hlediska motoru jde o jednu z nejjistějších voleb v celém přehledu. Slabinou bývá spíš příslušenství: plastové vodní čerpadlo a termostat s životností cca 100–150 tis. km, a obecně dražší originální díly a hodinová sazba u BMW specialistů oproti Škodě/VW. Motor je bezproblémový, ale počítejte s vyššími náklady na běžný servis.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/2005-2008_BMW_320i_%28E90%29_sedan_%282011-07-17%29_01.jpg/960px-2005-2008_BMW_320i_%28E90%29_sedan_%282011-07-17%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "consumption": 7.8,
+    "ncap": {
+      "stars": 5,
+      "year": 2005
+    },
+    "score": 67,
+    "scoreBreakdown": {
+      "reliability": 80,
+      "safety": 100,
+      "consumption": 56,
+      "service": 55,
+      "space": 48,
+      "availability": 50
+    }
+  },
+  {
+    "id": "mercedes-c-klasse-t-w204",
+    "name": "Mercedes C-Klasse T-Modell 1.8/2.0 Kompressor/CGI (W204)",
+    "wikiTitle": "Mercedes-Benz C-Class (W204)",
+    "brand": "Mercedes-Benz",
+    "brandSlug": "mercedes-benz",
+    "category": "kombi",
+    "tier": "280k",
+    "top": false,
+    "trunk": "490–1500 l (sklopeno)",
+    "price": "250–320 tis. Kč (roč. 2009–2014)",
+    "reliability": "Dobrá mechanika, ale drahý servis",
+    "note": "Podobně jako BMW 3 Touring – kvalitní auto, ale vyšší náklady na údržbu než mainstreamové značky.",
+    "pros": [
+      "Kvalitní zpracování interiéru a materiálů",
+      "Velký kufr, praktické kombi",
+      "Silná síť nezávislých specialistů na Mercedes v ČR"
+    ],
+    "cons": [
+      "Motor M271 (Kompressor/CGI) náchylný na natažený rozvodový řetěz a poruchu olejového čerpadla po cca 150 tis. km",
+      "Dražší originální díly než evropský mainstream",
+      "Starší Kompressor verze méně spolehlivá než pozdější přeplňovaná CGI"
+    ],
+    "bazosQuery": "mercedes c-klasse combi t-modell benzín",
+    "sautoModel": "trida-c",
+    "engineNote": "Řada motorů M271 (1.8 Kompressor nebo pozdější 1.8/2.0 CGI s turbem) má známý neduh – natažený rozvodový řetěz a s tím spojenou poruchu olejového čerpadla, projevující se typicky po 150 000+ km (chrastění při startu). Před koupí je nutná kontrola historie výměny řetězové sady. Mechanicky jinak odolný motor, ale servis a originální díly jsou dražší než u Škody/VW/Fordu – počítejte s tím při rozhodování.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/2008_Mercedes-Benz_C300_4MATIC_Sport_Sedan%2C_07-29-2022.jpg/960px-2008_Mercedes-Benz_C300_4MATIC_Sport_Sedan%2C_07-29-2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "consumption": 8.5,
+    "ncap": {
+      "stars": 5,
+      "year": 2007
+    },
+    "score": 65,
+    "scoreBreakdown": {
+      "reliability": 74,
+      "safety": 100,
+      "consumption": 42,
+      "service": 51,
+      "space": 53,
+      "availability": 50
+    }
   }
 ]
