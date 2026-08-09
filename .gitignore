@@ -5,3 +5,11 @@ __pycache__/
 node_modules/
 *.log
 .~lock*
+*-log.txt
+*-log2.txt
+check-github-setup*.command
+push-diag.command
+push-ssh.command
+push-to-github.command
+cleanup-push.command
+push-log.txt
