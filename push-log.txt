@@ -1,0 +1,3 @@
+=== push to github ===
+Initialized empty Git repository in /Users/jakubkoudelka/Library/Application Support/Claude/local-agent-mode-sessions/91d8959a-c664-4e74-afb5-f51551d1526d/2ec08b7a-2d38-4b15-9f6e-24058ae654d1/local_88386e6e-f455-4345-b688-263609b5e4ec/outputs/auto-dashboard/.git/
+error: No such remote: 'origin'

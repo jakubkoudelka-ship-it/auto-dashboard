@@ -1,0 +1,61 @@
+
+[notice] A new release of pip is available: 25.2 -> 26.2.1
+[notice] To update, run: pip3 install --upgrade pip
+Spouštím scraper (všech 53 modelů, cca 2-3 minuty)...
+[1/53] skoda-octavia2-combi -> https://auto.bazos.cz/?hledat=%C5%A1koda%20octavia%20combi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[2/53] fiat-tipo-kombi -> https://auto.bazos.cz/?hledat=fiat%20tipo%20kombi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[3/53] toyota-avensis-corolla-verso -> https://auto.bazos.cz/?hledat=toyota%20avensis%20kombi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[4/53] ford-mondeo-combi -> https://auto.bazos.cz/?hledat=ford%20mondeo%20combi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[5/53] ford-focus-combi -> https://auto.bazos.cz/?hledat=ford%20focus%20combi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[6/53] kia-ceed-hyundai-i30-combi -> https://auto.bazos.cz/?hledat=kia%20ceed%20sw%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[7/53] mazda6-kombi -> https://auto.bazos.cz/?hledat=mazda%206%20kombi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[8/53] peugeot-308-sw -> https://auto.bazos.cz/?hledat=peugeot%20308%20sw%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[9/53] seat-leon-st -> https://auto.bazos.cz/?hledat=seat%20leon%20st%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[10/53] volvo-v70-v50 -> https://auto.bazos.cz/?hledat=volvo%20v70%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[11/53] skoda-roomster-rapid -> https://auto.bazos.cz/?hledat=%C5%A1koda%20roomster%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[12/53] dacia-logan-mcv -> https://auto.bazos.cz/?hledat=dacia%20logan%20mcv%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[13/53] renault-megane-grandtour -> https://auto.bazos.cz/?hledat=renault%20megane%20grandtour%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[14/53] vw-golf-passat-variant -> https://auto.bazos.cz/?hledat=vw%20golf%20variant%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[15/53] citroen-c4-c5-tourer -> https://auto.bazos.cz/?hledat=citroen%20c5%20tourer%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[16/53] mazda-premacy-5 -> https://auto.bazos.cz/?hledat=mazda%20premacy%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[17/53] seat-altea-xl -> https://auto.bazos.cz/?hledat=seat%20altea%20xl%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[18/53] fiat-500l -> https://auto.bazos.cz/?hledat=fiat%20500l%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[19/53] opel-zafira -> https://auto.bazos.cz/?hledat=opel%20zafira%207%20m%C3%ADst%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[20/53] renault-grand-scenic -> https://auto.bazos.cz/?hledat=renault%20grand%20scenic%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[21/53] vw-sharan-galaxy-alhambra -> https://auto.bazos.cz/?hledat=vw%20sharan%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[22/53] dacia-duster1 -> https://auto.bazos.cz/?hledat=dacia%20duster%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[23/53] nissan-qashqai1 -> https://auto.bazos.cz/?hledat=nissan%20qashqai%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[24/53] hyundai-ix35 -> https://auto.bazos.cz/?hledat=hyundai%20ix35%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[25/53] mitsubishi-asx -> https://auto.bazos.cz/?hledat=mitsubishi%20asx%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[26/53] suzuki-sx4 -> https://auto.bazos.cz/?hledat=suzuki%20sx4%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[27/53] suzuki-vitara-new -> https://auto.bazos.cz/?hledat=suzuki%20vitara%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[28/53] skoda-yeti -> https://auto.bazos.cz/?hledat=%C5%A1koda%20yeti%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[29/53] subaru-forester -> https://auto.bazos.cz/?hledat=subaru%20forester%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[30/53] honda-crv-civic-tourer -> https://auto.bazos.cz/?hledat=honda%20cr-v%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[31/53] tucson-sportage-moderni -> https://auto.bazos.cz/?hledat=hyundai%20tucson%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[32/53] dacia-dokker -> https://auto.bazos.cz/?hledat=dacia%20dokker%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[33/53] renault-kangoo -> https://auto.bazos.cz/?hledat=renault%20kangoo%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[34/53] partner-tepee-berlingo -> https://auto.bazos.cz/?hledat=peugeot%20partner%20tepee%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[35/53] fiat-doblo -> https://auto.bazos.cz/?hledat=fiat%20doblo%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[36/53] citroen-c4-picasso -> https://auto.bazos.cz/?hledat=citroen%20c4%20picasso%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[37/53] ford-cmax -> https://auto.bazos.cz/?hledat=ford%20c-max%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[38/53] ford-smax -> https://auto.bazos.cz/?hledat=ford%20s-max%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[39/53] kia-carens -> https://auto.bazos.cz/?hledat=kia%20carens%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[40/53] toyota-verso -> https://auto.bazos.cz/?hledat=toyota%20verso%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[41/53] mitsubishi-outlander -> https://auto.bazos.cz/?hledat=mitsubishi%20outlander%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[42/53] suzuki-grand-vitara -> https://auto.bazos.cz/?hledat=suzuki%20grand%20vitara%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[43/53] lada-niva -> https://auto.bazos.cz/?hledat=lada%20niva%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[44/53] toyota-auris-touring -> https://auto.bazos.cz/?hledat=toyota%20auris%20touring%20sports%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[45/53] opel-astra-combi -> https://auto.bazos.cz/?hledat=opel%20astra%20combi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[46/53] opel-insignia-combi -> https://auto.bazos.cz/?hledat=opel%20insignia%20combi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[47/53] skoda-superb-combi -> https://auto.bazos.cz/?hledat=%C5%A1koda%20superb%20combi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[48/53] hyundai-i40-combi -> https://auto.bazos.cz/?hledat=hyundai%20i40%20combi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[49/53] chevrolet-daewoo-lacetti -> https://auto.bazos.cz/?hledat=daewoo%20lacetti%20kombi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=200000&Submit=Hled%C3%A1n%C3%AD
+[50/53] octavia3-14tsi-ea211 -> https://auto.bazos.cz/?hledat=%C5%A1koda%20octavia%203%20combi%201.4%20tsi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=350000&Submit=Hled%C3%A1n%C3%AD
+[51/53] octavia3-16mpi -> https://auto.bazos.cz/?hledat=%C5%A1koda%20octavia%203%20combi%201.6%20mpi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=350000&Submit=Hled%C3%A1n%C3%AD
+[52/53] duster2-sce -> https://auto.bazos.cz/?hledat=dacia%20duster%202%201.6%20sce%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=350000&Submit=Hled%C3%A1n%C3%AD
+[53/53] octavia3-duster2-evo-avoid -> https://auto.bazos.cz/?hledat=%C5%A1koda%20octavia%203%201.0%20tsi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=&cenado=350000&Submit=Hled%C3%A1n%C3%AD
+
+Hotovo, zapsano 53 zaznamu do /Users/jakubkoudelka/Library/Application Support/Claude/local-agent-mode-sessions/91d8959a-c664-4e74-afb5-f51551d1526d/2ec08b7a-2d38-4b15-9f6e-24058ae654d1/local_88386e6e-f455-4345-b688-263609b5e4ec/outputs/auto-dashboard/data/listings.json
+
+HOTOVO. Toto okno můžete zavřít.

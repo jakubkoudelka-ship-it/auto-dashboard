@@ -1,0 +1,46 @@
+# Naplanovana aktualizace data/listings.json.
+#
+# POZOR: scraper (scripts/scrape_bazos.py) je best-effort prototyp, ktery
+# nebyl otestovan proti zivemu webu (viz komentar v souboru). Pred zapnutim
+# tohoto workflow doporucuji:
+#   1) spustit skript lokalne (python scripts/scrape_bazos.py --limit 3)
+#      a zkontrolovat, ze parsovani sedi na aktualni HTML strukturu webu,
+#   2) overit robots.txt / podminky pouziti cilove stranky.
+#
+# Dokud tyhle kroky neuděláš, workflow můžeš nechat vypnutý (stačí ho
+# nemergovat / nepovolit v Actions), dashboard funguje i bez listings.json —
+# tlačítka "aktuální nabídka" v modal okně fungují nezávisle na tomto souboru.
+
+name: Update car listings
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # kazdy den v 6:00 UTC
+  workflow_dispatch: {} # + moznost spustit rucne z GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run scraper
+        run: python scripts/scrape_bazos.py --delay 2.0
+
+      - name: Commit updated listings
+        run: |
+          git config user.name "auto-dashboard-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/listings.json
+          git diff --staged --quiet || git commit -m "chore: update listings.json [automated]"
+          git push

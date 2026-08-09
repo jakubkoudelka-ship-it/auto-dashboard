@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Výběr rodinného auta – dashboard</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-icon">🚗</span>
+      <div>
+        <h1>Výběr rodinného auta</h1>
+        <p class="subtitle">Bazarový research &middot; kombi / MPV / SUV &middot; benzín</p>
+      </div>
+    </div>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+
+<main>
+  <section class="controls">
+    <div class="control-row">
+      <div class="pill-group" id="categoryFilters">
+        <button class="pill active" data-cat="all">Vše</button>
+        <button class="pill" data-cat="kombi">Kombi</button>
+        <button class="pill" data-cat="mpv">MPV</button>
+        <button class="pill" data-cat="suv">SUV</button>
+        <button class="pill" data-cat="uzitkove">Užitkové</button>
+      </div>
+      <div class="pill-group" id="tierFilters">
+        <button class="pill active" data-tier="all">Všechny rozpočty</button>
+        <button class="pill" data-tier="200k">do 200 tis. Kč</button>
+        <button class="pill" data-tier="280k">280–320 tis. Kč</button>
+        <button class="pill" data-tier="vyrazeno">Nad rozpočtem</button>
+      </div>
+    </div>
+    <div class="control-row">
+      <input type="text" id="searchBox" placeholder="Hledat model nebo značku…" />
+      <select id="sortSelect">
+        <option value="rank">Řadit: doporučení</option>
+        <option value="price">Řadit: cena</option>
+        <option value="trunk">Řadit: kufr</option>
+        <option value="name">Řadit: název A–Z</option>
+      </select>
+      <label class="toggle">
+        <input type="checkbox" id="topOnly" />
+        <span>Jen ★ top doporučení</span>
+      </label>
+    </div>
+  </section>
+
+  <section id="cardGrid" class="card-grid"></section>
+
+  <p class="empty-state" id="emptyState" hidden>Žádný model neodpovídá zvoleným filtrům.</p>
+</main>
+
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modalClose" aria-label="Zavřít">✕</button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>Data z tržního researche (srpen 2026) &middot; fotky se natahují živě z Wikipedia API &middot; tlačítka "aktuální nabídka" otevírají předfiltrované hledání na Sauto.cz / Bazoš.cz.</p>
+  <p class="repo-note">Osobní projekt &middot; <a href="https://github.com" target="_blank" rel="noopener">github.com</a></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
