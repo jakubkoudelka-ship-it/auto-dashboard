@@ -284,9 +284,13 @@ function render() {
 }
 
 const SCORE_BREAKDOWN_LABELS = [
-  ["reliability", "Spolehlivost", 50],
-  ["space", "Prostor v kategorii", 20],
-  ["brand", "Preference značky", 30],
+  ["reliability", "Spolehlivost", 25],
+  ["safety", "Bezpečnost (Euro NCAP)", 15],
+  ["consumption", "Spotřeba paliva", 10],
+  ["service", "Servis a díly", 10],
+  ["space", "Prostor v kategorii", 15],
+  ["availability", "Dostupnost na trhu", 5],
+  ["brand", "Preference značky", 20],
 ];
 
 function scoreBreakdownBlock(car) {
@@ -307,7 +311,7 @@ function scoreBreakdownBlock(car) {
         <span class="score-total score-${scoreTier(car.score)}">${car.score}<small>/100</small></span>
       </div>
       <div class="score-rows">${rows}</div>
-      <p class="score-note">Skóre popisuje vlastnosti auta (spolehlivost, prostor kufru v rámci kategorie, značková preference) – záměrně nezahrnuje pořizovací cenu, protože ta není vlastností auta, ale konkrétního inzerátu. Rozpočet vidíte zvlášť jako štítek u karty a lze podle něj filtrovat nahoře. Skóre nezohledňuje konkrétní inzeráty ani stav dané kupované ojetiny.</p>
+      <p class="score-note">Skóre popisuje vlastnosti auta (spolehlivost, bezpečnost, spotřeba, servis/díly, prostor kufru v rámci kategorie, dostupnost na trhu, značková preference) – záměrně nezahrnuje pořizovací cenu, protože ta není vlastností auta, ale konkrétního inzerátu. Rozpočet vidíte zvlášť jako štítek u karty a lze podle něj filtrovat nahoře. Bezpečnostní hvězdičky Euro NCAP z různých let nejsou 1:1 srovnatelné (test se v čase zpřísňoval) – rok testu je uveden u auta výše. Skóre nezohledňuje konkrétní inzeráty ani stav dané kupované ojetiny.</p>
     </div>
   `;
 }
@@ -341,6 +345,8 @@ function openModal(id) {
         <div class="modal-stat"><div class="label">Cena</div><div class="value">${car.price}</div></div>
         <div class="modal-stat"><div class="label">Spolehlivost</div><div class="value">${car.reliability}</div></div>
         <div class="modal-stat"><div class="label">Značka</div><div class="value">${car.brand}</div></div>
+        <div class="modal-stat"><div class="label">Spotřeba</div><div class="value">${typeof car.consumption === "number" ? `~${car.consumption.toLocaleString("cs-CZ")} l/100 km` : "neznámá"}</div></div>
+        <div class="modal-stat"><div class="label">Euro NCAP</div><div class="value">${car.ncap ? `${"★".repeat(car.ncap.stars)}${"☆".repeat(5 - car.ncap.stars)} (${car.ncap.year})` : "netestováno"}</div></div>
       </div>
       ${scoreBreakdownBlock(car)}
       <div class="note-box">${car.note}</div>
