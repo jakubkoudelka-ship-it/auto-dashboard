@@ -278,6 +278,7 @@ function openModal(id) {
         <div class="modal-stat"><div class="label">Značka</div><div class="value">${car.brand}</div></div>
       </div>
       <div class="note-box">${car.note}</div>
+      ${car.engineNote ? `<div class="engine-box"><h4>🔧 Motorizace – co vybrat a proč</h4><p>${car.engineNote}</p></div>` : ""}
       <div class="pros-cons">
         <div class="pros">
           <h4>+ Klady</h4>
