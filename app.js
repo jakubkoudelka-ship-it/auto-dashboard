@@ -284,13 +284,12 @@ function render() {
 }
 
 const SCORE_BREAKDOWN_LABELS = [
-  ["reliability", "Spolehlivost", 25],
+  ["reliability", "Spolehlivost", 30],
   ["safety", "Bezpečnost (Euro NCAP)", 15],
   ["consumption", "Spotřeba paliva", 10],
   ["service", "Servis a díly", 10],
-  ["space", "Prostor v kategorii", 15],
-  ["availability", "Dostupnost na trhu", 5],
-  ["brand", "Preference značky", 20],
+  ["space", "Prostor (zavazadlový, v kategorii)", 25],
+  ["availability", "Dostupnost na trhu", 10],
 ];
 
 function scoreBreakdownBlock(car) {
@@ -311,7 +310,7 @@ function scoreBreakdownBlock(car) {
         <span class="score-total score-${scoreTier(car.score)}">${car.score}<small>/100</small></span>
       </div>
       <div class="score-rows">${rows}</div>
-      <p class="score-note">Skóre popisuje vlastnosti auta (spolehlivost, bezpečnost, spotřeba, servis/díly, prostor kufru v rámci kategorie, dostupnost na trhu, značková preference) – záměrně nezahrnuje pořizovací cenu, protože ta není vlastností auta, ale konkrétního inzerátu. Rozpočet vidíte zvlášť jako štítek u karty a lze podle něj filtrovat nahoře. Bezpečnostní hvězdičky Euro NCAP z různých let nejsou 1:1 srovnatelné (test se v čase zpřísňoval) – rok testu je uveden u auta výše. Skóre nezohledňuje konkrétní inzeráty ani stav dané kupované ojetiny.</p>
+      <p class="score-note">Skóre popisuje vlastnosti auta (spolehlivost, bezpečnost, spotřeba, servis/díly, zavazadlový prostor v rámci kategorie, dostupnost na trhu) – záměrně nezahrnuje pořizovací cenu ani značku samotnou, protože to nejsou vlastnosti auta, ale konkrétního inzerátu / osobní preference. Rozpočet vidíte zvlášť jako štítek u karty a lze podle něj filtrovat nahoře. Prostor = objem zavazadlového prostoru v litrech (nesklopeno), porovnaný jen v rámci stejné kategorie (kombi vs. kombi, SUV vs. SUV…). Bezpečnostní hvězdičky Euro NCAP z různých let nejsou 1:1 srovnatelné (test se v čase zpřísňoval) – rok testu je uveden u auta výše. Skóre nezohledňuje konkrétní inzeráty ani stav dané kupované ojetiny.</p>
     </div>
   `;
 }

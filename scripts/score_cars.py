@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 """
 Spocita transparentni skore 0-100 pro kazde auto v data/cars.json a ulozi
-ho do pole "score". Skore je vazeny soucet SEDMI slozek popisujicich
+ho do pole "score". Skore je vazeny soucet SESTI slozek popisujicich
 VLASTNOSTI auta - pořizovaci cena zaměrně NENI soucasti skore, protoze
 neni vlastnosti auta jako takoveho (jde o promenlivy udaj konkretniho
-inzeratu/trhu, ne o parametr modelu). Rozpocet zustava zobrazeny zvlast -
-jako tier badge na karte ("do 200 tis. Kc" / "280-320 tis. Kc" / ...) a
-jako filtrovaci pilulky nahore, takze si ho muzete kdykoli sami omezit.
+inzeratu/trhu, ne o parametr modelu). Znackova preference take NENI
+soucasti skore (na explicitni zadost uzivatele byla odstranena) - vsechny
+znacky se tedy hodnoti čistě podle vlastnosti, bez malusu/bonusu za znacku
+jako takovou. Rozpocet zustava zobrazeny zvlast - jako tier badge na karte
+("do 200 tis. Kc" / "280-320 tis. Kc" / ...) a jako filtrovaci pilulky
+nahore, takze si ho muzete kdykoli sami omezit.
 
-  25 % spolehlivost       - odvozeno z textoveho pole "reliability" (klicova
+  30 % spolehlivost       - odvozeno z textoveho pole "reliability" (klicova
                             slova) + bonus/malus podle rizikovych/pozitivnich
                             frazi v "pros"/"cons" (napinak retezu, koroze,
                             elektronika, bezudrzbovy rozvod, bez turba...)
@@ -23,22 +26,15 @@ jako filtrovaci pilulky nahore, takze si ho muzete kdykoli sami omezit.
   10 % servis a dily      - kombinace obecne znamky dostupnosti/ceny
                             servisu a dilu pro danou znacku v CR
                             (BRAND_SERVICE_BASE) + klicova slova v pros/cons
-  15 % prostor            - kufr (litry, "na sedadla", ne sklopeno)
-                            normalizovany v ramci kategorie (kombi/mpv/suv/
-                            uzitkove), aby se SUV neporovnavalo s velkym MPV
-   5 % dostupnost na trhu - kolik relevantnich inzeratu se aktualne najde
+  25 % prostor (kufr)     - objem zavazadloveho prostoru (litry, "na
+                            sedadla", tedy nesklopeno - realny uzitny prostor
+                            pri plne obsazenem aute) normalizovany v ramci
+                            kategorie (kombi/mpv/suv/uzitkove), aby se SUV
+                            neporovnavalo s velkym MPV. Vaha zvysena z 15 %
+                            na 25 % na explicitni pozadavek uzivatele.
+  10 % dostupnost na trhu - kolik relevantnich inzeratu se aktualne najde
                             (data/listings.json ze scripts/scrape_bazos.py) -
                             malo inzeratu = hur se to realne shani
-  20 % znackova preference - vychozi 100 b. pro vsechny znacky; Skoda ma
-                            (na zaklade explicitniho pozadavku uzivatele, ze
-                            je pro nej az posledni volba) malus na 55 b.
-                            Vaha 20 % je zamerne vyssi nez u ostatnich slozek,
-                            protoze s pribyvajicimi vlastnostmi (bezpecnost,
-                            servis, dostupnost) by Skoda diky sirokemu
-                            zastoupeni na CZ trhu jinak preference prebila -
-                            tato vaha to spolehlive vyvazuje.
-                            Zmente BRAND_PREFERENCE nize, pokud se preference
-                            zmeni.
 
 Znacku TOP (top 3 podle skore) mohou dostat jen auta v realnem rozpoctu
 (tier "200k" nebo "280k") - auto nad rozpoctem nebo s tier "avoid" se
@@ -61,24 +57,18 @@ CARS_PATH = "data/cars.json"
 LISTINGS_PATH = "data/listings.json"
 
 WEIGHTS = {
-    "reliability": 0.25,
+    "reliability": 0.30,
     "safety": 0.15,
     "consumption": 0.10,
     "service": 0.10,
-    "space": 0.15,
-    "availability": 0.05,
-    "brand": 0.20,
+    "space": 0.25,
+    "availability": 0.10,
 }
 assert abs(sum(WEIGHTS.values()) - 1.0) < 1e-9
 
 # Tier, ktery je eligible pro znacku TOP (realny rozpocet). "vyrazeno" a
 # "avoid" jsou z TOP vyrazeny vzdy, i kdyby mely nejvyssi skore vlastnosti.
 TOP_ELIGIBLE_TIERS = {"200k", "280k"}
-
-# Znackova preference uzivatele. 100 = neutralni. Upravte podle libosti.
-BRAND_PREFERENCE = {
-    "skoda": 55,
-}
 
 # Obecna dostupnost/cena servisu a dilu pro danou znacku v CR (100 =
 # nejlevnejsi a nejdostupnejsi, mensi cislo = drazsi dily / rezasi sit
@@ -298,14 +288,6 @@ def parse_trunk(trunk_str):
     return nums[0] if nums else None
 
 
-def brand_score(brand):
-    b = normalize(brand)
-    for key, val in BRAND_PREFERENCE.items():
-        if key in b:
-            return val
-    return 100
-
-
 def load_listing_counts():
     try:
         with open(LISTINGS_PATH, encoding="utf-8") as f:
@@ -352,7 +334,6 @@ def main():
             lo, hi = cat_minmax[car["category"]]
             space = 100 if hi == lo else round((t - lo) / (hi - lo) * 100)
 
-        brand = brand_score(car["brand"])
         service = service_score(car)
         safety = safety_score(car["id"])
 
@@ -382,7 +363,6 @@ def main():
             + WEIGHTS["service"] * service
             + WEIGHTS["space"] * space
             + WEIGHTS["availability"] * availability
-            + WEIGHTS["brand"] * brand
         )
         total = max(0, min(100, round(total)))
 
@@ -394,7 +374,6 @@ def main():
             "service": service,
             "space": space,
             "availability": availability,
-            "brand": brand,
         }
 
     # TOP 3 podle skore, jen mezi auty v realnem rozpoctu
