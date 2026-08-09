@@ -28,9 +28,13 @@ nahore, takze si ho muzete kdykoli sami omezit.
                             (BRAND_SERVICE_BASE) + klicova slova v pros/cons
   25 % prostor (kufr)     - objem zavazadloveho prostoru (litry, "na
                             sedadla", tedy nesklopeno - realny uzitny prostor
-                            pri plne obsazenem aute) normalizovany v ramci
-                            kategorie (kombi/mpv/suv/uzitkove), aby se SUV
-                            neporovnavalo s velkym MPV. Vaha zvysena z 15 %
+                            pri plne obsazenem aute) normalizovany GLOBALNE
+                            napric vsemi 53 auty (ne po kategoriich - puvodni
+                            normalizace po kategoriich davala matouci vysledky,
+                            protoze kategorie "mpv" mixuje 5mistne a 7mistne
+                            vozy a 7mistne maji s obsazenymi sedadly male
+                            kufry, coz uměle nafukovalo skore malych MPV
+                            oproti objemnejsim kombi). Vaha zvysena z 15 %
                             na 25 % na explicitni pozadavek uzivatele.
   10 % dostupnost na trhu - kolik relevantnich inzeratu se aktualne najde
                             (data/listings.json ze scripts/scrape_bazos.py) -
@@ -309,16 +313,15 @@ def main():
 
     listing_counts = load_listing_counts()
 
-    # prostor: normalizace v ramci kategorie
-    trunk_by_cat = {}
+    # prostor: normalizace napric celym seznamem (ne po kategoriich) - viz
+    # docstring nahore, proc byla puvodni normalizace po kategoriich zmenena.
+    trunk_values = []
     for car in cars:
         t = parse_trunk(car.get("trunk", ""))
         car["_trunk_l"] = t
         if t is not None:
-            trunk_by_cat.setdefault(car["category"], []).append(t)
-    cat_minmax = {
-        cat: (min(vals), max(vals)) for cat, vals in trunk_by_cat.items()
-    }
+            trunk_values.append(t)
+    trunk_lo, trunk_hi = min(trunk_values), max(trunk_values)
 
     # spotreba: normalizace napric celym seznamem (mensi = lepsi)
     consumptions = [v for v in CONSUMPTION_DATA.values() if v is not None]
@@ -331,8 +334,7 @@ def main():
         if t is None:
             space = 50
         else:
-            lo, hi = cat_minmax[car["category"]]
-            space = 100 if hi == lo else round((t - lo) / (hi - lo) * 100)
+            space = round((t - trunk_lo) / (trunk_hi - trunk_lo) * 100)
 
         service = service_score(car)
         safety = safety_score(car["id"])
