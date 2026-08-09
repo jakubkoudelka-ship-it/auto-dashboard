@@ -33,7 +33,7 @@ const state = {
   category: "all",
   tier: "all",
   query: "",
-  sort: "rank",
+  sort: "score",
   topOnly: false,
   listingsByCarId: {}, // volitelně naplněno z data/listings.json (viz scripts/scrape_bazos.py)
 };
@@ -146,6 +146,17 @@ function listingsBlock(car) {
   `;
 }
 
+function scoreTier(score) {
+  if (score >= 85) return "high";
+  if (score >= 65) return "mid";
+  return "low";
+}
+
+function scoreChip(car) {
+  if (typeof car.score !== "number") return "";
+  return `<span class="score-chip score-${scoreTier(car.score)}" title="Skóre modelu (viz detail auta)">${car.score}<small>/100</small></span>`;
+}
+
 function cardTemplate(car) {
   const catIcon = CATEGORY_ICONS[car.category] || "🚗";
   const photoInner = car.image
@@ -161,7 +172,10 @@ function cardTemplate(car) {
         <span class="badge-tier ${tierClass(car.tier)}">${TIER_LABELS[car.tier]}</span>
       </div>
       <div class="car-body">
-        <span class="car-cat-tag">${CATEGORY_LABELS[car.category]}</span>
+        <div class="car-cat-row">
+          <span class="car-cat-tag">${CATEGORY_LABELS[car.category]}</span>
+          ${scoreChip(car)}
+        </div>
         <h3 class="car-name">${car.name}</h3>
         <div class="car-meta">
           <span>🧳 <b>${car.trunk}</b></span>
@@ -212,10 +226,10 @@ function applyFilters() {
       const numB = parseInt((b.trunk.match(/\d+/) || [0])[0], 10);
       return numB - numA;
     }
-    // default: rank -> top first, then tier, then name
-    if (a.top !== b.top) return a.top ? -1 : 1;
-    if (tierRank[a.tier] !== tierRank[b.tier])
-      return tierRank[a.tier] - tierRank[b.tier];
+    // default: skóre (viz scripts/score_cars.py) sestupně, při shodě abecedně
+    const scoreA = typeof a.score === "number" ? a.score : -1;
+    const scoreB = typeof b.score === "number" ? b.score : -1;
+    if (scoreA !== scoreB) return scoreB - scoreA;
     return a.name.localeCompare(b.name, "cs");
   });
 
@@ -264,6 +278,36 @@ function render() {
     });
 }
 
+const SCORE_BREAKDOWN_LABELS = [
+  ["reliability", "Spolehlivost", 35],
+  ["budget", "Rozpočet", 30],
+  ["space", "Prostor v kategorii", 15],
+  ["brand", "Preference značky", 20],
+];
+
+function scoreBreakdownBlock(car) {
+  if (typeof car.score !== "number" || !car.scoreBreakdown) return "";
+  const rows = SCORE_BREAKDOWN_LABELS.map(([key, label, weight]) => {
+    const val = car.scoreBreakdown[key] ?? 0;
+    return `
+      <div class="score-row">
+        <div class="score-row-label">${label} <span>(váha ${weight}&thinsp;%)</span></div>
+        <div class="score-bar"><div class="score-bar-fill score-${scoreTier(val)}" style="width:${val}%"></div></div>
+        <div class="score-row-value">${val}</div>
+      </div>`;
+  }).join("");
+  return `
+    <div class="score-box">
+      <div class="score-box-head">
+        <h4>📊 Skóre modelu</h4>
+        <span class="score-total score-${scoreTier(car.score)}">${car.score}<small>/100</small></span>
+      </div>
+      <div class="score-rows">${rows}</div>
+      <p class="score-note">Skóre = spolehlivost (motor, koroze, elektronika) + rozpočtové pásmo + prostor kufru v rámci kategorie + značková preference. Nezohledňuje konkrétní inzeráty ani stav dané kupované ojetiny.</p>
+    </div>
+  `;
+}
+
 function openModal(id) {
   const car = state.cars.find((c) => c.id === id);
   if (!car) return;
@@ -294,6 +338,7 @@ function openModal(id) {
         <div class="modal-stat"><div class="label">Spolehlivost</div><div class="value">${car.reliability}</div></div>
         <div class="modal-stat"><div class="label">Značka</div><div class="value">${car.brand}</div></div>
       </div>
+      ${scoreBreakdownBlock(car)}
       <div class="note-box">${car.note}</div>
       ${car.engineNote ? `<div class="engine-box"><h4>🔧 Motorizace – co vybrat a proč</h4><p>${car.engineNote}</p></div>` : ""}
       <div class="pros-cons">

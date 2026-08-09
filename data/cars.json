@@ -7,7 +7,7 @@
     "brandSlug": "skoda",
     "category": "kombi",
     "tier": "200k",
-    "top": true,
+    "top": false,
     "trunk": "585 l",
     "price": "150–200 tis. Kč (roč. 2006–2010)",
     "reliability": "Velmi dobrá",
@@ -26,7 +26,14 @@
     "bazosQuery": "škoda octavia combi 1.6 benzín",
     "sautoModel": "octavia",
     "engineNote": "V nabídce byly tři motorizace: 1.6 MPI (75 kW, nepřímé vstřikování, rozvodový řemen) je nejjednodušší a nejprověřenější volba – desítky let ověřená technika bez rizika karbonizace z přímého vstřiku. 1.6 FSI (přímé vstřikování) se nedoporučuje, trpí zanášením sacích ventilů karbonem. 1.6/2.0 TSI (od cca 2010) je výkonnější, ale u ročníků před 2012 má často problém s poddimenzovaným napínákem rozvodového řetězu – řetěz se natahuje a v horším případě přeskočí o zub. Pro váš profil (krátké městské trasy) jednoznačně doporučujeme 1.6 MPI: nejnižší riziko poruchy a nejlevnější servis.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Skoda_Octavia_IV_liftback_%28cropped%29.jpg/960px-Skoda_Octavia_IV_liftback_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Skoda_Octavia_IV_liftback_%28cropped%29.jpg/960px-Skoda_Octavia_IV_liftback_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 85,
+    "scoreBreakdown": {
+      "reliability": 91,
+      "budget": 100,
+      "space": 78,
+      "brand": 55
+    }
   },
   {
     "id": "fiat-tipo-kombi",
@@ -55,7 +62,14 @@
     "bazosQuery": "fiat tipo kombi 1.4 benzín",
     "sautoModel": "tipo",
     "engineNote": "Motor 1.4 16V (rodina FIRE/E.torQ) je atmosférický, s nepřímým vstřikováním a rozvodovým řemenem (výměna cca každých 120 000 km / 5 let). Nemá turbo ani přímé vstřikování, takže odpadá riziko karbonizace sacích ventilů i zanášení GPF. Slabším bodem bývá jen hlučnější chod a nižší výkon, mechanicky je ale nenáročný a levný na opravy. Turbo verzi 1.4 T-Jet bychom pro váš profil krátkých městských tras nedoporučovali – přímé vstřikování a turbo znamenají vyšší riziko karbonizace.",
-    "image": null
+    "image": null,
+    "score": 89,
+    "scoreBreakdown": {
+      "reliability": 86,
+      "budget": 100,
+      "space": 62,
+      "brand": 100
+    }
   },
   {
     "id": "toyota-avensis-corolla-verso",
@@ -83,7 +97,14 @@
     "bazosQuery": "toyota avensis kombi benzín",
     "sautoModel": "avensis",
     "engineNote": "Motor 1.8 VVT-i (1ZZ-FE) má rozvodový řetěz, ale ročníky vyrobené před rokem 2005 trpí zvýšenou spotřebou oleje kvůli poddimenzovaným olejovým kanálkům v pístech – vada byla opravena až v roce 2005. Před koupí bezpodmínečně zkontrolujte spotřebu oleje na delší zkušební jízdě, případně hledejte novější kus (po 2005) nebo pozdější motor 1ZR-FE/2ZR-FE, který touto vadou netrpí. Jinak jde o typicky toyotí nenáročný a odolný motor bez turba a bez GPF.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/2011_Toyota_Avensis_in_Aspen_Grey%2C_front_left%2C_06-06-2025.jpg/960px-2011_Toyota_Avensis_in_Aspen_Grey%2C_front_left%2C_06-06-2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/2011_Toyota_Avensis_in_Aspen_Grey%2C_front_left%2C_06-06-2025.jpg/960px-2011_Toyota_Avensis_in_Aspen_Grey%2C_front_left%2C_06-06-2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 80,
+    "scoreBreakdown": {
+      "reliability": 65,
+      "budget": 100,
+      "space": 48,
+      "brand": 100
+    }
   },
   {
     "id": "ford-mondeo-combi",
@@ -110,7 +131,14 @@
     "bazosQuery": "ford mondeo combi 2.0 benzín",
     "sautoModel": "mondeo",
     "engineNote": "Motor 2.0 Duratec pochází z dílny Mazdy a na rozdíl od menších fordích jednotek 1.6/1.8 má rozvodový řetěz místo řemenu – odpadá tak riziko spojené s opomenutou výměnou řemenu. Je atmosférický, s nepřímým vstřikováním, takže bez rizik spojených s karbonizací od přímého vstřiku. Patří mezi nejspolehlivější fordí benzínové motory té doby.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Ford_Mondeo_Turnier_2.0_EcoBlue_ST-Line_%28V%2C_Facelift%29_%E2%80%93_f_18042021.jpg/960px-Ford_Mondeo_Turnier_2.0_EcoBlue_ST-Line_%28V%2C_Facelift%29_%E2%80%93_f_18042021.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Ford_Mondeo_Turnier_2.0_EcoBlue_ST-Line_%28V%2C_Facelift%29_%E2%80%93_f_18042021.jpg/960px-Ford_Mondeo_Turnier_2.0_EcoBlue_ST-Line_%28V%2C_Facelift%29_%E2%80%93_f_18042021.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 91,
+    "scoreBreakdown": {
+      "reliability": 91,
+      "budget": 100,
+      "space": 62,
+      "brand": 100
+    }
   },
   {
     "id": "ford-focus-combi",
@@ -137,7 +165,14 @@
     "bazosQuery": "ford focus combi 1.6 benzín",
     "sautoModel": "focus",
     "engineNote": "Motor 1.6 (rodina Sigma/Duratec Ti-VCT) má rozvodový řemen s intervalem cca 160 000 km – klíčové je mít doloženou výměnu, protože jde o kolizní motor (při přetržení řemenu se ohnou ventily). Nemá hydraulické zdvihátka, takže je potřeba jednou za 150–160 tis. km nechat seřídit ventilové vůle, což majitelé často zanedbávají. Jinak je to jednoduchý atmosférický motor bez turba a bez přímého vstřikování.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/2018_Ford_Focus_ST-Line_X_1.0.jpg/960px-2018_Ford_Focus_ST-Line_X_1.0.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/2018_Ford_Focus_ST-Line_X_1.0.jpg/960px-2018_Ford_Focus_ST-Line_X_1.0.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 82,
+    "scoreBreakdown": {
+      "reliability": 80,
+      "budget": 100,
+      "space": 28,
+      "brand": 100
+    }
   },
   {
     "id": "kia-ceed-hyundai-i30-combi",
@@ -164,7 +199,14 @@
     "bazosQuery": "kia ceed sw benzín",
     "sautoModel": "ceed",
     "engineNote": "V tomto ročníku (2007–2012) šlo většinou ještě o starší motor Beta 1.6 16V s rozvodovým řemenem (interval cca 90–100 tis. km, kolizní motor). Novější přímovstřikovaný Gamma 1.6 GDI dorazil až později (cca od 2011) a v tomto rozpočtu se téměř nevyskytuje. Motor je nenáročný, hlavní riziko je jen zanedbaná výměna řemenu – vyžádejte si doklad o servisu.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/2018_Kia_Ceed_First_Edition_1.4_Front.jpg/960px-2018_Kia_Ceed_First_Edition_1.4_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/2018_Kia_Ceed_First_Edition_1.4_Front.jpg/960px-2018_Kia_Ceed_First_Edition_1.4_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 86,
+    "scoreBreakdown": {
+      "reliability": 82,
+      "budget": 100,
+      "space": 52,
+      "brand": 100
+    }
   },
   {
     "id": "mazda6-kombi",
@@ -191,7 +233,14 @@
     "bazosQuery": "mazda 6 kombi 2.0 benzín",
     "sautoModel": "6",
     "engineNote": "Atmosférický motor 2.0 z rodiny MZR (vyvinutý společně s Fordem, sourozenec Duratecu) má rozvodový řetěz a je bez turba i přímého vstřikování. Patří mezi nejodolnější motory své doby a zvládá vysoké nájezdy bez zásahu do rozvodu – hlavní podmínkou je jen pravidelná výměna oleje.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/2018_Mazda6_Sport_NAV%2B_Diesel_2.2_Front.jpg/960px-2018_Mazda6_Sport_NAV%2B_Diesel_2.2_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/2018_Mazda6_Sport_NAV%2B_Diesel_2.2_Front.jpg/960px-2018_Mazda6_Sport_NAV%2B_Diesel_2.2_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 90,
+    "scoreBreakdown": {
+      "reliability": 97,
+      "budget": 100,
+      "space": 42,
+      "brand": 100
+    }
   },
   {
     "id": "peugeot-308-sw",
@@ -218,7 +267,14 @@
     "bazosQuery": "peugeot 308 sw 1.6 benzín",
     "sautoModel": "308",
     "engineNote": "Starší atmosférický motor 1.6 16V VTi (bez turba, nepřímé vstřikování) je oproti novější přeplňované verzi 1.6 THP jednoznačně bezpečnější volbou. THP totiž trpí karbonizací sacích ventilů a natahováním rozvodového řetězu (v extrémních případech i po 40–50 tis. km), oprava vyjde na 15–50 tis. Kč. U atmosférické 1.6 16V VTi tato rizika odpadají – zaplatíte za to nižším výkonem.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/2022_-_Peugeot_308_III_%28C%29_-_121.jpg/960px-2022_-_Peugeot_308_III_%28C%29_-_121.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/2022_-_Peugeot_308_III_%28C%29_-_121.jpg/960px-2022_-_Peugeot_308_III_%28C%29_-_121.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 79,
+    "scoreBreakdown": {
+      "reliability": 65,
+      "budget": 100,
+      "space": 44,
+      "brand": 100
+    }
   },
   {
     "id": "seat-leon-st",
@@ -245,7 +301,14 @@
     "bazosQuery": "seat leon st 1.6 benzín",
     "sautoModel": "leon",
     "engineNote": "Stejný motor 1.6 MPI jako u Octavie (koncernový EA111, nepřímé vstřikování, rozvodový řemen) – jde o nejjednodušší a nejprověřenější motorizaci VAG koncernu z té doby, bez rizik spojených s přímým vstřikováním nebo turbem.",
-    "image": null
+    "image": null,
+    "score": 89,
+    "scoreBreakdown": {
+      "reliability": 78,
+      "budget": 100,
+      "space": 79,
+      "brand": 100
+    }
   },
   {
     "id": "volvo-v70-v50",
@@ -273,7 +336,14 @@
     "bazosQuery": "volvo v70 2.4 benzín",
     "sautoModel": "v70",
     "engineNote": "Pětiválec 2.4i (B5244) má rozvodový řemen s intervalem 120 000 km – jde o kolizní motor, takže bez doloženého servisu rozvodu byste ho neměli kupovat. Motor je jinak mechanicky odolný, sledovanou slabinou je vyšší spotřeba oleje u starších kusů. Menší 1.8 (u V50) je technicky jednodušší, ale méně výkonný a stále vyžaduje hlídání rozvodového řemene.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/3rd_Volvo_V70_--_09-18-2009.jpg/960px-3rd_Volvo_V70_--_09-18-2009.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/3rd_Volvo_V70_--_09-18-2009.jpg/960px-3rd_Volvo_V70_--_09-18-2009.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 77,
+    "scoreBreakdown": {
+      "reliability": 78,
+      "budget": 100,
+      "space": 1,
+      "brand": 100
+    }
   },
   {
     "id": "skoda-roomster-rapid",
@@ -300,7 +370,14 @@
     "bazosQuery": "škoda roomster 1.2 benzín",
     "sautoModel": "roomster",
     "engineNote": "Motor 1.2 TSI (EA111, tříválec s turbem a přímým vstřikováním) má rozvodový řetěz, jehož napínač byl u kusů vyrobených před polovinou roku 2011 poddimenzovaný – řetěz se natahoval už mezi 30 000 a 100 000 km, v krajním případě přeskočil o zub a poškodil ventily. Od listopadu 2011 je díl posílený (širší řetěz, nová vodítka, lepší napínák). Před koupí bezpodmínečně ověřte, zda byl napínák vyměněn za posílenou verzi, nebo zvolte pozdější ročník.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Skoda_Roomster_front_20091212.jpg/960px-Skoda_Roomster_front_20091212.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Skoda_Roomster_front_20091212.jpg/960px-Skoda_Roomster_front_20091212.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 64,
+    "scoreBreakdown": {
+      "reliability": 65,
+      "budget": 100,
+      "space": 0,
+      "brand": 55
+    }
   },
   {
     "id": "dacia-logan-mcv",
@@ -328,7 +405,14 @@
     "bazosQuery": "dacia logan mcv 1.6 benzín",
     "sautoModel": "logan",
     "engineNote": "Motor 1.6 16V (rodina Renault K4M) je stejný jako u Duster/Dokker – jednoduchý atmosférický motor s rozvodovým řetězem. Napínač řetězu je dobré nechat zkontrolovat kolem 80–100 tis. km, jinak jde o nenáročnou a levnou techniku bez turba a bez GPF.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Dacia_Logan_2023_Front_2_%28cropped%29.jpg/960px-Dacia_Logan_2023_Front_2_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Dacia_Logan_2023_Front_2_%28cropped%29.jpg/960px-Dacia_Logan_2023_Front_2_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 87,
+    "scoreBreakdown": {
+      "reliability": 74,
+      "budget": 100,
+      "space": 72,
+      "brand": 100
+    }
   },
   {
     "id": "renault-megane-grandtour",
@@ -355,7 +439,14 @@
     "bazosQuery": "renault megane grandtour 1.6 benzín",
     "sautoModel": "megane",
     "engineNote": "Stejná motorizace 1.6 16V K4M jako u Duster/Loganu – rozvodový řetěz, kontrola napínače doporučená kolem 80–100 tis. km. Bez turba a přímého vstřikování, takže nehrozí karbonizace ani zanášení GPF.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/2017_Renault_Megane_Dynamique_S_NAV_DC_1.5_Front.jpg/960px-2017_Renault_Megane_Dynamique_S_NAV_DC_1.5_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/2017_Renault_Megane_Dynamique_S_NAV_DC_1.5_Front.jpg/960px-2017_Renault_Megane_Dynamique_S_NAV_DC_1.5_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 86,
+    "scoreBreakdown": {
+      "reliability": 80,
+      "budget": 100,
+      "space": 50,
+      "brand": 100
+    }
   },
   {
     "id": "vw-golf-passat-variant",
@@ -382,7 +473,14 @@
     "bazosQuery": "vw golf variant benzín",
     "sautoModel": "golf",
     "engineNote": "V tomto rozpočtu byste narazili na starší motory 1.4/1.6 (EA111) nebo 2.0 (EA113/EA888) – zásadně upřednostněte atmosférické MPI verze před FSI/TSI kvůli riziku karbonizace a (u 1.2/1.4 TSI) natahování rozvodového řetězu. Realisticky je ale celý tento pár mimo rozpočet ve slušném stavu.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2020_Volkswagen_Golf_Style_1.5_Front.jpg/960px-2020_Volkswagen_Golf_Style_1.5_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2020_Volkswagen_Golf_Style_1.5_Front.jpg/960px-2020_Volkswagen_Golf_Style_1.5_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 62,
+    "scoreBreakdown": {
+      "reliability": 76,
+      "budget": 30,
+      "space": 41,
+      "brand": 100
+    }
   },
   {
     "id": "citroen-c4-c5-tourer",
@@ -410,7 +508,14 @@
     "bazosQuery": "citroen c5 tourer benzín",
     "sautoModel": "c5",
     "engineNote": "Atmosférickým motorům 1.6/2.0 16V (rodina EW) se nevyhýbejte – jsou bez turba, s nepřímým vstřikováním, a i přes vyšší spotřebu oleje u starších kusů patří mezi nejspolehlivější motory PSA koncernu. Přeplňovanému 1,6 THP se ale vyhněte úplně – trpí karbonizací sacích ventilů a natahováním rozvodového řetězu (oprava 15–50 tis. Kč).",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Citro%C3%ABn_C5_2008_Front_%28cropped%29.jpg/960px-Citro%C3%ABn_C5_2008_Front_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Citro%C3%ABn_C5_2008_Front_%28cropped%29.jpg/960px-Citro%C3%ABn_C5_2008_Front_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 73,
+    "scoreBreakdown": {
+      "reliability": 48,
+      "budget": 100,
+      "space": 39,
+      "brand": 100
+    }
   },
   {
     "id": "mazda-premacy-5",
@@ -437,7 +542,14 @@
     "bazosQuery": "mazda premacy benzín",
     "sautoModel": "premacy",
     "engineNote": "Starší atmosférické benzínové motory 1.6/1.8/2.0 (bez turba, nepřímé vstřikování) mají rozvodový řemen – ověřte si servisní historii výměny. Jinak jde o jednoduchou a odolnou techniku bez GPF a bez rizik spojených s přímým vstřikováním.",
-    "image": null
+    "image": null,
+    "score": 91,
+    "scoreBreakdown": {
+      "reliability": 82,
+      "budget": 100,
+      "space": 79,
+      "brand": 100
+    }
   },
   {
     "id": "seat-altea-xl",
@@ -464,7 +576,14 @@
     "bazosQuery": "seat altea xl benzín",
     "sautoModel": "altea",
     "engineNote": "Stejný motor 1.6 MPI jako Octavia/Leon (EA111, nepřímé vstřikování, rozvodový řemen) – jde o nejjednodušší a nejbezpečnější volbu z celé nabídky motorů VAG té doby.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/2007_SEAT_Altea_Reference_TDi_1.9_Front.jpg/960px-2007_SEAT_Altea_Reference_TDi_1.9_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/2007_SEAT_Altea_Reference_TDi_1.9_Front.jpg/960px-2007_SEAT_Altea_Reference_TDi_1.9_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 92,
+    "scoreBreakdown": {
+      "reliability": 78,
+      "budget": 100,
+      "space": 97,
+      "brand": 100
+    }
   },
   {
     "id": "fiat-500l",
@@ -491,7 +610,14 @@
     "bazosQuery": "fiat 500l 1.4 benzín",
     "sautoModel": "500l",
     "engineNote": "Preferujte atmosférický 1.4 16V (FIRE, nepřímé vstřikování, rozvodový řemen) před přeplňovaným 1.4 T-Jet (turbo, přímé vstřikování, vyšší riziko karbonizace při krátkých městských trasách). Motoru 0.9 TwinAir se vyhněte úplně – má nejvíc stížností na spolehlivost turba a rozvodového řetězu.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/2014_Fiat_500L_Lounge_1.4.jpg/960px-2014_Fiat_500L_Lounge_1.4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/2014_Fiat_500L_Lounge_1.4.jpg/960px-2014_Fiat_500L_Lounge_1.4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 88,
+    "scoreBreakdown": {
+      "reliability": 78,
+      "budget": 100,
+      "space": 72,
+      "brand": 100
+    }
   },
   {
     "id": "opel-zafira",
@@ -519,7 +645,14 @@
     "bazosQuery": "opel zafira 7 míst benzín",
     "sautoModel": "zafira",
     "engineNote": "U starších motorů řady Z16XE/X16XEL (do cca 2005) je rozvodový řemen nutné měnit už po 60 000 km – jde o kolizní motor. Novější Z16XER má interval až 150 000 km. Před koupí bezpodmínečně zjistěte přesný kód motoru a ověřte servisní historii rozvodu, protože rozdíl v intervalu je zásadní.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Opel_Zafira_Tourer_2.0_CDTI_Innovation_%28C%29_%E2%80%93_Frontansicht%2C_23._Mai_2013%2C_Heiligenhaus.jpg/960px-Opel_Zafira_Tourer_2.0_CDTI_Innovation_%28C%29_%E2%80%93_Frontansicht%2C_23._Mai_2013%2C_Heiligenhaus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Opel_Zafira_Tourer_2.0_CDTI_Innovation_%28C%29_%E2%80%93_Frontansicht%2C_23._Mai_2013%2C_Heiligenhaus.jpg/960px-Opel_Zafira_Tourer_2.0_CDTI_Innovation_%28C%29_%E2%80%93_Frontansicht%2C_23._Mai_2013%2C_Heiligenhaus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 66,
+    "scoreBreakdown": {
+      "reliability": 46,
+      "budget": 100,
+      "space": 2,
+      "brand": 100
+    }
   },
   {
     "id": "renault-grand-scenic",
@@ -546,7 +679,14 @@
     "bazosQuery": "renault grand scenic benzín",
     "sautoModel": "grand-scenic",
     "engineNote": "Stejná motorizace 1.6 16V K4M jako u Duster/Megane – rozvodový řetěz, doporučená kontrola napínače kolem 80–100 tis. km.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/2019_Renault_Grand_Scenic_Iconic_TCE_1.3.jpg/960px-2019_Renault_Grand_Scenic_Iconic_TCE_1.3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/2019_Renault_Grand_Scenic_Iconic_TCE_1.3.jpg/960px-2019_Renault_Grand_Scenic_Iconic_TCE_1.3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 68,
+    "scoreBreakdown": {
+      "reliability": 46,
+      "budget": 100,
+      "space": 13,
+      "brand": 100
+    }
   },
   {
     "id": "vw-sharan-galaxy-alhambra",
@@ -574,7 +714,14 @@
     "bazosQuery": "vw sharan benzín",
     "sautoModel": "sharan",
     "engineNote": "Benzínové verze bývají obvykle 1.8T/2.0 (přeplňované, u starších generací i s rozvodovým řemenem) – v tomto rozpočtu ale narazíte téměř výhradně na dieselové kusy, benzín je vzácný a najít dobře udržovaný exemplář je náročné.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/2018_Volkswagen_Sharan_SEL_BlueMotion_Technology_2.0.jpg/960px-2018_Volkswagen_Sharan_SEL_BlueMotion_Technology_2.0.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/2018_Volkswagen_Sharan_SEL_BlueMotion_Technology_2.0.jpg/960px-2018_Volkswagen_Sharan_SEL_BlueMotion_Technology_2.0.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 68,
+    "scoreBreakdown": {
+      "reliability": 93,
+      "budget": 30,
+      "space": 44,
+      "brand": 100
+    }
   },
   {
     "id": "dacia-duster1",
@@ -601,7 +748,14 @@
     "bazosQuery": "dacia duster 1.6 benzín",
     "sautoModel": "duster",
     "engineNote": "Motor 1.6 16V (Renault K4M) je jednoduchý atmosférický motor s rozvodovým řetězem bez turba a bez GPF – ideální pro krátké městské trasy. Jediné riziko je napínač řetězu, který doporučujeme nechat zkontrolovat kolem 80–100 tis. km, pak už motor obvykle bez problémů zvládá 250 000+ km.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Dacia_Duster_TCe_130_Extreme_%28III%29_%E2%80%93_f_13102024.jpg/960px-Dacia_Duster_TCe_130_Extreme_%28III%29_%E2%80%93_f_13102024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Dacia_Duster_TCe_130_Extreme_%28III%29_%E2%80%93_f_13102024.jpg/960px-Dacia_Duster_TCe_130_Extreme_%28III%29_%E2%80%93_f_13102024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 96,
+    "scoreBreakdown": {
+      "reliability": 93,
+      "budget": 100,
+      "space": 88,
+      "brand": 100
+    }
   },
   {
     "id": "nissan-qashqai1",
@@ -629,7 +783,14 @@
     "bazosQuery": "nissan qashqai 1.6 benzín",
     "sautoModel": "qashqai",
     "engineNote": "Motor 1.6 16V má bezúdržbový rozvodový řetěz, který je obecně velmi spolehlivý – jen napínače je dobré nechat zkontrolovat kolem 100–150 tis. km. Bez turba a bez přímého vstřikování, takže bez rizika karbonizace.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2024_Nissan_Qashqai_e-Power_IMG_2187.jpg/960px-2024_Nissan_Qashqai_e-Power_IMG_2187.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2024_Nissan_Qashqai_e-Power_IMG_2187.jpg/960px-2024_Nissan_Qashqai_e-Power_IMG_2187.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 92,
+    "scoreBreakdown": {
+      "reliability": 93,
+      "budget": 100,
+      "space": 60,
+      "brand": 100
+    }
   },
   {
     "id": "hyundai-ix35",
@@ -656,7 +817,14 @@
     "bazosQuery": "hyundai ix35 1.6 benzín",
     "sautoModel": "ix35",
     "engineNote": "Motory 1.6/2.0 (rodina Gamma/Nu) mají rozvodový řetěz s variabilním časováním (CVVT) – patří mezi spolehlivější korejské motory té doby, hlavní podmínkou je pravidelná výměna oleje a kontrola hydraulických napínačů. Atmosférické verze bez turba jsou bezpečnější volba než pozdější přeplňované GDI/T-GDI jednotky.",
-    "image": null
+    "image": null,
+    "score": 91,
+    "scoreBreakdown": {
+      "reliability": 82,
+      "budget": 100,
+      "space": 83,
+      "brand": 100
+    }
   },
   {
     "id": "mitsubishi-asx",
@@ -684,7 +852,14 @@
     "bazosQuery": "mitsubishi asx 1.6 benzín",
     "sautoModel": "asx",
     "engineNote": "Motor 1.6 MIVEC (4A92) má rozvodový řetěz a je považován za velmi spolehlivý, atmosférický, bez přímého vstřikování. Patří mezi hlavní důvody, proč se ASX v tomto rozpočtu tak dobře hodnotí – nemá typické neduhy přeplňovaných downsizovaných motorů.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Mitsubishi_ASX_%282019%29_IMG_6615.jpg/960px-Mitsubishi_ASX_%282019%29_IMG_6615.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Mitsubishi_ASX_%282019%29_IMG_6615.jpg/960px-Mitsubishi_ASX_%282019%29_IMG_6615.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 88,
+    "scoreBreakdown": {
+      "reliability": 95,
+      "budget": 100,
+      "space": 35,
+      "brand": 100
+    }
   },
   {
     "id": "suzuki-sx4",
@@ -711,7 +886,14 @@
     "bazosQuery": "suzuki sx4 1.6 benzín",
     "sautoModel": "sx4",
     "engineNote": "Motor 1.6 VVT (M16A) má rozvodový řetěz s unikátním napínačem podobným motocyklovým motorům, který udrží řetěz napnutý i po vypnutí motoru – proto je extrémně tichý a spolehlivý i při vysokých nájezdech, poruchy rozvodu jsou prakticky neznámé. Jedna z nejspolehlivějších motorizací v celém přehledu.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Suzuki_SX4_%283rd_generation%29_1X7A6968.jpg/960px-Suzuki_SX4_%283rd_generation%29_1X7A6968.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Suzuki_SX4_%283rd_generation%29_1X7A6968.jpg/960px-Suzuki_SX4_%283rd_generation%29_1X7A6968.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 84,
+    "scoreBreakdown": {
+      "reliability": 97,
+      "budget": 100,
+      "space": 2,
+      "brand": 100
+    }
   },
   {
     "id": "suzuki-vitara-new",
@@ -736,7 +918,14 @@
     "bazosQuery": "suzuki vitara benzín",
     "sautoModel": "vitara",
     "engineNote": "Aktuální generace už často nabízí přeplňovaný 1.4 Boosterjet s přímým vstřikováním – modernější, ale komplexnější technika. V tomto rozpočtu se k němu ale prakticky nedostanete, cena je zcela mimo dosah.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/2018_Suzuki_Vitara_%28LY%29_S_Turbo_wagon_%282018-11-02%29_01.jpg/960px-2018_Suzuki_Vitara_%28LY%29_S_Turbo_wagon_%282018-11-02%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/2018_Suzuki_Vitara_%28LY%29_S_Turbo_wagon_%282018-11-02%29_01.jpg/960px-2018_Suzuki_Vitara_%28LY%29_S_Turbo_wagon_%282018-11-02%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 69,
+    "scoreBreakdown": {
+      "reliability": 95,
+      "budget": 30,
+      "space": 46,
+      "brand": 100
+    }
   },
   {
     "id": "skoda-yeti",
@@ -763,7 +952,14 @@
     "bazosQuery": "škoda yeti 1.2 benzín",
     "sautoModel": "yeti",
     "engineNote": "Motory 1.2 TSI a 1.4 TSI (EA111) mají rozvodový řetěz se stejnou slabinou jako Roomster/Octavia – u kusů vyrobených před polovinou 2011 hrozí natahování řetězu kvůli poddimenzovanému napínači. Vyžádejte si doklad o kontrole/výměně napínače nebo zvolte pozdější ročník s vylepšeným dílem.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/2011_Skoda_Yeti_S_TSi_1.2_Front.jpg/960px-2011_Skoda_Yeti_S_TSi_1.2_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/2011_Skoda_Yeti_S_TSi_1.2_Front.jpg/960px-2011_Skoda_Yeti_S_TSi_1.2_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 82,
+    "scoreBreakdown": {
+      "reliability": 93,
+      "budget": 100,
+      "space": 58,
+      "brand": 55
+    }
   },
   {
     "id": "subaru-forester",
@@ -773,7 +969,7 @@
     "brandSlug": "subaru",
     "category": "suv",
     "tier": "200k",
-    "top": false,
+    "top": true,
     "trunk": "505 l",
     "price": "kolem 190–200 tis. Kč",
     "reliability": "Velmi dobrá, pohon 4x4 součástí výbavy",
@@ -790,7 +986,14 @@
     "bazosQuery": "subaru forester 2.0 benzín",
     "sautoModel": "forester",
     "engineNote": "Atmosférický motor 2.0 (FB20) má výrobcem deklarovaný bezúdržbový rozvodový řetěz, hlavní slabinou je ale zvýšená spotřeba oleje – při zanedbaných intervalech výměny (doporučeno měnit i častěji než udává výrobce, cca každých 7 500 km) hrozí zadření pístních kroužků. Sledujte hladinu oleje mezi výměnami.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Subaru_Forester_%28SL%29_e-BOXER_DSC_8811.jpg/960px-Subaru_Forester_%28SL%29_e-BOXER_DSC_8811.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Subaru_Forester_%28SL%29_e-BOXER_DSC_8811.jpg/960px-Subaru_Forester_%28SL%29_e-BOXER_DSC_8811.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 98,
+    "scoreBreakdown": {
+      "reliability": 93,
+      "budget": 100,
+      "space": 100,
+      "brand": 100
+    }
   },
   {
     "id": "honda-crv-civic-tourer",
@@ -815,7 +1018,14 @@
     "bazosQuery": "honda cr-v 1.8 benzín",
     "sautoModel": "cr-v",
     "engineNote": "Motor 1.8 i-VTEC (R18A) má úzký a tichý rozvodový řetěz bez zaznamenaných hromadných poruch, nespotřebovává nadměrně olej ani chladicí kapalinu a při pravidelných výměnách oleje (5–10 tis. km) zvládá 250 000–300 000 km bez zásahu. Patří mezi nejspolehlivější benzínové motory v celém přehledu.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Honda_CR-V_e-HEV_Elegance_AWD_%28VI%29_%E2%80%93_f_14072024.jpg/960px-Honda_CR-V_e-HEV_Elegance_AWD_%28VI%29_%E2%80%93_f_14072024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Honda_CR-V_e-HEV_Elegance_AWD_%28VI%29_%E2%80%93_f_14072024.jpg/960px-Honda_CR-V_e-HEV_Elegance_AWD_%28VI%29_%E2%80%93_f_14072024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 71,
+    "scoreBreakdown": {
+      "reliability": 95,
+      "budget": 30,
+      "space": 58,
+      "brand": 100
+    }
   },
   {
     "id": "tucson-sportage-moderni",
@@ -840,7 +1050,14 @@
     "bazosQuery": "hyundai tucson benzín",
     "sautoModel": "tucson",
     "engineNote": "Moderní generace nabízí přímovstřikované motory Gamma/Smartstream (často i s turbem), technicky vyspělejší, ale komplexnější a citlivější na krátké městské trasy (riziko karbonizace a zanášení GPF). V tomto rozpočtu je ale celý model mimo dosah.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/2022_Hyundai_Tucson_Preferred%2C_Front_Right%2C_05-24-2021.jpg/960px-2022_Hyundai_Tucson_Preferred%2C_Front_Right%2C_05-24-2021.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/2022_Hyundai_Tucson_Preferred%2C_Front_Right%2C_05-24-2021.jpg/960px-2022_Hyundai_Tucson_Preferred%2C_Front_Right%2C_05-24-2021.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 76,
+    "scoreBreakdown": {
+      "reliability": 93,
+      "budget": 30,
+      "space": 98,
+      "brand": 100
+    }
   },
   {
     "id": "dacia-dokker",
@@ -868,7 +1085,14 @@
     "bazosQuery": "dacia dokker 1.6 benzín",
     "sautoModel": "dokker",
     "engineNote": "Stejný motor K4M 1.6 16V jako Duster – rozvodový řetěz, doporučená kontrola napínače kolem 80–100 tis. km, jinak nenáročná a levná technika.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/2012_Dacia_Dokker.JPG/960px-2012_Dacia_Dokker.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/2012_Dacia_Dokker.JPG/960px-2012_Dacia_Dokker.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 87,
+    "scoreBreakdown": {
+      "reliability": 63,
+      "budget": 100,
+      "space": 100,
+      "brand": 100
+    }
   },
   {
     "id": "renault-kangoo",
@@ -895,7 +1119,14 @@
     "bazosQuery": "renault kangoo 1.6 benzín",
     "sautoModel": "kangoo",
     "engineNote": "Motor 1.6 16V K4M je stejná osvědčená technika jako u Duster/Loganu – rozvodový řetěz, atmosférický, bez GPF. Starší generace mohou mít i jednodušší 1.4/1.6 8V s rozvodovým řemenem – ověřte si konkrétní motorizaci a servisní historii.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/2024_Renault_Kangoo_in_Mineral_White%2C_front_left%2C_06-12-2025.jpg/960px-2024_Renault_Kangoo_in_Mineral_White%2C_front_left%2C_06-12-2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/2024_Renault_Kangoo_in_Mineral_White%2C_front_left%2C_06-12-2025.jpg/960px-2024_Renault_Kangoo_in_Mineral_White%2C_front_left%2C_06-12-2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 78,
+    "scoreBreakdown": {
+      "reliability": 80,
+      "budget": 100,
+      "space": 0,
+      "brand": 100
+    }
   },
   {
     "id": "partner-tepee-berlingo",
@@ -922,7 +1153,14 @@
     "bazosQuery": "peugeot partner tepee benzín",
     "sautoModel": "partner",
     "engineNote": "Atmosférické motory 1.4/1.6 16V (bez turba, nepřímé vstřikování) jsou bezpečnější volbou než přeplňovaný VTi Turbo/THP. Rozvodový řemen bývá potřeba měnit v intervalu výrobce – vyžádejte si doklad o poslední výměně.",
-    "image": null
+    "image": null,
+    "score": 79,
+    "scoreBreakdown": {
+      "reliability": 78,
+      "budget": 100,
+      "space": 11,
+      "brand": 100
+    }
   },
   {
     "id": "fiat-doblo",
@@ -949,7 +1187,14 @@
     "bazosQuery": "fiat doblo 1.4 benzín",
     "sautoModel": "doblo",
     "engineNote": "Motor 1.4 16V (FIRE) je atmosférický s nepřímým vstřikováním a rozvodovým řemenem (interval cca 120 tis. km / 5 let) – jednoduchá a odolná technika bez rizik spojených s turbem nebo přímým vstřikováním.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Fiat_Doblo_%2822707961995%29.jpg/960px-Fiat_Doblo_%2822707961995%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Fiat_Doblo_%2822707961995%29.jpg/960px-Fiat_Doblo_%2822707961995%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 93,
+    "scoreBreakdown": {
+      "reliability": 82,
+      "budget": 100,
+      "space": 93,
+      "brand": 100
+    }
   },
   {
     "id": "citroen-c4-picasso",
@@ -977,7 +1222,14 @@
     "bazosQuery": "citroen c4 picasso 1.6 benzín",
     "sautoModel": "c4-picasso",
     "engineNote": "Atmosférický 1.6 VTi (bez turba, nepřímé vstřikování) je bezpečnější volba než přeplňovaný 1.6 THP, který trpí karbonizací a natahováním rozvodového řetězu. Staré robotizované převodovky (pokud na ně narazíte) se také raději vyhněte – manuál nebo klasický automat je jistější.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/2015_Citro%C3%ABn_C4_Picasso_%28B7_MY15%29_Exclusive_e-THP_wagon_%282015-06-15%29_01.jpg/960px-2015_Citro%C3%ABn_C4_Picasso_%28B7_MY15%29_Exclusive_e-THP_wagon_%282015-06-15%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/2015_Citro%C3%ABn_C4_Picasso_%28B7_MY15%29_Exclusive_e-THP_wagon_%282015-06-15%29_01.jpg/960px-2015_Citro%C3%ABn_C4_Picasso_%28B7_MY15%29_Exclusive_e-THP_wagon_%282015-06-15%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 91,
+    "scoreBreakdown": {
+      "reliability": 74,
+      "budget": 100,
+      "space": 100,
+      "brand": 100
+    }
   },
   {
     "id": "ford-cmax",
@@ -987,7 +1239,7 @@
     "brandSlug": "ford",
     "category": "mpv",
     "tier": "200k",
-    "top": false,
+    "top": true,
     "trunk": "471 l",
     "price": "100–180 tis. Kč",
     "reliability": "Benzíny jsou u Fordu elita ve spolehlivosti",
@@ -1004,7 +1256,14 @@
     "bazosQuery": "ford c-max 1.8 benzín",
     "sautoModel": "c-max",
     "engineNote": "Pro těžší karoserii C-Maxu doporučujeme raději 1.8 nebo 2.0 Duratec před slabším 1.6 – u větších motorů (1.8/2.0) je typicky rozvodový řetěz (odvozeno od Mazdy), zatímco menší 1.6 Sigma/Ti-VCT má rozvodový řemen s intervalem 160 tis. km a navíc vyžaduje pravidelné seřizování ventilových vůlí.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Ford_C-Max_1.6_TDCi_Trend_%28II%29_%E2%80%93_Frontansicht_%281%29%2C_30._Juli_2011%2C_Mettmann.jpg/960px-Ford_C-Max_1.6_TDCi_Trend_%28II%29_%E2%80%93_Frontansicht_%281%29%2C_30._Juli_2011%2C_Mettmann.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Ford_C-Max_1.6_TDCi_Trend_%28II%29_%E2%80%93_Frontansicht_%281%29%2C_30._Juli_2011%2C_Mettmann.jpg/960px-Ford_C-Max_1.6_TDCi_Trend_%28II%29_%E2%80%93_Frontansicht_%281%29%2C_30._Juli_2011%2C_Mettmann.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 97,
+    "scoreBreakdown": {
+      "reliability": 95,
+      "budget": 100,
+      "space": 92,
+      "brand": 100
+    }
   },
   {
     "id": "ford-smax",
@@ -1030,7 +1289,14 @@
     "bazosQuery": "ford s-max benzín",
     "sautoModel": "s-max",
     "engineNote": "Benzínové verze bývají 1.8/2.0 Duratec s rozvodovým řetězem, ale na trhu v tomto rozpočtu naprosto převažují diesely – najít dobře udržovaný benzín je náročné.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/2018_Ford_S-Max_Vignale_TDCi_2.0.jpg/960px-2018_Ford_S-Max_Vignale_TDCi_2.0.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/2018_Ford_S-Max_Vignale_TDCi_2.0.jpg/960px-2018_Ford_S-Max_Vignale_TDCi_2.0.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 62,
+    "scoreBreakdown": {
+      "reliability": 78,
+      "budget": 30,
+      "space": 39,
+      "brand": 100
+    }
   },
   {
     "id": "kia-carens",
@@ -1057,7 +1323,14 @@
     "bazosQuery": "kia carens benzín",
     "sautoModel": "carens",
     "engineNote": "V tomto ročníku šlo většinou o starší motor Beta 1.6/2.0 16V s rozvodovým řemenem (kolizní motor, interval cca 90–100 tis. km) – před koupí ověřte doklad o výměně.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/2016_Kia_Rondo_LX_Value_in_Sterling_Metallic%2C_Front_Right%2C_05-18-2023.jpg/960px-2016_Kia_Rondo_LX_Value_in_Sterling_Metallic%2C_Front_Right%2C_05-18-2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/2016_Kia_Rondo_LX_Value_in_Sterling_Metallic%2C_Front_Right%2C_05-18-2023.jpg/960px-2016_Kia_Rondo_LX_Value_in_Sterling_Metallic%2C_Front_Right%2C_05-18-2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 78,
+    "scoreBreakdown": {
+      "reliability": 80,
+      "budget": 100,
+      "space": 0,
+      "brand": 100
+    }
   },
   {
     "id": "toyota-verso",
@@ -1084,7 +1357,14 @@
     "bazosQuery": "toyota verso benzín",
     "sautoModel": "verso",
     "engineNote": "Sdílí základ i motorizaci s Corolla Verso/Avensis (1.8 VVT-i, 1ZZ-FE) – stejně jako u Avensis platí, že starší kusy (před 2005) mohou mít zvýšenou spotřebu oleje kvůli konstrukční vadě pístních kroužků. Preferujte novější ročník nebo si při zkušební jízdě ověřte spotřebu oleje.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Toyota_Verso_20090614_front.JPG/960px-Toyota_Verso_20090614_front.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Toyota_Verso_20090614_front.JPG/960px-Toyota_Verso_20090614_front.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 83,
+    "scoreBreakdown": {
+      "reliability": 93,
+      "budget": 100,
+      "space": 3,
+      "brand": 100
+    }
   },
   {
     "id": "mitsubishi-outlander",
@@ -1111,7 +1391,14 @@
     "bazosQuery": "mitsubishi outlander 2.4 benzín",
     "sautoModel": "outlander",
     "engineNote": "Starší benzínový motor 2.4 (4B12) má rozvodový řetěz a je typicky japonsky odolný, hlavní nevýhodou je vyšší spotřeba paliva u těžšího SUV. Bez turba a bez přímého vstřikování, takže bez rizik karbonizace.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/2025_Mitsubishi_Outlander_PHEV_%28fourth_generation%29_IMG_3129.jpg/960px-2025_Mitsubishi_Outlander_PHEV_%28fourth_generation%29_IMG_3129.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/2025_Mitsubishi_Outlander_PHEV_%28fourth_generation%29_IMG_3129.jpg/960px-2025_Mitsubishi_Outlander_PHEV_%28fourth_generation%29_IMG_3129.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 95,
+    "scoreBreakdown": {
+      "reliability": 97,
+      "budget": 100,
+      "space": 76,
+      "brand": 100
+    }
   },
   {
     "id": "suzuki-grand-vitara",
@@ -1138,7 +1425,14 @@
     "bazosQuery": "suzuki grand vitara 2.0 benzín",
     "sautoModel": "grand-vitara",
     "engineNote": "Atmosférický motor 2.0 (J20A) má rozvodový řemen s intervalem cca 100 tis. km – jednoduchá technika bez turba, o něco hlučnější a náročnější na spotřebu při vyšších otáčkách, ale mechanicky nenáročná.",
-    "image": null
+    "image": null,
+    "score": 78,
+    "scoreBreakdown": {
+      "reliability": 67,
+      "budget": 100,
+      "space": 31,
+      "brand": 100
+    }
   },
   {
     "id": "lada-niva",
@@ -1166,7 +1460,14 @@
     "bazosQuery": "lada niva 1.7 benzín",
     "sautoModel": "niva",
     "engineNote": "Motor 1.7i (odvozený z Fiatu, injekční verze) má rozvodový řetěz, který podle zkušeností majitelů vydrží statisíce kilometrů i při zanedbané údržbě. Jde o extrémně jednoduchou a odolnou techniku – starší karburátorové verze jsou ještě jednodušší (bez elektroniky), ale hůř se u nich shání náhradní díly a splňují nižší emisní normy.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/1987_Lada_Niva_1600.jpg/960px-1987_Lada_Niva_1600.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/1987_Lada_Niva_1600.jpg/960px-1987_Lada_Niva_1600.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 78,
+    "scoreBreakdown": {
+      "reliability": 80,
+      "budget": 100,
+      "space": 0,
+      "brand": 100
+    }
   },
   {
     "id": "toyota-auris-touring",
@@ -1192,7 +1493,14 @@
     "bazosQuery": "toyota auris touring sports 1.6 benzín",
     "sautoModel": "auris",
     "engineNote": "Novější motory 1.6/1.8 Valvematic (typicky 1ZR-FAE/2ZR-FAE) už nemají problém se spotřebou oleje jako starší 1ZZ-FE – jde o moderní, ale stále atmosférické (bez turba) a spolehlivé motory s rozvodovým řetězem.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Toyota_Auris_2.0_D-4D_Executive_%28II%29_%E2%80%93_Frontansicht%2C_1._Juni_2013%2C_D%C3%BCsseldorf.jpg/960px-Toyota_Auris_2.0_D-4D_Executive_%28II%29_%E2%80%93_Frontansicht%2C_1._Juni_2013%2C_D%C3%BCsseldorf.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Toyota_Auris_2.0_D-4D_Executive_%28II%29_%E2%80%93_Frontansicht%2C_1._Juni_2013%2C_D%C3%BCsseldorf.jpg/960px-Toyota_Auris_2.0_D-4D_Executive_%28II%29_%E2%80%93_Frontansicht%2C_1._Juni_2013%2C_D%C3%BCsseldorf.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 70,
+    "scoreBreakdown": {
+      "reliability": 95,
+      "budget": 30,
+      "space": 53,
+      "brand": 100
+    }
   },
   {
     "id": "opel-astra-combi",
@@ -1219,7 +1527,14 @@
     "bazosQuery": "opel astra combi 1.4 benzín",
     "sautoModel": "astra",
     "engineNote": "Stejná rodina motorů jako u Zafiry – u starších kódů (X16XEL, Z16XE, do cca 2005) je rozvodový řemen nutné měnit už po 60 000 km, u novějších (Z16XER/A16XER) až po 150 000 km. Bezpodmínečně ověřte konkrétní kód motoru a servisní historii rozvodu.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Opel_Astra_1.2_Turbo_Ultimate_%28L%29_%E2%80%93_f_13122024.jpg/960px-Opel_Astra_1.2_Turbo_Ultimate_%28L%29_%E2%80%93_f_13122024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Opel_Astra_1.2_Turbo_Ultimate_%28L%29_%E2%80%93_f_13122024.jpg/960px-Opel_Astra_1.2_Turbo_Ultimate_%28L%29_%E2%80%93_f_13122024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 73,
+    "scoreBreakdown": {
+      "reliability": 48,
+      "budget": 100,
+      "space": 39,
+      "brand": 100
+    }
   },
   {
     "id": "opel-insignia-combi",
@@ -1244,7 +1559,14 @@
     "bazosQuery": "opel insignia combi benzín",
     "sautoModel": "insignia",
     "engineNote": "Novější motory řady Family1/Ecotec (1.6/1.8) mají prodloužený interval rozvodového řemene až 150 000 km – bezpečnější volba než starší generace. Auto je ale ve slušném stavu spíš nad rozpočtem.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Opel_Insignia_Sports_Tourer_1.5_DIT_Innovation_%28B%29_%E2%80%93_Frontansicht%2C_12._Mai_2017%2C_D%C3%BCsseldorf.jpg/960px-Opel_Insignia_Sports_Tourer_1.5_DIT_Innovation_%28B%29_%E2%80%93_Frontansicht%2C_12._Mai_2017%2C_D%C3%BCsseldorf.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Opel_Insignia_Sports_Tourer_1.5_DIT_Innovation_%28B%29_%E2%80%93_Frontansicht%2C_12._Mai_2017%2C_D%C3%BCsseldorf.jpg/960px-Opel_Insignia_Sports_Tourer_1.5_DIT_Innovation_%28B%29_%E2%80%93_Frontansicht%2C_12._Mai_2017%2C_D%C3%BCsseldorf.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 65,
+    "scoreBreakdown": {
+      "reliability": 78,
+      "budget": 30,
+      "space": 57,
+      "brand": 100
+    }
   },
   {
     "id": "skoda-superb-combi",
@@ -1269,7 +1591,14 @@
     "bazosQuery": "škoda superb combi benzín",
     "sautoModel": "superb",
     "engineNote": "U první generace (2001–2008) byste narazili hlavně na motory 1.8T/2.0 FSI (EA113) – přímé vstřikování s rizikem karbonizace sacích ventilů. Bezpečnější volbou by byl atmosférický 2.0 MPI, pokud se najde, ale celé auto je v tomto rozpočtu prakticky nedostupné.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Skoda_Superb_L%26K_%28IV%29_%E2%80%93_f_12042026.jpg/960px-Skoda_Superb_L%26K_%28IV%29_%E2%80%93_f_12042026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Skoda_Superb_L%26K_%28IV%29_%E2%80%93_f_12042026.jpg/960px-Skoda_Superb_L%26K_%28IV%29_%E2%80%93_f_12042026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 67,
+    "scoreBreakdown": {
+      "reliability": 91,
+      "budget": 30,
+      "space": 100,
+      "brand": 55
+    }
   },
   {
     "id": "hyundai-i40-combi",
@@ -1295,7 +1624,14 @@
     "bazosQuery": "hyundai i40 combi benzín",
     "sautoModel": "i40",
     "engineNote": "Benzínový motor 1.6/2.0 GDI (přímé vstřikování) je modernější, ale citlivější na krátké městské trasy kvůli riziku karbonizace sacích ventilů. Na trhu navíc benzín silně ustupuje naftě – většina nabídky jsou diesely.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/2012-2015_Hyundai_i40_%28VF2%29_Active_2.0_sedan_%282018-10-12%29_01.jpg/960px-2012-2015_Hyundai_i40_%28VF2%29_Active_2.0_sedan_%282018-10-12%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/2012-2015_Hyundai_i40_%28VF2%29_Active_2.0_sedan_%282018-10-12%29_01.jpg/960px-2012-2015_Hyundai_i40_%28VF2%29_Active_2.0_sedan_%282018-10-12%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 87,
+    "scoreBreakdown": {
+      "reliability": 78,
+      "budget": 100,
+      "space": 63,
+      "brand": 100
+    }
   },
   {
     "id": "chevrolet-daewoo-lacetti",
@@ -1321,7 +1657,14 @@
     "bazosQuery": "daewoo lacetti kombi benzín",
     "sautoModel": "lacetti",
     "engineNote": "Motor 1.4/1.6 (F14D3/F16D3) má rozvodový řemen s poměrně krátkým intervalem výměny (cca 60 000 km) – jde o kolizní motor, takže bez dokladu o pravidelné výměně hrozí ohnuté ventily. Motor má i další slabiny (netěsnící víko hlavy, citlivé vstřikovače), proto je to spíš nouzová/přechodná volba.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/GM_Daewoo_Lacetti_5X_J200_Poly_Silver_%281%29.jpg/960px-GM_Daewoo_Lacetti_5X_J200_Poly_Silver_%281%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/GM_Daewoo_Lacetti_5X_J200_Poly_Silver_%281%29.jpg/960px-GM_Daewoo_Lacetti_5X_J200_Poly_Silver_%281%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 67,
+    "scoreBreakdown": {
+      "reliability": 46,
+      "budget": 100,
+      "space": 7,
+      "brand": 100
+    }
   },
   {
     "id": "octavia3-14tsi-ea211",
@@ -1331,7 +1674,7 @@
     "brandSlug": "skoda",
     "category": "kombi",
     "tier": "280k",
-    "top": true,
+    "top": false,
     "trunk": "590 l",
     "price": "cca 280–320 tis. Kč",
     "reliability": "Velmi dobrá – vyřešený problém s natahaným řetězem oproti EA111",
@@ -1348,7 +1691,14 @@
     "bazosQuery": "škoda octavia 3 combi 1.4 tsi benzín",
     "sautoModel": "octavia",
     "engineNote": "Motor 1.4 TSI EA211 (na rozdíl od staršího EA111) má vyřešený problém s natahováním rozvodového řetězu – nová generace přinesla robustnější napínač i vedení řetězu. Má přímé vstřikování a u ročníků po cca 2017/2018 i GPF, takže se hodí spíš pro časté delší/dálniční jízdy, které filtr pravidelně vypálí. Pro čistě krátké městské trasy zvažte raději 1.6 MPI z předchozí generace nebo přímo 1.6 MPI Octavii III (viz níže).",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Skoda_Octavia_IV_liftback_%28cropped%29.jpg/960px-Skoda_Octavia_IV_liftback_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Skoda_Octavia_IV_liftback_%28cropped%29.jpg/960px-Skoda_Octavia_IV_liftback_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 79,
+    "scoreBreakdown": {
+      "reliability": 93,
+      "budget": 78,
+      "space": 80,
+      "brand": 55
+    }
   },
   {
     "id": "octavia3-16mpi",
@@ -1374,7 +1724,14 @@
     "bazosQuery": "škoda octavia 3 combi 1.6 mpi benzín",
     "sautoModel": "octavia",
     "engineNote": "Motor 1.6 MPI je v rámci třetí generace Octavie nejjednodušší volba – nepřímé vstřikování, atmosférický, bez GPF (nepotřebuje ho, protože bez přímého vstřiku nevzniká tolik pevných částic). Ideální právě pro váš profil krátkých městských tras, kde by se GPF u přeplňovaných TSI motorů nestíhal pravidelně vypalovat.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Skoda_Octavia_IV_liftback_%28cropped%29.jpg/960px-Skoda_Octavia_IV_liftback_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Skoda_Octavia_IV_liftback_%28cropped%29.jpg/960px-Skoda_Octavia_IV_liftback_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 70,
+    "scoreBreakdown": {
+      "reliability": 67,
+      "budget": 78,
+      "space": 80,
+      "brand": 55
+    }
   },
   {
     "id": "duster2-sce",
@@ -1400,7 +1757,14 @@
     "bazosQuery": "dacia duster 2 1.6 sce benzín",
     "sautoModel": "duster",
     "engineNote": "Motor 1.6 SCe je atmosférický s nepřímým vstřikováním (na rozdíl od přeplňovaného TCe) – nemá GPF a je tak bezpečnější volbou pro krátké městské trasy. Výkonem je slabší než přeplňované verze, ale mechanicky nejjednodušší a nejméně náchylný na karbonizaci.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Dacia_Duster_TCe_130_Extreme_%28III%29_%E2%80%93_f_13102024.jpg/960px-Dacia_Duster_TCe_130_Extreme_%28III%29_%E2%80%93_f_13102024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Dacia_Duster_TCe_130_Extreme_%28III%29_%E2%80%93_f_13102024.jpg/960px-Dacia_Duster_TCe_130_Extreme_%28III%29_%E2%80%93_f_13102024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 83,
+    "scoreBreakdown": {
+      "reliability": 80,
+      "budget": 78,
+      "space": 75,
+      "brand": 100
+    }
   },
   {
     "id": "octavia3-duster2-evo-avoid",
@@ -1426,6 +1790,13 @@
     "bazosQuery": "škoda octavia 3 1.0 tsi benzín",
     "sautoModel": "octavia",
     "engineNote": "Nejnovější motory 1.0–1.5 TSI/TCe EVO mají přímé vstřikování a povinný GPF (filtr pevných částic) – ten potřebuje pravidelně dosáhnout vyšších otáček/teplot na delší jízdě, aby se sám vypálil. Při výhradně krátkých městských trasách (váš hlavní profil) hrozí zanášení GPF i karbonizace/ředění oleje palivem u downsizovaných přeplňovaných motorů. Pro váš profil proto tuto motorizaci nedoporučujeme.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Skoda_Octavia_IV_liftback_%28cropped%29.jpg/960px-Skoda_Octavia_IV_liftback_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Skoda_Octavia_IV_liftback_%28cropped%29.jpg/960px-Skoda_Octavia_IV_liftback_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "score": 31,
+    "scoreBreakdown": {
+      "reliability": 44,
+      "budget": 8,
+      "space": 14,
+      "brand": 55
+    }
   }
 ]
