@@ -96,16 +96,21 @@ async function fetchWikiThumb(title) {
   }
 }
 
+// Spodni cenova hranice pro odkazy "aktualni nabidka" - vyrazuje velmi levne
+// (typicky havarovane/nepojizdne/na dily) inzeraty. Stejna hodnota se pouziva
+// i ve scripts/scrape_bazos.py pro zive stahovane inzeraty v detailu auta.
+const MIN_PRICE = 50000;
+
 function bazosUrl(car) {
   const cenado = car.tier === "280k" || car.tier === "avoid" ? 350000 : 200000;
   const q = encodeURIComponent(car.bazosQuery);
-  return `https://auto.bazos.cz/?hledat=${q}&hlokalita=&humkreis=25&cenaod=&cenado=${cenado}&Submit=Hled%C3%A1n%C3%AD`;
+  return `https://auto.bazos.cz/?hledat=${q}&hlokalita=&humkreis=25&cenaod=${MIN_PRICE}&cenado=${cenado}&Submit=Hled%C3%A1n%C3%AD`;
 }
 
 function sautoUrl(car) {
   const cenado = car.tier === "280k" || car.tier === "avoid" ? 350000 : 200000;
   const modelPart = car.sautoModel ? `/${encodeURIComponent(car.sautoModel)}` : "";
-  return `https://www.sauto.cz/inzerce/osobni/${car.brandSlug}${modelPart}?cena-do=${cenado}&palivo=benzin`;
+  return `https://www.sauto.cz/inzerce/osobni/${car.brandSlug}${modelPart}?cena-do=${cenado}&cena-od=${MIN_PRICE}&palivo=benzin`;
 }
 
 function tierClass(tier) {
@@ -279,10 +284,9 @@ function render() {
 }
 
 const SCORE_BREAKDOWN_LABELS = [
-  ["reliability", "Spolehlivost", 35],
-  ["budget", "Rozpočet", 30],
-  ["space", "Prostor v kategorii", 15],
-  ["brand", "Preference značky", 20],
+  ["reliability", "Spolehlivost", 50],
+  ["space", "Prostor v kategorii", 20],
+  ["brand", "Preference značky", 30],
 ];
 
 function scoreBreakdownBlock(car) {
@@ -303,7 +307,7 @@ function scoreBreakdownBlock(car) {
         <span class="score-total score-${scoreTier(car.score)}">${car.score}<small>/100</small></span>
       </div>
       <div class="score-rows">${rows}</div>
-      <p class="score-note">Skóre = spolehlivost (motor, koroze, elektronika) + rozpočtové pásmo + prostor kufru v rámci kategorie + značková preference. Nezohledňuje konkrétní inzeráty ani stav dané kupované ojetiny.</p>
+      <p class="score-note">Skóre popisuje vlastnosti auta (spolehlivost, prostor kufru v rámci kategorie, značková preference) – záměrně nezahrnuje pořizovací cenu, protože ta není vlastností auta, ale konkrétního inzerátu. Rozpočet vidíte zvlášť jako štítek u karty a lze podle něj filtrovat nahoře. Skóre nezohledňuje konkrétní inzeráty ani stav dané kupované ojetiny.</p>
     </div>
   `;
 }

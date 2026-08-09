@@ -1,26 +1,29 @@
 #!/usr/bin/env python3
 """
 Spocita transparentni skore 0-100 pro kazde auto v data/cars.json a ulozi
-ho do pole "score". Skore je vazeny soucet ctyr slozek:
+ho do pole "score". Skore je vazeny soucet TRI slozek popisujicich
+VLASTNOSTI auta - pořizovaci cena zaměrně NENI soucasti skore, protoze
+neni vlastnosti auta jako takoveho (jde o promenlivy udaj konkretniho
+inzeratu/trhu, ne o parametr modelu). Rozpocet zustava zobrazeny zvlast -
+jako tier badge na karte ("do 200 tis. Kc" / "280-320 tis. Kc" / ...) a
+jako filtrovaci pilulky nahore, takze si ho muzete kdykoli sami omezit.
 
-  35 % spolehlivost   - odvozeno z textoveho pole "reliability" (klicova
+  50 % spolehlivost   - odvozeno z textoveho pole "reliability" (klicova
                          slova) + bonus/malus podle rizikovych/pozitivnich
                          frazi v "pros"/"cons" (napinak retezu, koroze,
                          elektronika, bezudrzbovy rozvod, bez turba...)
-  30 % rozpocet        - podle pole "tier": do 200 tis. = 100 b.,
-                         280-320 tis. = 78 b., nad rozpoctem = 30 b.,
-                         nedoporuceno (avoid) = 8 b.
-  15 % prostor          - kufr (litry, "na sedadla", ne sklopeno) normalizovany
+  20 % prostor          - kufr (litry, "na sedadla", ne sklopeno) normalizovany
                          v ramci kategorie (kombi/mpv/suv/uzitkove), aby se
                          SUV neporovnavalo s velkym MPV
-  20 % znackova preference - vychozi 100 b. pro vsechny znacky; Skoda ma
+  30 % znackova preference - vychozi 100 b. pro vsechny znacky; Skoda ma
                          (na zaklade explicitniho pozadavku uzivatele, ze je
                          pro nej az posledni volba) malus na 55 b. Zmente
                          BRAND_PREFERENCE nize, pokud se preference zmeni.
 
-Auta s tier == "avoid" nikdy nedostanou znacku TOP bez ohledu na skore.
-Top 3 auta s nejvyssim skore (a tier != avoid) dostanou "top": true,
-zbytek "top": false - nahrazuje drivejsi rucni vyber.
+Znacku TOP (top 3 podle skore) mohou dostat jen auta v realnem rozpoctu
+(tier "200k" nebo "280k") - auto nad rozpoctem nebo s tier "avoid" se
+nikdy neoznaci jako TOP doporuceni, bez ohledu na to, jak dobre skoruje
+na vlastnostech, protoze si ho reálně nekoupite.
 
 Spustit:
     python3 scripts/score_cars.py
@@ -32,18 +35,14 @@ import unicodedata
 CARS_PATH = "data/cars.json"
 
 WEIGHTS = {
-    "reliability": 0.35,
-    "budget": 0.30,
-    "space": 0.15,
-    "brand": 0.20,
+    "reliability": 0.50,
+    "space": 0.20,
+    "brand": 0.30,
 }
 
-TIER_SCORE = {
-    "200k": 100,
-    "280k": 78,
-    "vyrazeno": 30,
-    "avoid": 8,
-}
+# Tier, ktery je eligible pro znacku TOP (realny rozpocet). "vyrazeno" a
+# "avoid" jsou z TOP vyrazeny vzdy, i kdyby mely nejvyssi skore vlastnosti.
+TOP_ELIGIBLE_TIERS = {"200k", "280k"}
 
 # Znackova preference uzivatele. 100 = neutralni. Upravte podle libosti.
 BRAND_PREFERENCE = {
@@ -132,7 +131,6 @@ def main():
 
     for car in cars:
         rel = reliability_score(car)
-        budget = TIER_SCORE.get(car["tier"], 50)
 
         t = car.pop("_trunk_l")
         if t is None:
@@ -145,7 +143,6 @@ def main():
 
         total = (
             WEIGHTS["reliability"] * rel
-            + WEIGHTS["budget"] * budget
             + WEIGHTS["space"] * space
             + WEIGHTS["brand"] * brand
         )
@@ -154,13 +151,12 @@ def main():
         car["score"] = total
         car["scoreBreakdown"] = {
             "reliability": rel,
-            "budget": budget,
             "space": space,
             "brand": brand,
         }
 
-    # TOP 3 podle skore, tier != avoid
-    eligible = [c for c in cars if c["tier"] != "avoid"]
+    # TOP 3 podle skore, jen mezi auty v realnem rozpoctu
+    eligible = [c for c in cars if c["tier"] in TOP_ELIGIBLE_TIERS]
     eligible.sort(key=lambda c: c["score"], reverse=True)
     top_ids = {c["id"] for c in eligible[:3]}
     for car in cars:

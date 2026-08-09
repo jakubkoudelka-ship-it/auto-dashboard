@@ -54,6 +54,12 @@ HEADERS = {
 MAX_LISTINGS_PER_CAR = 8
 MAX_RAW_ITEMS_TO_SCAN = 40  # kolik prvnich vysledku z vypisu vubec projit pred filtrovanim
 
+# Spodni cenova hranice - vyrazuje velmi levne inzeraty (typicky havarovane,
+# nepojizdne, "na dily" nebo jinak podezrele stare kusy), ktere nechceme
+# v prehledu vubec videt. Pouziva se jak primo v URL dotazu na bazos.cz
+# (parametr cenaod), tak jako zalozni filtr pri zpracovani vysledku.
+MIN_PRICE = 50000
+
 # Slova, ktera jasne znaci naftovy motor -> vyradit, protoze cely dashboard je jen pro benzin
 DIESEL_KEYWORDS = [
     "tdi", "dci", "cdti", "hdi", "crdi", "jtd", "multijet", "d4d",
@@ -121,12 +127,12 @@ def classify_listing(title: str, target: str):
     return target in found
 
 
-def bazos_search_url(query: str, cena_do: int) -> str:
+def bazos_search_url(query: str, cena_do: int, cena_od: int = MIN_PRICE) -> str:
     """Sestavi URL pro standardni vyhledavaci formular na *.bazos.cz."""
     q = quote(query)
     return (
         f"https://auto.bazos.cz/?hledat={q}&hlokalita=&humkreis=25"
-        f"&cenaod=&cenado={cena_do}&Submit=Hled%C3%A1n%C3%AD"
+        f"&cenaod={cena_od}&cenado={cena_do}&Submit=Hled%C3%A1n%C3%AD"
     )
 
 
@@ -210,6 +216,8 @@ def filter_and_cap_listings(listings, car: dict):
     for item in listings:
         if not keyword_match(item["title"], car):
             continue  # nadpis vubec nezminuje znacku/model -> nejspis promo inzerat jineho auta
+        if item.get("price") is not None and item["price"] < MIN_PRICE:
+            continue  # podezrele levne (havarovane/na dily) -> vyradit
         match = classify_listing(item["title"], target)
         if match is False:
             continue  # jasny nesoulad motorizace -> vyradit z vypisu
