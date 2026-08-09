@@ -7,9 +7,10 @@ node_modules/
 .~lock*
 *-log.txt
 *-log2.txt
+finish-log.txt
+cleanup-*.command
+cleanup-log*.txt
 check-github-setup*.command
-push-diag.command
-push-ssh.command
-push-to-github.command
-cleanup-push.command
-push-log.txt
+push-*.command
+push-*.txt
+finish-cleanup.command
