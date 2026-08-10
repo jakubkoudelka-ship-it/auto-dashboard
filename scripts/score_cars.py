@@ -32,13 +32,18 @@ nahore, takze si ho muzete kdykoli sami omezit.
                             pozadavek uzivatele.
   25 % prostor (kufr)     - objem zavazadloveho prostoru (litry, "na
                             sedadla", tedy nesklopeno - realny uzitny prostor
-                            pri plne obsazenem aute) normalizovany GLOBALNE
-                            napric vsemi auty (ne po kategoriich - puvodni
-                            normalizace po kategoriich davala matouci vysledky,
-                            protoze kategorie "mpv" mixuje 5mistne a 7mistne
-                            vozy a 7mistne maji s obsazenymi sedadly male
-                            kufry, coz uměle nafukovalo skore malych MPV
-                            oproti objemnejsim kombi).
+                            pri plne obsazenem aute) normalizovany v ramci
+                            "prostorove skupiny" (viz space_group()): kombi,
+                            suv, uzitkove zvlast, "mpv" navic rozdelene na
+                            mpv-5 a mpv-7 podle poctu mist. Globalni
+                            normalizace napric vsemi auty (vyzkousena drive)
+                            byla zamitnuta, protoze umoznovala velkym
+                            uzitkovym dodavkam preskocit vsechny ostatni
+                            kategorie jen diky obrovskemu kufru, i kdyz jsou
+                            jinak nesrovnatelne (jiny ucel vozu). Deleni "mpv"
+                            na 5- a 7-mistne resi puvodni problem (7mistne
+                            MPV s malym kufrem by jinak umele tahaly dolu
+                            skore normalnich 5mistnych MPV v teze kategorii).
   10 % rok vyroby         - reprezentativni rok generace/motorizace (viz
                             YEAR_DATA), normalizovano globalne napric vsemi
                             auty (novejsi = vyssi skore). Nahrazuje puvodni
@@ -120,7 +125,8 @@ CONSUMPTION_DATA = {
     "fiat-500l": 6.2,
     "opel-zafira": 7.8,
     "renault-grand-scenic": 7.2,
-    "vw-sharan-galaxy-alhambra": 8.7,
+    "vw-sharan-galaxy": 8.7,
+    "seat-alhambra": 8.7,
     "dacia-duster1": 7.5,
     "nissan-qashqai1": 7.2,
     "hyundai-ix35": 8.0,
@@ -190,7 +196,8 @@ NCAP_DATA = {
     "fiat-500l": (5, 2013),
     "opel-zafira": (5, 2011),
     "renault-grand-scenic": (5, 2009),
-    "vw-sharan-galaxy-alhambra": (5, 2011),
+    "vw-sharan-galaxy": (5, 2011),
+    "seat-alhambra": (5, 2011),
     "dacia-duster1": (3, 2011),
     "nissan-qashqai1": (5, 2007),
     "hyundai-ix35": (5, 2010),
@@ -260,7 +267,8 @@ YEAR_DATA = {
     "fiat-500l": 2013,
     "opel-zafira": 2008,
     "renault-grand-scenic": 2008,
-    "vw-sharan-galaxy-alhambra": 2012,
+    "vw-sharan-galaxy": 2012,
+    "seat-alhambra": 2012,
     "dacia-duster1": 2013,
     "nissan-qashqai1": 2012,
     "hyundai-ix35": 2012,
@@ -393,19 +401,43 @@ def parse_trunk(trunk_str):
     return nums[0] if nums else None
 
 
+# Auta v kategorii "mpv", ktera jsou standardne 7-mista (i kdyz to nazev
+# nemusi rikat doslova, napr. "VW Sharan / Ford Galaxy / Seat Alhambra").
+# Pouziva se pro rozdeleni na mpv-5/mpv-7 v space_group() - viz tam.
+SEVEN_SEAT_MPV_IDS = {
+    "opel-zafira", "renault-grand-scenic", "vw-sharan-galaxy", "seat-alhambra",
+    "ford-smax", "kia-carens", "toyota-verso", "peugeot-5008",
+}
+
+
+def space_group(car):
+    """Prostorova skupina pro normalizaci kufru. Kombi/SUV/uzitkove se
+    berou jak jsou, "mpv" se dale deli na 5- a 7-mistne (viz
+    SEVEN_SEAT_MPV_IDS), protoze 7-mistne MPV maji s obsazenou 3. radou
+    sedadel podstatne mensi kufr a jinak by umele stahovaly dolu skore
+    normalnich 5-mistnych MPV v teze kategorii."""
+    cat = car.get("category", "")
+    if cat == "mpv":
+        return "mpv-7" if car["id"] in SEVEN_SEAT_MPV_IDS else "mpv-5"
+    return cat
+
+
 def main():
     with open(CARS_PATH, encoding="utf-8") as f:
         cars = json.load(f)
 
-    # prostor: normalizace napric celym seznamem (ne po kategoriich) - viz
-    # docstring nahore, proc byla puvodni normalizace po kategoriich zmenena.
-    trunk_values = []
+    # prostor: normalizace v ramci "prostorove skupiny" - viz docstring
+    # nahore. Skupina = kategorie (kombi/suv/uzitkove), krome "mpv", ktere
+    # se dale deli na mpv-5 a mpv-7 podle poctu mist (viz space_group()).
+    space_groups = {}
     for car in cars:
         t = parse_trunk(car.get("trunk", ""))
         car["_trunk_l"] = t
         if t is not None:
-            trunk_values.append(t)
-    trunk_lo, trunk_hi = min(trunk_values), max(trunk_values)
+            space_groups.setdefault(space_group(car), []).append(t)
+    group_minmax = {
+        g: (min(vals), max(vals)) for g, vals in space_groups.items()
+    }
 
     # spotreba: normalizace napric celym seznamem (mensi = lepsi)
     consumptions = [v for v in CONSUMPTION_DATA.values() if v is not None]
@@ -422,7 +454,8 @@ def main():
         if t is None:
             space = 50
         else:
-            space = round((t - trunk_lo) / (trunk_hi - trunk_lo) * 100)
+            lo, hi = group_minmax[space_group(car)]
+            space = 100 if hi == lo else round((t - lo) / (hi - lo) * 100)
 
         service = service_score(car)
         safety = safety_score(car["id"])
