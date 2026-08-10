@@ -209,10 +209,20 @@ def filter_and_cap_listings(listings, car: dict):
       primichava placene 'TOP' inzeraty uplne jineho auta bez ohledu na dotaz),
     - maji jasne jinou motorizaci (nafta, jiny objem nez cilovy).
     Nejiste motorizace (objem v nadpisu neuveden) necha a oznaci v datech,
-    aby to dashboard mohl zobrazit s poznamkou. Na konci orizne na MAX_LISTINGS_PER_CAR.
+    aby to dashboard mohl zobrazit s poznamkou.
+
+    Bazarovi prodejci casto vystavi jedno auto v X skoro identickych
+    inzeratech (ruzne fotky/popisky te stejne nabidky) nebo maji ve stejnem
+    miste rovnou vic kusu stejneho modelu - bez osetreni by tak prvnich
+    5-15 vysledku klidne bylo "totez" od jednoho prodejce a dashboard by
+    pusobil jako by nabidka byla mnohem uzsi, nez doopravdy je. Proto se
+    inzeraty nejdriv seskupi podle lokality (nejlepsi dostupna aproximace
+    "stejny prodejce") a pak se prokladaji round-robin napric skupinami,
+    aby nahore v seznamu bylo vic ruznych prodejcu/mist, ne jeden dokola.
+    Na konci se orizne na MAX_LISTINGS_PER_CAR.
     """
     target = target_displacement(car["name"])
-    kept = []
+    eligible = []
     for item in listings:
         if not keyword_match(item["title"], car):
             continue  # nadpis vubec nezminuje znacku/model -> nejspis promo inzerat jineho auta
@@ -222,9 +232,24 @@ def filter_and_cap_listings(listings, car: dict):
         if match is False:
             continue  # jasny nesoulad motorizace -> vyradit z vypisu
         item["engine_match"] = match  # True nebo None
-        kept.append(item)
-        if len(kept) >= MAX_LISTINGS_PER_CAR:
-            break
+        eligible.append(item)
+
+    groups = {}
+    order = []
+    for item in eligible:
+        key = item.get("location") or ""
+        if key not in groups:
+            groups[key] = []
+            order.append(key)
+        groups[key].append(item)
+
+    kept = []
+    idx = 0
+    while len(kept) < MAX_LISTINGS_PER_CAR and any(groups[k] for k in order):
+        key = order[idx % len(order)]
+        if groups[key]:
+            kept.append(groups[key].pop(0))
+        idx += 1
     return kept
 
 

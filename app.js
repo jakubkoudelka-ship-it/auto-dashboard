@@ -95,7 +95,7 @@ function updateSavedCount() {
  */
 async function loadListings() {
   try {
-    const res = await fetch("data/listings.json");
+    const res = await fetch("data/listings.json", { cache: "no-store" });
     if (!res.ok) return;
     const data = await res.json();
     const map = {};
