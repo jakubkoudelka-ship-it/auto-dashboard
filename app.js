@@ -178,7 +178,7 @@ function listingsBlock(car) {
     return `<div class="listings-block listings-empty">Poslední kontrola (${dateStr}) nenašla žádné inzeráty v limitu ceny.</div>`;
   }
   const rows = entry.listings
-    .slice(0, 5)
+    .slice(0, 15)
     .map((l, idx) => {
       const unverified = l.engine_match !== true;
       const note = unverified

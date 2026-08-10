@@ -51,8 +51,8 @@ HEADERS = {
     "Accept-Language": "cs-CZ,cs;q=0.9",
 }
 
-MAX_LISTINGS_PER_CAR = 8
-MAX_RAW_ITEMS_TO_SCAN = 40  # kolik prvnich vysledku z vypisu vubec projit pred filtrovanim
+MAX_LISTINGS_PER_CAR = 15
+MAX_RAW_ITEMS_TO_SCAN = 60  # kolik prvnich vysledku z vypisu vubec projit pred filtrovanim
 
 # Spodni cenova hranice - vyrazuje velmi levne inzeraty (typicky havarovane,
 # nepojizdne, "na dily" nebo jinak podezrele stare kusy), ktere nechceme
