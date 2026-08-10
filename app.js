@@ -273,6 +273,11 @@ function applyFilters() {
     );
   }
 
+  // Jednotliva kriteria skore (viz scripts/score_cars.py / SCORE_BREAKDOWN_LABELS
+  // v tomto souboru) - umoznuje razeni napr. jen podle spolehlivosti nebo
+  // prostoru misto celkoveho skore, ktere je vazeny prumer vsech.
+  const BREAKDOWN_SORT_KEYS = ["reliability", "safety", "consumption", "service", "space", "year"];
+
   const tierRank = { "200k": 0, "280k": 1, vyrazeno: 2, avoid: 3 };
   list.sort((a, b) => {
     if (state.sort === "name") return a.name.localeCompare(b.name, "cs");
@@ -281,6 +286,14 @@ function applyFilters() {
       const numA = parseInt((a.trunk.match(/\d+/) || [0])[0], 10);
       const numB = parseInt((b.trunk.match(/\d+/) || [0])[0], 10);
       return numB - numA;
+    }
+    if (BREAKDOWN_SORT_KEYS.includes(state.sort)) {
+      const valA = a.scoreBreakdown ? a.scoreBreakdown[state.sort] : undefined;
+      const valB = b.scoreBreakdown ? b.scoreBreakdown[state.sort] : undefined;
+      const nA = typeof valA === "number" ? valA : -1;
+      const nB = typeof valB === "number" ? valB : -1;
+      if (nA !== nB) return nB - nA;
+      return a.name.localeCompare(b.name, "cs");
     }
     // default: skóre (viz scripts/score_cars.py) sestupně, při shodě abecedně
     const scoreA = typeof a.score === "number" ? a.score : -1;
