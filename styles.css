@@ -494,6 +494,49 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 24px; }
 .listings-list a:hover { text-decoration: underline; color: var(--accent); }
 .listings-list span { color: var(--text-muted); font-size: 12px; margin-top: 2px; }
 
+.save-btn {
+  align-self: flex-start;
+  margin-top: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text-muted);
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s var(--ease);
+}
+.save-btn:hover { border-color: var(--gold); color: var(--gold); background: #fffaf0; }
+.save-btn.saved {
+  background: #fbe9d9;
+  border-color: var(--gold);
+  color: #b5651d;
+}
+
+.saved-toggle-btn { position: relative; }
+
+.saved-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.saved-panel-head h2 { margin: 0; }
+.saved-panel-head .cta-btn { flex: none; min-width: auto; }
+
+.saved-group { margin-bottom: 20px; }
+.saved-group:last-child { margin-bottom: 0; }
+.saved-group h4 {
+  margin: 0 0 8px;
+  color: var(--navy-dark);
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .cta-row { display: flex; gap: 10px; flex-wrap: wrap; }
 .cta-btn {
   flex: 1;

@@ -36,7 +36,56 @@ const state = {
   sort: "score",
   topOnly: false,
   listingsByCarId: {}, // volitelně naplněno z data/listings.json (viz scripts/scrape_bazos.py)
+  saved: [], // uložené inzeráty, viz loadSaved()/persistSaved() – žije jen v localStorage prohlížeče
 };
+
+/**
+ * "Nákupní seznam" uložených inzerátů. Ukládá se čistě lokálně do
+ * localStorage prohlížeče (stránka nemá backend) – funguje tedy jen na tom
+ * zařízení/prohlížeči, kde se inzerát uložil. Každá položka: {carId,
+ * carName, title, url, price_text, location, savedAt}.
+ */
+const SAVED_KEY = "auto-dashboard-saved-v1";
+function loadSaved() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(SAVED_KEY) || "[]");
+    return Array.isArray(raw) ? raw : [];
+  } catch (e) {
+    return [];
+  }
+}
+function persistSaved() {
+  try {
+    localStorage.setItem(SAVED_KEY, JSON.stringify(state.saved));
+  } catch (e) {
+    /* ignore quota errors */
+  }
+}
+function isListingSaved(carId, url) {
+  return state.saved.some((s) => s.carId === carId && s.url === url);
+}
+function toggleSavedListing(car, listing) {
+  const idx = state.saved.findIndex((s) => s.carId === car.id && s.url === listing.url);
+  if (idx >= 0) {
+    state.saved.splice(idx, 1);
+  } else {
+    state.saved.unshift({
+      carId: car.id,
+      carName: car.name,
+      title: listing.title,
+      url: listing.url,
+      price_text: listing.price_text || "",
+      location: listing.location || "",
+      savedAt: new Date().toISOString(),
+    });
+  }
+  persistSaved();
+  updateSavedCount();
+}
+function updateSavedCount() {
+  const el = document.getElementById("savedCount");
+  if (el) el.textContent = state.saved.length;
+}
 
 /**
  * Zkusí načíst data/listings.json (generuje scripts/scrape_bazos.py přes
@@ -130,15 +179,17 @@ function listingsBlock(car) {
   }
   const rows = entry.listings
     .slice(0, 5)
-    .map((l) => {
+    .map((l, idx) => {
       const unverified = l.engine_match !== true;
       const note = unverified
         ? '<span class="listing-engine-note" title="Nadpis inzerátu neobsahuje objem motoru, který hledáme — ověřte motorizaci přímo v inzerátu.">⚠︎ ověřte motorizaci</span>'
         : "";
+      const saved = isListingSaved(car.id, l.url);
       return `
       <li>
         <a href="${l.url}" target="_blank" rel="noopener">${l.title}</a>
         <span>${l.price_text || "cena neuvedena"}${l.location ? " · " + l.location : ""} ${note}</span>
+        <button type="button" class="save-btn${saved ? " saved" : ""}" data-car-id="${car.id}" data-listing-idx="${idx}">${saved ? "★ Uloženo" : "☆ Uložit do seznamu"}</button>
       </li>`;
     })
     .join("");
@@ -391,6 +442,83 @@ function closeModal() {
   document.getElementById("modalBackdrop").classList.remove("open");
 }
 
+/**
+ * Panel s uloženými inzeráty. Recykluje stejný modal (backdrop/content),
+ * jaký používá detail auta – žádný nový DOM navíc, jen jiný obsah.
+ */
+function openSavedPanel() {
+  const backdrop = document.getElementById("modalBackdrop");
+  const content = document.getElementById("modalContent");
+
+  if (!state.saved.length) {
+    content.innerHTML = `
+      <div class="modal-body">
+        <h2>💾 Uložené inzeráty</h2>
+        <div class="note-box">Zatím nemáte uložené žádné inzeráty. V detailu auta u konkrétní nabídky klikněte na „☆ Uložit do seznamu".</div>
+      </div>`;
+    backdrop.classList.add("open");
+    return;
+  }
+
+  const byCar = {};
+  state.saved.forEach((s) => {
+    (byCar[s.carId] = byCar[s.carId] || { carName: s.carName, items: [] }).items.push(s);
+  });
+
+  const groups = Object.values(byCar)
+    .map(
+      (g) => `
+      <div class="saved-group">
+        <h4>${g.carName}</h4>
+        <ul class="listings-list">
+          ${g.items
+            .map(
+              (s) => `
+            <li>
+              <a href="${s.url}" target="_blank" rel="noopener">${s.title}</a>
+              <span>${s.price_text || "cena neuvedena"}${s.location ? " · " + s.location : ""}</span>
+              <button type="button" class="save-btn saved" data-remove-car-id="${s.carId}" data-remove-url="${encodeURIComponent(s.url)}">✕ Odebrat ze seznamu</button>
+            </li>`
+            )
+            .join("")}
+        </ul>
+      </div>`
+    )
+    .join("");
+
+  content.innerHTML = `
+    <div class="modal-body">
+      <div class="saved-panel-head">
+        <h2>💾 Uložené inzeráty (${state.saved.length})</h2>
+        <button type="button" class="cta-btn" id="copySavedBtn">📋 Kopírovat seznam</button>
+      </div>
+      ${groups}
+    </div>`;
+  backdrop.classList.add("open");
+
+  document.getElementById("copySavedBtn")?.addEventListener("click", copySavedToClipboard);
+}
+
+function copySavedToClipboard() {
+  const text = state.saved
+    .map((s) => `${s.carName} — ${s.title} — ${s.price_text || "cena neuvedena"} — ${s.url}`)
+    .join("\n");
+  const btn = document.getElementById("copySavedBtn");
+  const done = (ok) => {
+    if (!btn) return;
+    const orig = "📋 Kopírovat seznam";
+    btn.textContent = ok ? "✅ Zkopírováno" : "⚠︎ Nepodařilo se zkopírovat";
+    setTimeout(() => {
+      btn.textContent = orig;
+    }, 1600);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => done(true), () => done(false));
+  } else {
+    done(false);
+  }
+}
+
 function wireControls() {
   document.querySelectorAll("#categoryFilters .pill").forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -436,6 +564,37 @@ function wireControls() {
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeModal();
   });
+
+  document.getElementById("savedBtn").addEventListener("click", openSavedPanel);
+
+  // delegovaný click na obsah modalu – pokrývá jak tlačítko "Uložit" u
+  // inzerátu v detailu auta, tak "Odebrat" v panelu uložených inzerátů
+  document.getElementById("modalContent").addEventListener("click", (e) => {
+    const saveBtn = e.target.closest("[data-car-id][data-listing-idx]");
+    if (saveBtn) {
+      const carId = saveBtn.dataset.carId;
+      const idx = Number(saveBtn.dataset.listingIdx);
+      const entry = state.listingsByCarId[carId];
+      const listing = entry && entry.listings[idx];
+      const car = state.cars.find((c) => c.id === carId);
+      if (!listing || !car) return;
+      toggleSavedListing(car, listing);
+      const nowSaved = isListingSaved(carId, listing.url);
+      saveBtn.classList.toggle("saved", nowSaved);
+      saveBtn.textContent = nowSaved ? "★ Uloženo" : "☆ Uložit do seznamu";
+      return;
+    }
+    const removeBtn = e.target.closest("[data-remove-car-id][data-remove-url]");
+    if (removeBtn) {
+      const carId = removeBtn.dataset.removeCarId;
+      const url = decodeURIComponent(removeBtn.dataset.removeUrl);
+      const idx = state.saved.findIndex((s) => s.carId === carId && s.url === url);
+      if (idx >= 0) state.saved.splice(idx, 1);
+      persistSaved();
+      updateSavedCount();
+      openSavedPanel();
+    }
+  });
 }
 
 async function init() {
@@ -447,7 +606,9 @@ async function init() {
       '<p style="color:#b3261e">Nepodařilo se načíst data/cars.json. Pokud otevíráte soubor přímo (file://), spusťte prosím lokální server, např. <code>python3 -m http.server</code>, kvůli omezením prohlížeče na načítání lokálních souborů.</p>';
     return;
   }
+  state.saved = loadSaved();
   wireControls();
+  updateSavedCount();
   await loadListings();
   render();
 }
