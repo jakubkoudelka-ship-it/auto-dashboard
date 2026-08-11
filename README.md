@@ -4,7 +4,7 @@ Interaktivní dashboard nad tržním researchem ojetých aut (kombi/MPV/SUV, ben
 
 ## Co to umí
 
-- **66 modelů** rozdělených do kategorií (kombi / MPV / SUV / užitkové), s filtrováním podle karoserie, cenového pásma a fulltextovým hledáním.
+- **70 modelů** rozdělených do kategorií (kombi / MPV / SUV / užitkové), s filtrováním podle karoserie, cenového pásma a fulltextovým hledáním.
 - **Fotky aut se načítají živě** z [Wikipedia REST API](https://en.wikipedia.org/api/rest_v1/) přímo v prohlížeči (žádné stažené obrázky v repozitáři) — funguje to i po nasazení na GitHub Pages. Pokud se fotka nenajde, zobrazí se ikona podle typu karoserie.
 - **Detail auta** (klik na kartu): klady/zápory, spolehlivost, kufr, cenové rozpětí, a tlačítka na **předfiltrované hledání** na Sauto.cz a Bazoš.cz.
 - Připravená (volitelná) integrace se scraperem — jakmile jednou vygenerujete `data/listings.json`, dashboard v detailu auta automaticky zobrazí i konkrétní nalezené inzeráty.

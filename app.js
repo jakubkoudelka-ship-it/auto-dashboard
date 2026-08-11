@@ -408,7 +408,7 @@ function openModal(id) {
         <div class="modal-stat"><div class="label">Cena</div><div class="value">${car.price}</div></div>
         <div class="modal-stat"><div class="label">Spolehlivost</div><div class="value">${car.reliability}</div></div>
         <div class="modal-stat"><div class="label">Značka</div><div class="value">${car.brand}</div></div>
-        <div class="modal-stat"><div class="label">Spotřeba</div><div class="value">${typeof car.consumption === "number" ? `~${car.consumption.toLocaleString("cs-CZ")} l/100 km` : "neznámá"}</div></div>
+        <div class="modal-stat"><div class="label">Spotřeba</div><div class="value">${typeof car.consumption === "number" ? `~${car.consumption.toLocaleString("cs-CZ")} ${car.consumptionUnit || "l/100 km"}` : "neznámá"}</div></div>
         <div class="modal-stat"><div class="label">Euro NCAP</div><div class="value">${car.ncap ? `${"★".repeat(car.ncap.stars)}${"☆".repeat(5 - car.ncap.stars)} (${car.ncap.year})` : "netestováno"}</div></div>
         <div class="modal-stat"><div class="label">Rok výroby</div><div class="value">${typeof car.year === "number" ? `cca ${car.year}` : "neznámý"}</div></div>
       </div>

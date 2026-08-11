@@ -171,6 +171,14 @@ CONSUMPTION_DATA = {
     "peugeot-5008": 7.9,
     "bmw-3-touring-e90": 7.8,
     "mercedes-c-klasse-t-w204": 8.5,
+    # Nasledujici 4 jsou bi-fuel CNG+benzin - hodnota je v kg CNG/100 km,
+    # ne v litrech benzinu (viz "consumptionUnit" pole u dane karty a
+    # uprava zobrazeni v app.js). Cisla jsou nizsi nez u benzinovych aut,
+    # coz spravne odrazi jejich nizsi provozni naklady v normalizaci.
+    "skoda-octavia-gtec": 3.8,
+    "seat-leon-st-tgi": 3.9,
+    "seat-arona-tgi": 4.4,
+    "skoda-kamiq-gtec": 4.4,
 }
 
 # Euro NCAP hvezdicky (0-5, None = netestovano) + rok testu (informacni,
@@ -242,6 +250,10 @@ NCAP_DATA = {
     "peugeot-5008": (5, 2009),
     "bmw-3-touring-e90": (5, 2005),
     "mercedes-c-klasse-t-w204": (5, 2007),
+    "skoda-octavia-gtec": (5, 2013),
+    "seat-leon-st-tgi": (5, 2013),
+    "seat-arona-tgi": (5, 2017),
+    "skoda-kamiq-gtec": (5, 2019),
 }
 
 # Reprezentativni rok vyroby/generace pro danou motorizaci (stred typickeho
@@ -313,6 +325,10 @@ YEAR_DATA = {
     "peugeot-5008": 2013,
     "bmw-3-touring-e90": 2009,
     "mercedes-c-klasse-t-w204": 2011,
+    "skoda-octavia-gtec": 2017,
+    "seat-leon-st-tgi": 2017,
+    "seat-arona-tgi": 2020,
+    "skoda-kamiq-gtec": 2021,
 }
 
 STRONG_POS = [
