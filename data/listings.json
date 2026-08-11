@@ -2903,7 +2903,7 @@
         "price": 69000,
         "location": "Jablonec nad Nisou466 01",
         "thumbnail": null,
-        "engine_match": null
+        "engine_match": true
       },
       {
         "title": "Lada Niva 1.7 1992",
