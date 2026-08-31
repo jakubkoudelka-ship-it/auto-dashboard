@@ -4,7 +4,7 @@
     "query": "škoda octavia combi 1.6 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=%C5%A1koda%20octavia%20combi%201.6%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:13:44.185971+00:00",
+    "scraped_at": "2026-08-31T12:39:31.056785+00:00",
     "listings": [
       {
         "title": "ŠKODA OCTAVIA KOMBI 1.6 MPI",
@@ -12,6 +12,15 @@
         "price_text": "159 000 Kč",
         "price": 159000,
         "location": "Zlín763 01",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
+        "title": "Škoda Octavia combi 1,6 75kw Gt model",
+        "url": "https://auto.bazos.cz/inzerat/223195372/skoda-octavia-combi-16-75kw-gt-model.php",
+        "price_text": "72 999 Kč",
+        "price": 72999,
+        "location": "Chrudim537 01",
         "thumbnail": null,
         "engine_match": true
       },
@@ -48,15 +57,6 @@
         "price_text": "94 900 Kč",
         "price": 94900,
         "location": "Šumperk789 01",
-        "thumbnail": null,
-        "engine_match": true
-      },
-      {
-        "title": "Škoda Octavia combi 1,6 75kw Gt model",
-        "url": "https://auto.bazos.cz/inzerat/223010446/skoda-octavia-combi-16-75kw-gt-model.php",
-        "price_text": "74 999 Kč",
-        "price": 74999,
-        "location": "Chrudim537 01",
         "thumbnail": null,
         "engine_match": true
       },
@@ -130,7 +130,7 @@
     "query": "fiat tipo kombi 1.4 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=fiat%20tipo%20kombi%201.4%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:13:46.994615+00:00",
+    "scraped_at": "2026-08-31T12:39:34.176829+00:00",
     "listings": []
   },
   {
@@ -138,7 +138,7 @@
     "query": "toyota avensis kombi benzín",
     "search_url": "https://auto.bazos.cz/?hledat=toyota%20avensis%20kombi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:13:49.752431+00:00",
+    "scraped_at": "2026-08-31T12:39:37.107338+00:00",
     "listings": [
       {
         "title": "Toyota Avensis Combi 1.8 108 kW |2. majitel | DPH | Splátky",
@@ -210,7 +210,7 @@
     "query": "ford mondeo combi 2.0 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=ford%20mondeo%20combi%202.0%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:13:52.477505+00:00",
+    "scraped_at": "2026-08-31T12:39:40.169845+00:00",
     "listings": [
       {
         "title": "Ford Mondeo combi",
@@ -224,8 +224,8 @@
       {
         "title": "Ford Mondeo Combi MK4 2.0i",
         "url": "https://auto.bazos.cz/inzerat/222945876/ford-mondeo-combi-mk4-20i.php",
-        "price_text": "100 000 Kč",
-        "price": 100000,
+        "price_text": "89 999 Kč",
+        "price": 89999,
         "location": "Plzeň-jih334 41",
         "thumbnail": null,
         "engine_match": true
@@ -246,7 +246,7 @@
     "query": "ford focus combi 1.6 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=ford%20focus%20combi%201.6%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:13:55.283306+00:00",
+    "scraped_at": "2026-08-31T12:39:43.152713+00:00",
     "listings": [
       {
         "title": "Ford Focus Combi 1.6Ti-VCT 92kW VÝHŘEV Alu ROZVODY",
@@ -309,7 +309,7 @@
     "query": "kia ceed sw benzín",
     "search_url": "https://auto.bazos.cz/?hledat=kia%20ceed%20sw%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:13:57.898675+00:00",
+    "scraped_at": "2026-08-31T12:39:46.124319+00:00",
     "listings": [
       {
         "title": "KIA CEED SW 1.4 2008",
@@ -363,7 +363,7 @@
     "query": "mazda 6 kombi 2.0 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=mazda%206%20kombi%202.0%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:00.835197+00:00",
+    "scraped_at": "2026-08-31T12:39:49.149049+00:00",
     "listings": [
       {
         "title": "Mazda 6 2.0i 114KW AUTOMAT VÝHŘEV SENZORY TEMPOMAT",
@@ -375,8 +375,17 @@
         "engine_match": true
       },
       {
+        "title": "Mazda 6 Kombi 2.0 108 kW | 2010 | ČR původ",
+        "url": "https://auto.bazos.cz/inzerat/223219910/mazda-6-kombi-20-108-kw-2010-cr-puvod.php",
+        "price_text": "67 900 Kč",
+        "price": 67900,
+        "location": "Praha 4140 00",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
         "title": "MAZDA 6 2.0 108 KW TE ROK 2010 - BENZÍN",
-        "url": "https://auto.bazos.cz/inzerat/223112239/mazda-6-20-108-kw-te-rok-2010-benzin.php",
+        "url": "https://auto.bazos.cz/inzerat/223216943/mazda-6-20-108-kw-te-rok-2010-benzin.php",
         "price_text": "119 900 Kč",
         "price": 119900,
         "location": "Brno602 00",
@@ -398,15 +407,6 @@
         "price_text": "59 900 Kč",
         "price": 59900,
         "location": "Praha 9198 00",
-        "thumbnail": null,
-        "engine_match": true
-      },
-      {
-        "title": "Mazda 6 Kombi 2.0 108 kW | 2010 | ČR původ",
-        "url": "https://auto.bazos.cz/inzerat/222958443/mazda-6-kombi-20-108-kw-2010-cr-puvod.php",
-        "price_text": "67 900 Kč",
-        "price": 67900,
-        "location": "Praha 4140 00",
         "thumbnail": null,
         "engine_match": true
       },
@@ -493,7 +493,7 @@
       },
       {
         "title": "MAZDA 6 2.0 108 KW EXCLUSIVE 175 000 KM - BENZÍN",
-        "url": "https://auto.bazos.cz/inzerat/223106899/mazda-6-20-108-kw-exclusive-175-000-km-benzin.php",
+        "url": "https://auto.bazos.cz/inzerat/223216894/mazda-6-20-108-kw-exclusive-175-000-km-benzin.php",
         "price_text": "129 900 Kč",
         "price": 129900,
         "location": "Brno602 00",
@@ -507,7 +507,7 @@
     "query": "peugeot 308 sw 1.6 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=peugeot%20308%20sw%201.6%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:03.546947+00:00",
+    "scraped_at": "2026-08-31T12:39:52.118834+00:00",
     "listings": [
       {
         "title": "Peugeot 308 SW 1.6i 16V MODEL 2011 7-MÍST MOŽNO NA SPLÁTKY",
@@ -552,7 +552,7 @@
     "query": "seat leon st 1.6 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=seat%20leon%20st%201.6%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:06.364333+00:00",
+    "scraped_at": "2026-08-31T12:39:55.117225+00:00",
     "listings": [
       {
         "title": "Seat Leon 1p 1.6 MPI",
@@ -606,7 +606,7 @@
     "query": "volvo v70 2.4 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=volvo%20v70%202.4%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:09.114769+00:00",
+    "scraped_at": "2026-08-31T12:39:58.029508+00:00",
     "listings": []
   },
   {
@@ -614,17 +614,8 @@
     "query": "škoda roomster 1.2 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=%C5%A1koda%20roomster%201.2%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:11.937438+00:00",
+    "scraped_at": "2026-08-31T12:40:01.073400+00:00",
     "listings": [
-      {
-        "title": "Škoda Roomster 1.2 tsi 63kw r.v.8/2011, najeto: 160 259km",
-        "url": "https://auto.bazos.cz/inzerat/222927734/skoda-roomster-12-tsi-63kw-rv82011-najeto-160-259km.php",
-        "price_text": "89 000 Kč",
-        "price": 89000,
-        "location": "Chrudim537 01",
-        "thumbnail": null,
-        "engine_match": true
-      },
       {
         "title": "Škoda Roomster 1.2 TSI 63 kW",
         "url": "https://auto.bazos.cz/inzerat/223029355/skoda-roomster-12-tsi-63-kw.php",
@@ -640,6 +631,24 @@
         "price_text": "109 000 Kč",
         "price": 109000,
         "location": "Karviná737 01",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
+        "title": "Škoda Roomster 1.2 HTP benzín manuál 51 kw",
+        "url": "https://auto.bazos.cz/inzerat/223219167/skoda-roomster-12-htp-benzin-manual-51-kw.php",
+        "price_text": "74 900 Kč",
+        "price": 74900,
+        "location": "České Budějovice373 41",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
+        "title": "Škoda Roomster 1.2 TSI",
+        "url": "https://auto.bazos.cz/inzerat/223197399/skoda-roomster-12-tsi.php",
+        "price_text": "109 000 Kč",
+        "price": 109000,
+        "location": "Cheb350 02",
         "thumbnail": null,
         "engine_match": true
       },
@@ -707,15 +716,6 @@
         "engine_match": true
       },
       {
-        "title": "Škoda Roomster 1.2 TSI 63kw",
-        "url": "https://auto.bazos.cz/inzerat/223039476/skoda-roomster-12-tsi-63kw.php",
-        "price_text": "89 000 Kč",
-        "price": 89000,
-        "location": "Cheb350 02",
-        "thumbnail": null,
-        "engine_match": true
-      },
-      {
         "title": "Škoda Roomster 1.2 TSI Scout, NOVÉ ROZVODY",
         "url": "https://auto.bazos.cz/inzerat/222990612/skoda-roomster-12-tsi-scout-nove-rozvody.php",
         "price_text": "129 900 Kč",
@@ -734,20 +734,20 @@
         "engine_match": true
       },
       {
-        "title": "Prodám / Vyměním Škoda Roomster 1,2 Tsi 77 kW , TOP STAV",
-        "url": "https://auto.bazos.cz/inzerat/222844212/prodam-vymenim-skoda-roomster-12-tsi-77-kw-top-stav.php",
-        "price_text": "119 000 Kč",
-        "price": 119000,
-        "location": "Příbram263 01",
+        "title": "Škoda Roomster 1.2 51 kW",
+        "url": "https://auto.bazos.cz/inzerat/222797052/skoda-roomster-12-51-kw.php",
+        "price_text": "50 000 Kč",
+        "price": 50000,
+        "location": "Třebíč674 01",
         "thumbnail": null,
         "engine_match": true
       },
       {
-        "title": "Škoda Roomster 1,2 TSi, Tažné, Nová STK, klima",
-        "url": "https://auto.bazos.cz/inzerat/223111387/skoda-roomster-12-tsi-tazne-nova-stk-klima.php",
-        "price_text": "97 900 Kč",
-        "price": 97900,
-        "location": "Olomouc783 91",
+        "title": "Škoda Roomster 1.2 TSI 63kw",
+        "url": "https://auto.bazos.cz/inzerat/223039476/skoda-roomster-12-tsi-63kw.php",
+        "price_text": "89 000 Kč",
+        "price": 89000,
+        "location": "Cheb350 02",
         "thumbnail": null,
         "engine_match": true
       }
@@ -758,7 +758,7 @@
     "query": "dacia logan mcv 1.6 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=dacia%20logan%20mcv%201.6%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:14.713797+00:00",
+    "scraped_at": "2026-08-31T12:40:04.207585+00:00",
     "listings": []
   },
   {
@@ -766,7 +766,7 @@
     "query": "renault megane grandtour 1.6 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=renault%20megane%20grandtour%201.6%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:17.476803+00:00",
+    "scraped_at": "2026-08-31T12:40:07.175119+00:00",
     "listings": [
       {
         "title": "RENAULT MEGANE III Combi 1,6 16V 74kW rok 2010 - Klima",
@@ -780,8 +780,8 @@
       {
         "title": "Renault Megane Grandtour 2010, 1. majitel, 174.000km, STK",
         "url": "https://auto.bazos.cz/inzerat/223060747/renault-megane-grandtour-2010-1-majitel-174000km-stk.php",
-        "price_text": "82 000 Kč",
-        "price": 82000,
+        "price_text": "80 000 Kč",
+        "price": 80000,
         "location": "Brno602 00",
         "thumbnail": null,
         "engine_match": null
@@ -802,7 +802,7 @@
     "query": "vw golf variant benzín",
     "search_url": "https://auto.bazos.cz/?hledat=vw%20golf%20variant%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:20.181964+00:00",
+    "scraped_at": "2026-08-31T12:40:10.104641+00:00",
     "listings": [
       {
         "title": "Volkswagen Golf 7 VII variant 1.4 Tsi 90KW r.2014 159tis km",
@@ -856,7 +856,7 @@
     "query": "citroen c5 tourer benzín",
     "search_url": "https://auto.bazos.cz/?hledat=citroen%20c5%20tourer%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:22.837674+00:00",
+    "scraped_at": "2026-08-31T12:40:13.051764+00:00",
     "listings": [
       {
         "title": "Citroen C5 Tourer 1.6 THP - Plná výbava - Exclusive",
@@ -874,7 +874,7 @@
     "query": "mazda premacy benzín",
     "search_url": "https://auto.bazos.cz/?hledat=mazda%20premacy%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:25.621503+00:00",
+    "scraped_at": "2026-08-31T12:40:16.064530+00:00",
     "listings": []
   },
   {
@@ -882,7 +882,7 @@
     "query": "seat altea xl benzín",
     "search_url": "https://auto.bazos.cz/?hledat=seat%20altea%20xl%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:28.423481+00:00",
+    "scraped_at": "2026-08-31T12:40:19.182857+00:00",
     "listings": [
       {
         "title": "SEAT ALTEA XL 1.4 TSI 92 kW - TOP STAV -GARANCE KM -NOVÁ STK",
@@ -890,15 +890,6 @@
         "price_text": "165 000 Kč",
         "price": 165000,
         "location": "Chomutov430 03",
-        "thumbnail": null,
-        "engine_match": null
-      },
-      {
-        "title": "Seat Altea XL 1.4tsi 92kw Style Xenony",
-        "url": "https://auto.bazos.cz/inzerat/223112470/seat-altea-xl-14tsi-92kw-style-xenony.php",
-        "price_text": "109 900 Kč",
-        "price": 109900,
-        "location": "Tábor391 62",
         "thumbnail": null,
         "engine_match": null
       },
@@ -1018,6 +1009,15 @@
         "location": "Ústí nad Orlicí561 64",
         "thumbnail": null,
         "engine_match": null
+      },
+      {
+        "title": "Seat  Altea XL",
+        "url": "https://auto.bazos.cz/inzerat/222398892/seat-altea-xl.php",
+        "price_text": "65 000 Kč",
+        "price": 65000,
+        "location": "Bruntál795 01",
+        "thumbnail": null,
+        "engine_match": null
       }
     ]
   },
@@ -1026,7 +1026,7 @@
     "query": "fiat 500l 1.4 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=fiat%20500l%201.4%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:31.169413+00:00",
+    "scraped_at": "2026-08-31T12:40:22.266135+00:00",
     "listings": [
       {
         "title": "Fiat 500L 1.4 Trekking 88kW",
@@ -1040,8 +1040,8 @@
       {
         "title": "FIAT 500L 1.4 70kw",
         "url": "https://auto.bazos.cz/inzerat/222551756/fiat-500l-14-70kw.php",
-        "price_text": "170 000 Kč",
-        "price": 170000,
+        "price_text": "125 000 Kč",
+        "price": 125000,
         "location": "Hradec Králové500 08",
         "thumbnail": null,
         "engine_match": true
@@ -1071,7 +1071,7 @@
     "query": "opel zafira 7 míst benzín",
     "search_url": "https://auto.bazos.cz/?hledat=opel%20zafira%207%20m%C3%ADst%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:33.885652+00:00",
+    "scraped_at": "2026-08-31T12:40:25.370403+00:00",
     "listings": []
   },
   {
@@ -1079,7 +1079,7 @@
     "query": "renault grand scenic benzín",
     "search_url": "https://auto.bazos.cz/?hledat=renault%20grand%20scenic%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:36.610353+00:00",
+    "scraped_at": "2026-08-31T12:40:28.246299+00:00",
     "listings": []
   },
   {
@@ -1087,7 +1087,7 @@
     "query": "vw sharan benzín",
     "search_url": "https://auto.bazos.cz/?hledat=vw%20sharan%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:39.207653+00:00",
+    "scraped_at": "2026-08-31T12:40:30.996109+00:00",
     "listings": [
       {
         "title": "VW Sharan",
@@ -1105,7 +1105,7 @@
     "query": "seat alhambra benzín",
     "search_url": "https://auto.bazos.cz/?hledat=seat%20alhambra%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:42.025686+00:00",
+    "scraped_at": "2026-08-31T12:40:34.062054+00:00",
     "listings": [
       {
         "title": "SEAT ALHAMBRA 7N, 1.4 TSi, KAMERA, 1. MAJITEL, NOVÉ ROZVODY.",
@@ -1159,7 +1159,7 @@
     "query": "dacia duster 1.6 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=dacia%20duster%201.6%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:44.732636+00:00",
+    "scraped_at": "2026-08-31T12:40:37.105394+00:00",
     "listings": [
       {
         "title": "Dacia Duster 1.6 SCe 84 kW Access 4x2 Nové v ČR 1.Maj 1952",
@@ -1207,6 +1207,24 @@
         "engine_match": true
       },
       {
+        "title": "DACIA DUSTER 1.6i 16V 77KW LPG,KLIMA,RÁM,HAGUSY",
+        "url": "https://auto.bazos.cz/inzerat/223213761/dacia-duster-16i-16v-77kw-lpgklimaramhagusy.php",
+        "price_text": "135 000 Kč",
+        "price": 135000,
+        "location": "Tachov348 15",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
+        "title": "Dacia Duster 1.6SCe,navi,kamera,klima",
+        "url": "https://auto.bazos.cz/inzerat/223212511/dacia-duster-16scenavikameraklima.php",
+        "price_text": "199 999 Kč",
+        "price": 199999,
+        "location": "Chrudim537 01",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
         "title": "Dacia Duster 1.6 BENZIN BEZ KOROZE",
         "url": "https://auto.bazos.cz/inzerat/223174005/dacia-duster-16-benzin-bez-koroze.php",
         "price_text": "118 000 Kč",
@@ -1239,15 +1257,6 @@
         "price_text": "125 000 Kč",
         "price": 125000,
         "location": "Znojmo672 01",
-        "thumbnail": null,
-        "engine_match": true
-      },
-      {
-        "title": "DACIA DUSTER 1.6i 16V 77KW LPG,KLIMA,RÁM,HAGUSY",
-        "url": "https://auto.bazos.cz/inzerat/223067404/dacia-duster-16i-16v-77kw-lpgklimaramhagusy.php",
-        "price_text": "135 000 Kč",
-        "price": 135000,
-        "location": "Tachov348 15",
         "thumbnail": null,
         "engine_match": true
       },
@@ -1286,15 +1295,6 @@
         "location": "Svitavy569 55",
         "thumbnail": null,
         "engine_match": true
-      },
-      {
-        "title": "Dacia Duster 1.6SCe TEMPOMAT PŮVOD ČR manuál 84 kw",
-        "url": "https://auto.bazos.cz/inzerat/222470035/dacia-duster-16sce-tempomat-puvod-cr-manual-84-kw.php",
-        "price_text": "189 900 Kč",
-        "price": 189900,
-        "location": "Nový Jičín741 01",
-        "thumbnail": null,
-        "engine_match": true
       }
     ]
   },
@@ -1303,7 +1303,7 @@
     "query": "nissan qashqai 1.6 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=nissan%20qashqai%201.6%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:47.484334+00:00",
+    "scraped_at": "2026-08-31T12:40:40.022469+00:00",
     "listings": [
       {
         "title": "Nissan Qashqai 1.6",
@@ -1371,8 +1371,8 @@
       {
         "title": "Nissan Qashqai 1.6 86kw 2011 158tis.naj Facelift",
         "url": "https://auto.bazos.cz/inzerat/222191529/nissan-qashqai-16-86kw-2011-158tisnaj-facelift.php",
-        "price_text": "119 000 Kč",
-        "price": 119000,
+        "price_text": "105 000 Kč",
+        "price": 105000,
         "location": "Jindřichův Hradec378 91",
         "thumbnail": null,
         "engine_match": true
@@ -1420,7 +1420,7 @@
     "query": "hyundai ix35 1.6 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=hyundai%20ix35%201.6%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:50.114846+00:00",
+    "scraped_at": "2026-08-31T12:40:42.997497+00:00",
     "listings": [
       {
         "title": "Hyundai ix35 1.6 benzín 99KW-TRIKOLOR PREMIUM PLUS, PO SERVI",
@@ -1428,6 +1428,24 @@
         "price_text": "194 999 Kč",
         "price": 194999,
         "location": "Opava747 05",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
+        "title": "Hyundai ix35, 1.6, Benzín, rv.2012/03 (cj.2359)",
+        "url": "https://auto.bazos.cz/inzerat/223217626/hyundai-ix35-16-benzin-rv201203-cj2359.php",
+        "price_text": "155 000 Kč",
+        "price": 155000,
+        "location": "Nový Jičín742 51",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
+        "title": "Hyundai ix35, 1.6 benzín",
+        "url": "https://auto.bazos.cz/inzerat/223188614/hyundai-ix35-16-benzin.php",
+        "price_text": "175 000 Kč",
+        "price": 175000,
+        "location": "Teplice417 71",
         "thumbnail": null,
         "engine_match": true
       },
@@ -1483,7 +1501,7 @@
     "query": "mitsubishi asx 1.6 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=mitsubishi%20asx%201.6%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:52.728094+00:00",
+    "scraped_at": "2026-08-31T12:40:45.979385+00:00",
     "listings": [
       {
         "title": "Mitsubishi ASX 1.6i 86kW panorama, 2 sady kol, plna serviska",
@@ -1519,7 +1537,7 @@
     "query": "suzuki sx4 1.6 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=suzuki%20sx4%201.6%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:55.404403+00:00",
+    "scraped_at": "2026-08-31T12:40:48.805137+00:00",
     "listings": [
       {
         "title": "SUZUKI SX4 1.6 - 4x4 - najeto jen 99 tisíc",
@@ -1531,20 +1549,29 @@
         "engine_match": true
       },
       {
+        "title": "Suzuki SX4 1.6 88kW 2015 122342km TAŽNÉ k prodeji",
+        "url": "https://auto.bazos.cz/inzerat/223226169/suzuki-sx4-16-88kw-2015-122342km-tazne-k-prodeji.php",
+        "price_text": "199 900 Kč",
+        "price": 199900,
+        "location": "Nový Jičín742 42",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
+        "title": "Suzuki SX4, 1.6 79kW, najeto 126tis, 4x4",
+        "url": "https://auto.bazos.cz/inzerat/223190679/suzuki-sx4-16-79kw-najeto-126tis-4x4.php",
+        "price_text": "89 000 Kč",
+        "price": 89000,
+        "location": "Chomutov431 91",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
         "title": "Suzuki SX4, 1.6i ČR 2.MAJ,NOVÉ PNEU+ZIMNÍ",
         "url": "https://auto.bazos.cz/inzerat/223154600/suzuki-sx4-16i-cr-2majnove-pneuzimni.php",
         "price_text": "169 000 Kč",
         "price": 169000,
         "location": "Plzeň301 00",
-        "thumbnail": null,
-        "engine_match": true
-      },
-      {
-        "title": "Nabízím Suzuki SX4 1.6GLX 79kW 2008 145068km VVTbez koroze",
-        "url": "https://auto.bazos.cz/inzerat/223140065/nabizim-suzuki-sx4-16glx-79kw-2008-145068km-vvtbez-koroze.php",
-        "price_text": "114 900 Kč",
-        "price": 114900,
-        "location": "Nový Jičín742 42",
         "thumbnail": null,
         "engine_match": true
       },
@@ -1585,7 +1612,7 @@
         "engine_match": true
       },
       {
-        "title": "Suzuki SX4 1.6 4x4 benzín",
+        "title": "Suzuki SX4 1.6 4x4 benzín REZERVOVÁNO",
         "url": "https://auto.bazos.cz/inzerat/223046608/suzuki-sx4-16-4x4-benzin.php",
         "price_text": "80 000 Kč",
         "price": 80000,
@@ -1646,15 +1673,6 @@
         "location": "Praha - západ252 25",
         "thumbnail": null,
         "engine_match": null
-      },
-      {
-        "title": "Suzuki SX4 sedan 1.6 79 kw benzin",
-        "url": "https://auto.bazos.cz/inzerat/222656693/suzuki-sx4-sedan-16-79-kw-benzin.php",
-        "price_text": "69 000 Kč",
-        "price": 69000,
-        "location": "Most434 01",
-        "thumbnail": null,
-        "engine_match": true
       }
     ]
   },
@@ -1663,7 +1681,7 @@
     "query": "suzuki vitara benzín",
     "search_url": "https://auto.bazos.cz/?hledat=suzuki%20vitara%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:14:58.074076+00:00",
+    "scraped_at": "2026-08-31T12:40:51.718389+00:00",
     "listings": [
       {
         "title": "Suzuki Grand Vitara 1.6 VX benzin 4x4",
@@ -1693,11 +1711,29 @@
         "engine_match": null
       },
       {
-        "title": "Suzuki Grand Vitara,2.0 4x4 servisní historie",
-        "url": "https://auto.bazos.cz/inzerat/223165784/suzuki-grand-vitara20-4x4-servisni-historie.php",
-        "price_text": "199 000 Kč",
-        "price": 199000,
+        "title": "Suzuki Grand Vitara 2.0 16V 4x4 benzín manuál 103 kw",
+        "url": "https://auto.bazos.cz/inzerat/223225908/suzuki-grand-vitara-20-16v-4x4-benzin-manual-103-kw.php",
+        "price_text": "86 000 Kč",
+        "price": 86000,
+        "location": "Náchod551 01",
+        "thumbnail": null,
+        "engine_match": null
+      },
+      {
+        "title": "Suzuki Grand Vitara,2.0 benzin 103 kw 4x4",
+        "url": "https://auto.bazos.cz/inzerat/223205608/suzuki-grand-vitara20-benzin-103-kw-4x4.php",
+        "price_text": "189 000 Kč",
+        "price": 189000,
         "location": "Kolín280 02",
+        "thumbnail": null,
+        "engine_match": null
+      },
+      {
+        "title": "Suzuki Grand Vitara 2.0 offroad 4x4",
+        "url": "https://auto.bazos.cz/inzerat/223193710/suzuki-grand-vitara-20-offroad-4x4.php",
+        "price_text": "164 900 Kč",
+        "price": 164900,
+        "location": "Olomouc779 00",
         "thumbnail": null,
         "engine_match": null
       },
@@ -1725,15 +1761,6 @@
         "price_text": "195 000 Kč",
         "price": 195000,
         "location": "Náchod547 01",
-        "thumbnail": null,
-        "engine_match": null
-      },
-      {
-        "title": "Suzuki Grand Vitara,Cabrio",
-        "url": "https://auto.bazos.cz/inzerat/223027784/suzuki-grand-vitaracabrio.php",
-        "price_text": "149 000 Kč",
-        "price": 149000,
-        "location": "Pelhřimov393 01",
         "thumbnail": null,
         "engine_match": null
       },
@@ -1790,15 +1817,6 @@
         "location": "Hodonín696 13",
         "thumbnail": null,
         "engine_match": null
-      },
-      {
-        "title": "Suzuki Grand Vitara 1.6i ,  73 kW LPG + benzín, 2009",
-        "url": "https://auto.bazos.cz/inzerat/222593751/suzuki-grand-vitara-16i-73-kw-lpg-benzin-2009.php",
-        "price_text": "115 000 Kč",
-        "price": 115000,
-        "location": "Hradec Králové500 03",
-        "thumbnail": null,
-        "engine_match": null
       }
     ]
   },
@@ -1807,7 +1825,7 @@
     "query": "škoda yeti 1.2 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=%C5%A1koda%20yeti%201.2%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:00.834485+00:00",
+    "scraped_at": "2026-08-31T12:40:54.685615+00:00",
     "listings": [
       {
         "title": "Škoda Yeti 1.2 TSI hagusy tažné alu",
@@ -1815,6 +1833,15 @@
         "price_text": "134 999 Kč",
         "price": 134999,
         "location": "Mladá Boleslav294 73",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
+        "title": "ŠKODA YETI 1.2 TSI 81KW r.11/2015 VYHŘ.SED. MF VOLANT 175tkm",
+        "url": "https://auto.bazos.cz/inzerat/222888720/skoda-yeti-12-tsi-81kw-r112015-vyhrsed-mf-volant-175tkm.php",
+        "price_text": "199 990 Kč",
+        "price": 199990,
+        "location": "Hradec Králové500 02",
         "thumbnail": null,
         "engine_match": true
       },
@@ -1837,6 +1864,24 @@
         "engine_match": true
       },
       {
+        "title": "Škoda YETI 1.2 TSi 77 kW Active Plus",
+        "url": "https://auto.bazos.cz/inzerat/223233867/skoda-yeti-12-tsi-77-kw-active-plus.php",
+        "price_text": "149 000 Kč",
+        "price": 149000,
+        "location": "Klatovy339 01",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
+        "title": "Škoda Yeti 1.2 TSI AMBITION benzín manuál 77 kw",
+        "url": "https://auto.bazos.cz/inzerat/223221715/skoda-yeti-12-tsi-ambition-benzin-manual-77-kw.php",
+        "price_text": "118 900 Kč",
+        "price": 118900,
+        "location": "Náchod551 01",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
         "title": "ŠKODA YETI 1.2 TSI 77KW",
         "url": "https://auto.bazos.cz/inzerat/222941438/skoda-yeti-12-tsi-77kw.php",
         "price_text": "139 900 Kč",
@@ -1846,26 +1891,8 @@
         "engine_match": true
       },
       {
-        "title": "Škoda Yeti 1.2 TSi 77kW LPG Tažné, Webasto",
-        "url": "https://auto.bazos.cz/inzerat/223111430/skoda-yeti-12-tsi-77kw-lpg-tazne-webasto.php",
-        "price_text": "149 900 Kč",
-        "price": 149900,
-        "location": "Olomouc783 91",
-        "thumbnail": null,
-        "engine_match": true
-      },
-      {
-        "title": "Prodej Škoda - Yeti",
-        "url": "https://auto.bazos.cz/inzerat/223094522/prodej-skoda-yeti.php",
-        "price_text": "160 000 Kč",
-        "price": 160000,
-        "location": "Opava747 56",
-        "thumbnail": null,
-        "engine_match": null
-      },
-      {
-        "title": "Škoda Yeti 1.2 Tsi",
-        "url": "https://auto.bazos.cz/inzerat/223091213/skoda-yeti-12-tsi.php",
+        "title": "Škoda Yeti 1.2 TSI",
+        "url": "https://auto.bazos.cz/inzerat/223195658/skoda-yeti-12-tsi.php",
         "price_text": "158 000 Kč",
         "price": 158000,
         "location": "Liberec463 34",
@@ -1934,15 +1961,6 @@
         "location": "Mladá Boleslav294 73",
         "thumbnail": null,
         "engine_match": true
-      },
-      {
-        "title": "Škoda Yeti 1.2 TSI tempomat",
-        "url": "https://auto.bazos.cz/inzerat/222710797/skoda-yeti-12-tsi-tempomat.php",
-        "price_text": "129 999 Kč",
-        "price": 129999,
-        "location": "Mladá Boleslav294 73",
-        "thumbnail": null,
-        "engine_match": true
       }
     ]
   },
@@ -1951,7 +1969,7 @@
     "query": "subaru forester 2.0 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=subaru%20forester%202.0%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:03.529359+00:00",
+    "scraped_at": "2026-08-31T12:40:57.658152+00:00",
     "listings": [
       {
         "title": "Subaru Forester 2.0i LPG XENONY ŚIBR TAŽNÉ",
@@ -2095,7 +2113,7 @@
     "query": "honda cr-v 1.8 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=honda%20cr-v%201.8%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:06.309534+00:00",
+    "scraped_at": "2026-08-31T12:41:00.522486+00:00",
     "listings": []
   },
   {
@@ -2103,8 +2121,17 @@
     "query": "hyundai tucson benzín",
     "search_url": "https://auto.bazos.cz/?hledat=hyundai%20tucson%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:08.983062+00:00",
+    "scraped_at": "2026-08-31T12:41:03.335001+00:00",
     "listings": [
+      {
+        "title": "Prodám Hyundai Tucson 2.0i benzin 2006",
+        "url": "https://auto.bazos.cz/inzerat/223198668/prodam-hyundai-tuson-20i-benzin-2006.php",
+        "price_text": "70 000 Kč",
+        "price": 70000,
+        "location": "Plzeň-jih333 01",
+        "thumbnail": null,
+        "engine_match": null
+      },
       {
         "title": "Hyundai Tucson 2.0 LPG",
         "url": "https://auto.bazos.cz/inzerat/223180875/hyundai-tucson-20-lpg.php",
@@ -2156,15 +2183,6 @@
         "price_text": "119 000 Kč",
         "price": 119000,
         "location": "Bruntál794 01",
-        "thumbnail": null,
-        "engine_match": null
-      },
-      {
-        "title": "Hyundai Tucson 2.0i ,  104 kW benzín, 2006",
-        "url": "https://auto.bazos.cz/inzerat/222596678/hyundai-tucson-20i-104-kw-benzin-2006.php",
-        "price_text": "100 000 Kč",
-        "price": 100000,
-        "location": "České Budějovice370 01",
         "thumbnail": null,
         "engine_match": null
       },
@@ -2229,7 +2247,7 @@
     "query": "dacia dokker 1.6 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=dacia%20dokker%201.6%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:11.678768+00:00",
+    "scraped_at": "2026-08-31T12:41:06.325739+00:00",
     "listings": [
       {
         "title": "DACIA DOKKER",
@@ -2241,20 +2259,29 @@
         "engine_match": null
       },
       {
-        "title": "KOUPÍM Dacia Dokker 1.6 benzín",
-        "url": "https://auto.bazos.cz/inzerat/223007299/koupim-dacia-dokker-16-benzin.php",
-        "price_text": "160 000 Kč",
-        "price": 160000,
-        "location": "Olomouc772 00",
+        "title": "DACIA DOKKER 1.6 SCE 75 KW LPG KLIMA NOVÁ STK",
+        "url": "https://auto.bazos.cz/inzerat/223204434/dacia-dokker-16-sce-75-kw-lpg-klima-nova-stk.php",
+        "price_text": "79 000 Kč",
+        "price": 79000,
+        "location": "Praha - východ251 01",
         "thumbnail": null,
         "engine_match": true
       },
       {
         "title": "Dacia Dokker, 1.6i Klima, tažné",
-        "url": "https://auto.bazos.cz/inzerat/222997415/dacia-dokker-16i-klima-tazne.php",
+        "url": "https://auto.bazos.cz/inzerat/223190896/dacia-dokker-16i-klima-tazne.php",
         "price_text": "159 900 Kč",
         "price": 159900,
         "location": "Brno618 00",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
+        "title": "KOUPÍM Dacia Dokker 1.6 benzín",
+        "url": "https://auto.bazos.cz/inzerat/223007299/koupim-dacia-dokker-16-benzin.php",
+        "price_text": "160 000 Kč",
+        "price": 160000,
+        "location": "Olomouc772 00",
         "thumbnail": null,
         "engine_match": true
       },
@@ -2337,7 +2364,7 @@
     "query": "renault kangoo 1.6 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=renault%20kangoo%201.6%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:14.402656+00:00",
+    "scraped_at": "2026-08-31T12:41:09.312320+00:00",
     "listings": [
       {
         "title": "RENAULT KANGOO   1,6i  64 Kw TAŽNÉ",
@@ -2367,20 +2394,20 @@
         "engine_match": true
       },
       {
+        "title": "Renault Kangoo 1.6 16V 4x4 benzín manuál 70 kw",
+        "url": "https://auto.bazos.cz/inzerat/223224695/renault-kangoo-16-16v-4x4-benzin-manual-70-kw.php",
+        "price_text": "109 900 Kč",
+        "price": 109900,
+        "location": "České Budějovice373 41",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
         "title": "Renault Kangoo 1.6i,KLIMA,AUTOMAT,TAŽNÉ",
         "url": "https://auto.bazos.cz/inzerat/222843424/renault-kangoo-16iklimaautomattazne.php",
         "price_text": "90 000 Kč",
         "price": 90000,
         "location": "Kolín280 02",
-        "thumbnail": null,
-        "engine_match": true
-      },
-      {
-        "title": "Renault Kangoo 1.6 16V 4x4 benzín manuál 70 kw",
-        "url": "https://auto.bazos.cz/inzerat/222830908/renault-kangoo-16-16v-4x4-benzin-manual-70-kw.php",
-        "price_text": "109 900 Kč",
-        "price": 109900,
-        "location": "České Budějovice373 41",
         "thumbnail": null,
         "engine_match": true
       },
@@ -2409,7 +2436,7 @@
     "query": "peugeot partner tepee benzín",
     "search_url": "https://auto.bazos.cz/?hledat=peugeot%20partner%20tepee%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:17.045274+00:00",
+    "scraped_at": "2026-08-31T12:41:12.181941+00:00",
     "listings": [
       {
         "title": "Peugeot Partner Tepee 1.6VTi 88kW, 3/2010, Tažné, Navi",
@@ -2445,7 +2472,7 @@
     "query": "fiat doblo 1.4 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=fiat%20doblo%201.4%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:19.795055+00:00",
+    "scraped_at": "2026-08-31T12:41:15.174364+00:00",
     "listings": [
       {
         "title": "Fiat DOBLO CARGO 1.4T-Jet CNG 88kW L1H1 2016 ČR KLIMA - DPH",
@@ -2589,7 +2616,7 @@
     "query": "citroen c4 picasso 1.6 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=citroen%20c4%20picasso%201.6%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:22.453047+00:00",
+    "scraped_at": "2026-08-31T12:41:18.006540+00:00",
     "listings": []
   },
   {
@@ -2597,7 +2624,7 @@
     "query": "ford c-max 1.8 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=ford%20c-max%201.8%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:25.257111+00:00",
+    "scraped_at": "2026-08-31T12:41:21.026245+00:00",
     "listings": [
       {
         "title": "Ford C-MAX 1.8i ,  92 kW benzín, 2009",
@@ -2629,8 +2656,8 @@
       {
         "title": "Ford C-MAX 1.8 benzín, manuál - 2009",
         "url": "https://auto.bazos.cz/inzerat/221823427/ford-c-max-18-benzin-manual-2009.php",
-        "price_text": "60 000 Kč",
-        "price": 60000,
+        "price_text": "50 000 Kč",
+        "price": 50000,
         "location": "Cheb350 02",
         "thumbnail": null,
         "engine_match": true
@@ -2642,7 +2669,7 @@
     "query": "ford s-max benzín",
     "search_url": "https://auto.bazos.cz/?hledat=ford%20s-max%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:28.004441+00:00",
+    "scraped_at": "2026-08-31T12:41:24.152325+00:00",
     "listings": [
       {
         "title": "Ford S-Max 2009",
@@ -2759,7 +2786,7 @@
     "query": "kia carens benzín",
     "search_url": "https://auto.bazos.cz/?hledat=kia%20carens%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:30.608936+00:00",
+    "scraped_at": "2026-08-31T12:41:26.992758+00:00",
     "listings": [
       {
         "title": "Kia Carens 1.6GDi 99KW/2016/ČR/1MAJITEL/",
@@ -2804,8 +2831,17 @@
     "query": "toyota verso benzín",
     "search_url": "https://auto.bazos.cz/?hledat=toyota%20verso%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:33.310969+00:00",
+    "scraped_at": "2026-08-31T12:41:29.987817+00:00",
     "listings": [
+      {
+        "title": "Toyota Verso 1.8benzín 108kW 2011 5miestne SK-pôvod",
+        "url": "https://auto.bazos.cz/inzerat/223200462/toyota-verso-18benzin-108kw-2011-5miestne-sk-povod.php",
+        "price_text": "161 000 Kč",
+        "price": 161000,
+        "location": "Slovensko987 65",
+        "thumbnail": null,
+        "engine_match": null
+      },
       {
         "title": "Toyota Corolla Verso",
         "url": "https://auto.bazos.cz/inzerat/223157343/toyota-corolla-verso.php",
@@ -2821,15 +2857,6 @@
         "price_text": "149 000 Kč",
         "price": 149000,
         "location": "Tábor390 02",
-        "thumbnail": null,
-        "engine_match": null
-      },
-      {
-        "title": "Toyota Verso 1.8benzín 108kW 2011 5miestne SK-pôvod",
-        "url": "https://auto.bazos.cz/inzerat/222838644/toyota-verso-18benzin-108kw-2011-5miestne-sk-povod.php",
-        "price_text": "161 000 Kč",
-        "price": 161000,
-        "location": "Slovensko987 65",
         "thumbnail": null,
         "engine_match": null
       },
@@ -2885,7 +2912,7 @@
     "query": "mitsubishi outlander 2.4 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=mitsubishi%20outlander%202.4%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:35.884298+00:00",
+    "scraped_at": "2026-08-31T12:41:32.899599+00:00",
     "listings": [
       {
         "title": "Mitsubishi Outlander 2.4i 4WD 7 míst, BENZÍN, UDRŽOVANÝ",
@@ -2930,7 +2957,7 @@
     "query": "suzuki grand vitara 2.0 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=suzuki%20grand%20vitara%202.0%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:38.539498+00:00",
+    "scraped_at": "2026-08-31T12:41:35.871779+00:00",
     "listings": []
   },
   {
@@ -2938,7 +2965,7 @@
     "query": "lada niva 1.7 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=lada%20niva%201.7%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:41.307104+00:00",
+    "scraped_at": "2026-08-31T12:41:38.795733+00:00",
     "listings": [
       {
         "title": "Lada Niva, 1.7i 4x4 61kW CZ 1.MAJITEL",
@@ -3010,7 +3037,7 @@
     "query": "toyota auris touring sports 1.6 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=toyota%20auris%20touring%20sports%201.6%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:43.953927+00:00",
+    "scraped_at": "2026-08-31T12:41:41.597544+00:00",
     "listings": [
       {
         "title": "Toyota Auris Touring Sports 1.6 Valvematic, 2013",
@@ -3028,7 +3055,7 @@
     "query": "opel astra combi 1.4 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=opel%20astra%20combi%201.4%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:46.685243+00:00",
+    "scraped_at": "2026-08-31T12:41:44.470685+00:00",
     "listings": [
       {
         "title": "2018 Opel Astra K sports tourer",
@@ -3046,7 +3073,7 @@
     "query": "opel insignia combi benzín",
     "search_url": "https://auto.bazos.cz/?hledat=opel%20insignia%20combi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:49.517807+00:00",
+    "scraped_at": "2026-08-31T12:41:47.492702+00:00",
     "listings": []
   },
   {
@@ -3054,7 +3081,7 @@
     "query": "škoda superb combi benzín",
     "search_url": "https://auto.bazos.cz/?hledat=%C5%A1koda%20superb%20combi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:52.224601+00:00",
+    "scraped_at": "2026-08-31T12:41:50.550713+00:00",
     "listings": [
       {
         "title": "Škoda Superb 2010 NOVÁ STK 2,0 TSI 147kw DSG",
@@ -3135,7 +3162,7 @@
     "query": "hyundai i40 combi benzín",
     "search_url": "https://auto.bazos.cz/?hledat=hyundai%20i40%20combi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:54.870531+00:00",
+    "scraped_at": "2026-08-31T12:41:53.346769+00:00",
     "listings": [
       {
         "title": "Hyundai i40 Combi 2.0 GDI 130 kW | TOP výbava | Nová spojka",
@@ -3153,7 +3180,7 @@
     "query": "daewoo lacetti kombi benzín",
     "search_url": "https://auto.bazos.cz/?hledat=daewoo%20lacetti%20kombi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:15:57.510451+00:00",
+    "scraped_at": "2026-08-31T12:41:56.165305+00:00",
     "listings": []
   },
   {
@@ -3161,7 +3188,7 @@
     "query": "škoda octavia 3 combi 1.4 tsi benzín",
     "search_url": "https://auto.bazos.cz/?hledat=%C5%A1koda%20octavia%203%20combi%201.4%20tsi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=350000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:00.362258+00:00",
+    "scraped_at": "2026-08-31T12:41:59.045042+00:00",
     "listings": [
       {
         "title": "Škoda Octavia 3 Facelift Combi 1.4 TSI 110 kW",
@@ -3218,6 +3245,15 @@
         "engine_match": true
       },
       {
+        "title": "Škoda Octavia III Combi, 1.4 TSI, 103 kW, 6st. manuál",
+        "url": "https://auto.bazos.cz/inzerat/223226768/skoda-octavia-iii-combi-14-tsi-103-kw-6st-manual.php",
+        "price_text": "229 000 Kč",
+        "price": 229000,
+        "location": "Teplice415 01",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
         "title": "Škoda Octavia III 1.4Tsi/103kw combi",
         "url": "https://auto.bazos.cz/inzerat/221913950/skoda-octavia-iii-14tsi103kw-combi.php",
         "price_text": "229 900 Kč",
@@ -3232,15 +3268,6 @@
         "price_text": "269 999 Kč",
         "price": 269999,
         "location": "Náchod549 01",
-        "thumbnail": null,
-        "engine_match": true
-      },
-      {
-        "title": "Škoda Octavia 3 Combi 1.4 TSI Elegance - nebouraná/nelakovan",
-        "url": "https://auto.bazos.cz/inzerat/222432666/skoda-octavia-3-combi-14-tsi-elegance-nebourananelakovan.php",
-        "price_text": "179 999 Kč",
-        "price": 179999,
-        "location": "Jihlava586 01",
         "thumbnail": null,
         "engine_match": true
       },
@@ -3305,7 +3332,7 @@
     "query": "škoda octavia 3 combi 1.6 mpi benzín",
     "search_url": "https://auto.bazos.cz/?hledat=%C5%A1koda%20octavia%203%20combi%201.6%20mpi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=350000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:03.048373+00:00",
+    "scraped_at": "2026-08-31T12:42:02.076703+00:00",
     "listings": []
   },
   {
@@ -3313,7 +3340,7 @@
     "query": "dacia duster 2 1.6 sce benzín",
     "search_url": "https://auto.bazos.cz/?hledat=dacia%20duster%202%201.6%20sce%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=350000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:05.772833+00:00",
+    "scraped_at": "2026-08-31T12:42:04.935160+00:00",
     "listings": []
   },
   {
@@ -3321,7 +3348,7 @@
     "query": "škoda octavia 3 1.0 tsi benzín",
     "search_url": "https://auto.bazos.cz/?hledat=%C5%A1koda%20octavia%203%201.0%20tsi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=350000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:08.606888+00:00",
+    "scraped_at": "2026-08-31T12:42:07.778316+00:00",
     "listings": [
       {
         "title": "Škoda Octavia 3 FL 1.0 TSI DSG",
@@ -3366,13 +3393,13 @@
     "query": "vw touran benzín",
     "search_url": "https://auto.bazos.cz/?hledat=vw%20touran%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:11.221652+00:00",
+    "scraped_at": "2026-08-31T12:42:10.547937+00:00",
     "listings": [
       {
-        "title": "VOLKSWAGEN TOURAN 1.6 Mpi 75 KW UNITED r.7/2008 177tkm LPG",
-        "url": "https://auto.bazos.cz/inzerat/223163573/volkswagen-touran-16-mpi-75-kw-united-r72008-177tkm-lpg.php",
-        "price_text": "159 990 Kč",
-        "price": 159990,
+        "title": "VOLKSWAGEN TOURAN 1.6 Mpi 75 KW UNITED r.8/2008 BEZ KOROZE",
+        "url": "https://auto.bazos.cz/inzerat/223155071/volkswagen-touran-16-mpi-75-kw-united-r82008-bez-koroze.php",
+        "price_text": "149 990 Kč",
+        "price": 149990,
         "location": "Hradec Králové500 02",
         "thumbnail": null,
         "engine_match": true
@@ -3396,10 +3423,10 @@
         "engine_match": true
       },
       {
-        "title": "VOLKSWAGEN TOURAN 1.6 Mpi 75 KW UNITED r.8/2008 BEZ KOROZE",
-        "url": "https://auto.bazos.cz/inzerat/223155071/volkswagen-touran-16-mpi-75-kw-united-r82008-bez-koroze.php",
-        "price_text": "149 990 Kč",
-        "price": 149990,
+        "title": "VOLKSWAGEN TOURAN 1.6 Mpi 75 KW UNITED r.7/2008 177tkm LPG",
+        "url": "https://auto.bazos.cz/inzerat/223163573/volkswagen-touran-16-mpi-75-kw-united-r72008-177tkm-lpg.php",
+        "price_text": "159 990 Kč",
+        "price": 159990,
         "location": "Hradec Králové500 02",
         "thumbnail": null,
         "engine_match": true
@@ -3411,7 +3438,7 @@
     "query": "vw tiguan benzín",
     "search_url": "https://auto.bazos.cz/?hledat=vw%20tiguan%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=350000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:13.822527+00:00",
+    "scraped_at": "2026-08-31T12:42:13.484218+00:00",
     "listings": [
       {
         "title": "Volkswagen Tiguan 1.4TSI MANUÁL BENZÍN VÝHŘEV PANORAMA",
@@ -3442,7 +3469,7 @@
       },
       {
         "title": "Volkswagen Tiguan, 1.4 TSi,Klima,Alu,Serviska",
-        "url": "https://auto.bazos.cz/inzerat/222189380/volkswagen-tiguan-14-tsiklimaaluserviska.php",
+        "url": "https://auto.bazos.cz/inzerat/223229399/volkswagen-tiguan-14-tsiklimaaluserviska.php",
         "price_text": "189 900 Kč",
         "price": 189900,
         "location": "Brno venkov664 41",
@@ -3519,7 +3546,7 @@
     "query": "škoda octavia tour combi benzín",
     "search_url": "https://auto.bazos.cz/?hledat=%C5%A1koda%20octavia%20tour%20combi%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:16.522299+00:00",
+    "scraped_at": "2026-08-31T12:42:16.330473+00:00",
     "listings": [
       {
         "title": "Škoda Octavia 1.6i Tour” LPG” rok 2010+bez koroze absolutně",
@@ -3573,7 +3600,7 @@
     "query": "citroen xsara picasso benzín",
     "search_url": "https://auto.bazos.cz/?hledat=citroen%20xsara%20picasso%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:19.195457+00:00",
+    "scraped_at": "2026-08-31T12:42:19.155898+00:00",
     "listings": []
   },
   {
@@ -3581,13 +3608,13 @@
     "query": "toyota rav4 2.0 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=toyota%20rav4%202.0%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:21.893301+00:00",
+    "scraped_at": "2026-08-31T12:42:22.037733+00:00",
     "listings": [
       {
         "title": "Toyota RAV4 2009 benzín",
         "url": "https://auto.bazos.cz/inzerat/222583684/toyota-rav4-2009-benzin.php",
-        "price_text": "109 000 Kč",
-        "price": 109000,
+        "price_text": "99 000 Kč",
+        "price": 99000,
         "location": "Karlovy Vary362 21",
         "thumbnail": null,
         "engine_match": null
@@ -3653,7 +3680,7 @@
     "query": "nissan x-trail benzín",
     "search_url": "https://auto.bazos.cz/?hledat=nissan%20x-trail%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:24.555947+00:00",
+    "scraped_at": "2026-08-31T12:42:25.022623+00:00",
     "listings": [
       {
         "title": "KOUPÍM Nissan x-trail",
@@ -3671,8 +3698,17 @@
     "query": "kia sportage 2.0 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=kia%20sportage%202.0%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:27.124123+00:00",
+    "scraped_at": "2026-08-31T12:42:27.925336+00:00",
     "listings": [
+      {
+        "title": "Kia Sportage 2.0 LPG 4x4",
+        "url": "https://auto.bazos.cz/inzerat/223205909/kia-sportage-20-lpg-4x4.php",
+        "price_text": "90 000 Kč",
+        "price": 90000,
+        "location": "Jihlava589 01",
+        "thumbnail": null,
+        "engine_match": true
+      },
       {
         "title": "Kia Sportage 2.0 i 104KW Active Pilot",
         "url": "https://auto.bazos.cz/inzerat/223160720/kia-sportage-20-i-104kw-active-pilot.php",
@@ -3717,15 +3753,6 @@
         "location": "Tábor392 01",
         "thumbnail": null,
         "engine_match": true
-      },
-      {
-        "title": "Kia Sportage 2.0 LPG 4x4",
-        "url": "https://auto.bazos.cz/inzerat/220784191/kia-sportage-20-lpg-4x4.php",
-        "price_text": "93 000 Kč",
-        "price": 93000,
-        "location": "Jihlava589 01",
-        "thumbnail": null,
-        "engine_match": true
       }
     ]
   },
@@ -3734,7 +3761,7 @@
     "query": "opel meriva benzín",
     "search_url": "https://auto.bazos.cz/?hledat=opel%20meriva%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:29.872771+00:00",
+    "scraped_at": "2026-08-31T12:42:31.019076+00:00",
     "listings": [
       {
         "title": "Krásná Opel Meriva 1.6... 130870km",
@@ -3764,15 +3791,6 @@
         "engine_match": true
       },
       {
-        "title": "Opel Meriva 1.6 Benzín 77kw",
-        "url": "https://auto.bazos.cz/inzerat/223152966/opel-meriva-16-benzin-77kw.php",
-        "price_text": "55 000 Kč",
-        "price": 55000,
-        "location": "Kolín280 02",
-        "thumbnail": null,
-        "engine_match": true
-      },
-      {
         "title": "Prodám Opel Meriva LPG",
         "url": "https://auto.bazos.cz/inzerat/223060145/prodam-opel-meriva-lpg.php",
         "price_text": "159 000 Kč",
@@ -3780,15 +3798,6 @@
         "location": "Vyškov682 01",
         "thumbnail": null,
         "engine_match": null
-      },
-      {
-        "title": "Opel Meriva 1,6 16V 74 kW AUTOMAT Essentia benzín",
-        "url": "https://auto.bazos.cz/inzerat/223026724/opel-meriva-16-16v-74-kw-automat-essentia-benzin.php",
-        "price_text": "69 900 Kč",
-        "price": 69900,
-        "location": "Jičín507 05",
-        "thumbnail": null,
-        "engine_match": true
       }
     ]
   },
@@ -3797,7 +3806,7 @@
     "query": "peugeot 3008 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=peugeot%203008%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:32.515255+00:00",
+    "scraped_at": "2026-08-31T12:42:33.816829+00:00",
     "listings": [
       {
         "title": "Peugeot 3008 prodám",
@@ -3908,6 +3917,15 @@
         "engine_match": true
       },
       {
+        "title": "PEUGEOT 3008 r.v. 2012 najeto pouze 67000Km 1.6 benzín",
+        "url": "https://auto.bazos.cz/inzerat/222239937/peugeot-3008-rv-2012-najeto-pouze-67000km-16-benzin.php",
+        "price_text": "109 000 Kč",
+        "price": 109000,
+        "location": "Brno625 00",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
         "title": "Peugeot 3008 1.6 THP - benzín / 106 ooo km / 1.majiteľ /",
         "url": "https://auto.bazos.cz/inzerat/222775446/peugeot-3008-16-thp-benzin-106-ooo-km-1majitel.php",
         "price_text": "132 000 Kč",
@@ -3923,7 +3941,7 @@
     "query": "peugeot 5008 benzín",
     "search_url": "https://auto.bazos.cz/?hledat=peugeot%205008%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:35.251918+00:00",
+    "scraped_at": "2026-08-31T12:42:36.750544+00:00",
     "listings": [
       {
         "title": "Peugeot 5008 7 míst",
@@ -3959,7 +3977,7 @@
     "query": "bmw 3 touring benzín",
     "search_url": "https://auto.bazos.cz/?hledat=bmw%203%20touring%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=350000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:37.857177+00:00",
+    "scraped_at": "2026-08-31T12:42:39.556314+00:00",
     "listings": []
   },
   {
@@ -3967,7 +3985,7 @@
     "query": "mercedes c-klasse combi t-modell benzín",
     "search_url": "https://auto.bazos.cz/?hledat=mercedes%20c-klasse%20combi%20t-modell%20benz%C3%ADn&hlokalita=&humkreis=25&cenaod=50000&cenado=350000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:40.475355+00:00",
+    "scraped_at": "2026-08-31T12:42:42.346401+00:00",
     "listings": []
   },
   {
@@ -3975,7 +3993,7 @@
     "query": "škoda octavia combi g-tec cng",
     "search_url": "https://auto.bazos.cz/?hledat=%C5%A1koda%20octavia%20combi%20g-tec%20cng&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:43.204924+00:00",
+    "scraped_at": "2026-08-31T12:42:45.417295+00:00",
     "listings": [
       {
         "title": "Škoda Octavia, 1.4 TSI G-TEC 81 kW",
@@ -3992,6 +4010,15 @@
         "price_text": "199 000 Kč",
         "price": 199000,
         "location": "České Budějovice370 01",
+        "thumbnail": null,
+        "engine_match": true
+      },
+      {
+        "title": "Škoda Octavia III Combi 1.4 TSI G-TEC 81 kW ELEGANCE, ČR",
+        "url": "https://auto.bazos.cz/inzerat/223197750/skoda-octavia-iii-combi-14-tsi-g-tec-81-kw-elegance-cr.php",
+        "price_text": "169 000 Kč",
+        "price": 169000,
+        "location": "Brno602 00",
         "thumbnail": null,
         "engine_match": true
       },
@@ -4023,15 +4050,6 @@
         "engine_match": true
       },
       {
-        "title": "Škoda Octavia III Combi 1.4 TSI G-TEC 81 kW Elegance",
-        "url": "https://auto.bazos.cz/inzerat/221953218/skoda-octavia-iii-combi-14-tsi-g-tec-81-kw-elegance.php",
-        "price_text": "189 900 Kč",
-        "price": 189900,
-        "location": "Brno602 00",
-        "thumbnail": null,
-        "engine_match": true
-      },
-      {
         "title": "Škoda Octavia 3 1.4 TSI G-tec",
         "url": "https://auto.bazos.cz/inzerat/221634351/skoda-octavia-3-14-tsi-g-tec.php",
         "price_text": "109 000 Kč",
@@ -4056,7 +4074,7 @@
     "query": "seat leon st tgi cng",
     "search_url": "https://auto.bazos.cz/?hledat=seat%20leon%20st%20tgi%20cng&hlokalita=&humkreis=25&cenaod=50000&cenado=350000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:45.989572+00:00",
+    "scraped_at": "2026-08-31T12:42:48.337597+00:00",
     "listings": [
       {
         "title": "Seat Leon cng",
@@ -4146,13 +4164,13 @@
     "query": "seat arona tgi cng",
     "search_url": "https://auto.bazos.cz/?hledat=seat%20arona%20tgi%20cng&hlokalita=&humkreis=25&cenaod=50000&cenado=350000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:48.730648+00:00",
+    "scraped_at": "2026-08-31T12:42:51.225252+00:00",
     "listings": [
       {
         "title": "Seat Arona FR 1.0 TGI - NOVÝ MODEL Benzín/CNG rv. 9/2021",
         "url": "https://auto.bazos.cz/inzerat/223160112/seat-arona-fr-10-tgi-novy-model-benzincng-rv-92021.php",
-        "price_text": "287 000 Kč",
-        "price": 287000,
+        "price_text": "285 000 Kč",
+        "price": 285000,
         "location": "Kutná Hora284 01",
         "thumbnail": null,
         "engine_match": true
@@ -4236,7 +4254,7 @@
     "query": "škoda kamiq g-tec cng",
     "search_url": "https://auto.bazos.cz/?hledat=%C5%A1koda%20kamiq%20g-tec%20cng&hlokalita=&humkreis=25&cenaod=50000&cenado=200000&Submit=Hled%C3%A1n%C3%AD",
     "status": "ok",
-    "scraped_at": "2026-08-30T11:16:51.417546+00:00",
+    "scraped_at": "2026-08-31T12:42:54.092332+00:00",
     "listings": []
   }
 ]
